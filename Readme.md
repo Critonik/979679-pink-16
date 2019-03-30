@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Тимур Алексеев](https://up.htmlacademy.ru/adaptive/16/user/979679).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
