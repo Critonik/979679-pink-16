@@ -1,0 +1,128 @@
+  <!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>Pink</title>
+    </head>
+    <body>
+      <header class="page-header">
+        <a class="logo page-header__logo" href="#">
+          <img class="logo__image" src="img/logotype-mobile.svg" width="75" height="22" alt="PINK">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="site-list main-nav__list site-list--active">
+              <li class="site-list__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="page-main">
+        <h1 class="page-main__description">Фотографии пользователей</h1>
+        <p class="page-main__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <section class="user-photo">
+          <figure class="user-photo panorama-of-the-day">
+            <img class="panorama-of-the-day__photo" src="#" alt="Винтовой мост">
+            <p class="panorama-of-the-day__logo">Панорама дня</p>
+            <figcaption class="user-photo__user-block">
+              <span class="user-block__name">Анна</span>
+              <time datetime="2019-04" class="user-block__timer">(5 минут назад)</time>  <!---тег time Хочет аттрибут datetime. Без него - невалидно-->
+              <p class="user-block__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <span class="user-block__like">Нравится: 215</span>
+            </figcaption>
+            </figure>
+            <figure> class="user-photo-list__item">
+              <img class="user-photo-image" src="#" alt="Автомобиль">
+              <figcaption class="user-photo__user-block">
+                <span class="user-block__name">Левон</span>
+                <time datetime="2019-04" class="user-block__timer">(5 часов назад)</time>
+                <p class="user-block__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <span class="user-block__like">Нравится: 356</span>
+              </figcaption>
+            </figure>
+            <figure class="user-photo-list__item">
+              <img class="user-photo-image" src="#" alt="Ударная установка">
+              <figcaption class="user-photo__user-block">
+                <span class="user-block__name">Антон</span>
+                <time datetime="2019-04" class="user-block__timer">(12 часов назад)</time>
+                <p class="user-block__text">Соседи будут рады!</p>
+                <span class="user-block__like">Нравится: 666</span>
+              </figcaption>
+            </figure>
+            <figure class="user-photo-list__item">
+              <img class="user-photo-image" src="#" alt="Стеклянный потолок">
+              <figcaption class="user-photo__user-block">
+                <span class="user-block__name">Борис</span>
+                <time datetime="2019-04" class="user-block__timer">(20 часов назад)</time>
+                <p class="user-block__text">Здесь могла быть ваша цитата о высоком и вечном</p>
+                <span class="user-block__like">Нравится: 215</span>
+              </figcaption>
+            </figure>
+            <figure class="user-photo-list__item">
+              <img class="user-photo-image" src="#" alt="Рынок">
+              <figcaption class="user-photo__user-block">
+                <span class="user-block__name">Сергей</span>
+                <time datetime="2019-04" class="user-block__timer">(25 часов назад)</time>
+                <p class="user-block__text">Самая кубанская в мире!</p>
+                <span class="user-block__like">Нравится: 4</span>
+              </figcaption>
+            </figure>
+            <figure class="user-photo-list__item">
+              <img class="user-photo-image" src="#" alt="Горы">
+              <figcaption class="user-photo__user-block">
+                <span class="user-block__name">Максим</span>
+                <time datetime="2019-04" class="user-block__timer">(40 часов назад)</time>
+                <p class="user-block__text">Где снег-то?</p>
+                <span class="user-block__like">Нравится: 150</span>
+              </figcaption>
+            </figure>
+            <figure class="user-photo-list__item">
+              <img class="user-photo-image" src="#" alt="Крыло самлета">
+              <figcaption class="user-photo__user-block">
+                <span class="user-block__name">Надежда</span>
+                <time datetime="2019-04" class="user-block__timer">(45 часов назад)</time>
+                <p class="user-block__text">Всем GM и взаимные лайки!</p>
+                <span class="user-block__like">Нравится: 2560</span>
+              </figcaption>
+            </figure>
+          <h2 class="user-photo__motivation">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="logo page-footer__logo">
+            <img class="logo__image" src="#" alt="PINK">
+          </div>
+          <div class="social page-footer__social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link social__link--vkontakte">Twitter</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--facebook">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--instagram">YouTube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright page-footer__copyright">
+            <span class="copyright__text">Разработано:</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
