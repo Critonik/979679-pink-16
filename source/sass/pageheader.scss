@@ -10,17 +10,16 @@
   color: #ffffff;
 }
 
-.main-nav ul {
+.site-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: #ffffff;
 }
 
-.site-list a {
-  color: #ffffff;
-}
-
-li.site-list__item {
+.site-list_item {
   padding: 23px 90px;
+}
+
+.site-list_link {
+  color: #ffffff;
 }

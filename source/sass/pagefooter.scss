@@ -1,16 +1,24 @@
-.page-footer__social ul {
+.social_list {
   list-style: none;
 }
 
-.social__link path {
+.social_link path {
   fill: #d22856;
 }
 
-.copyright__link path {
+.copyright_link path {
   fill: #d22856;
 }
 
-.copyright__link svg {
+.copyright_link svg {
   height: 40px;
   width: 26px;
+}
+
+.copyright_text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #283645;
 }

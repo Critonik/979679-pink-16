@@ -1,24 +1,18 @@
-.page-main__description {
+.main_title {
   font-weight: lighter;
   font-size: 24px;
   line-height: normal;
   text-align: center;
-  color: #ffffff;
-}
-
-h1.page-main__description {
+  color: #283645;
   padding: 0;
   margin: 0;
 }
 
-p.page-main__header {
-  margin: 0;
-}
-
-.page-main__header {
+.page-main_header {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  margin: 0;
 }
 
 .user-photo {
@@ -30,11 +24,7 @@ p.page-main__header {
   margin: 0;
 }
 
-p.panorama-of-the-day__logo {
-  margin: 0;
-}
-
-.panorama-of-the-day__logo {
+.panorama-of-the-day_logo {
   font-weight: bold;
   font-size: 12px;
   line-height: 24px;
@@ -47,25 +37,25 @@ p.panorama-of-the-day__logo {
   margin: 0;
 }
 
-.user-photo__user-block {
+.user-photo_user-block {
   margin: 0;
   background-color: #f2f2f2;
 }
 
-.user-block__name {
+.user-block_name {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
 }
 
-.user-block__timer {
+.user-block_timer {
   font-weight: lighter;
   font-size: 12px;
   line-height: 24px;
   color: #283645;
 }
 
-.user-block__text {
+.user-block_text {
   margin: 0;
   font-weight: normal;
   font-size: 14px;
@@ -73,25 +63,22 @@ p.panorama-of-the-day__logo {
   color: #283645;
 }
 
-.user-block__like {
+.user-block_like {
   color: #d22856;
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
 }
 
-.user-photo-list__item {
+.user-photo-list_item {
   margin: 0;
 }
 
-.user-photo__motivation {
+.user-photo_motivation {
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   text-align: center;
   color: #283645;
-}
-
-h2.user-photo__motivation {
   margin: 0;
 }
