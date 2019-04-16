@@ -1,0 +1,33 @@
+.main_header {
+  margin: 0;
+  padding: 0;
+}
+
+.main_header--background {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #243141;
+}
+
+.download-programm {
+  background-color: #243141;
+  color: #ffffff;
+}
+
+.download-links {
+  list-style: none;
+}
+
+.download-programm_link {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.download-programm_info {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
