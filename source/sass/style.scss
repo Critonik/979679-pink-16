@@ -12,6 +12,11 @@ body {
   color: #000000;
 }
 
+$tablet-width: 768px;
+
+$desktop-width: 1200px;
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -33,6 +38,18 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .center {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .center {
+    width: 1200px;
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -51,4 +68,4 @@ a {
 @import "maintariff.scss";
 @import "maincontacts.scss";
 @import "photoeditor.scss";
-@import "contestform.scss"
+@import "contestform.scss";

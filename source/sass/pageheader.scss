@@ -1,5 +1,44 @@
+$tablet-width: 768px;
+
+$desktop-width: 1200px;
+
 .page-header {
   background-color: #2b3848;
+  display: flex;
+  flex-direction: column;
+  outline: 1px red solid;
+}
+
+.logo {
+  height: 66px;
+  outline: 1px red solid;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    height: 111px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list {
+    background-color: #2b3848;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav_toggle {
+    display: none;
+  }
+
+  .logo {
+    height: 108px;
+  }
 }
 
 .main-nav {
@@ -8,6 +47,7 @@
   line-height: 32px;
   text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .site-list {
