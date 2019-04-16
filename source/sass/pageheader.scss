@@ -29,10 +29,24 @@ $desktop-width: 1200px;
   .site-list {
     background-color: #2b3848;
     display: flex;
+    width: 700px;
+  }
+
+  .main-nav__wrapper {
+    width: 960px;
   }
 
   .main-nav_toggle {
     display: none;
+  }
+
+  .site-list_item {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: none;
   }
 
   .logo {
@@ -47,6 +61,7 @@ $desktop-width: 1200px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .site-list {
@@ -56,7 +71,7 @@ $desktop-width: 1200px;
 }
 
 .site-list_item {
-  padding: 23px 90px;
+
 }
 
 .site-list_link {

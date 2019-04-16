@@ -1,20 +1,37 @@
+$tablet-width: 768px;
+
+$desktop-width: 1200px;
+
 .main_header {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 320px;
 }
 
 .main_header--background {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #243141;
+  height: 400px;
 }
 
 .download-programm {
   background-color: #243141;
   color: #ffffff;
+  height: 242px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.download-programm_store-list {
+  margin: 0;
+  padding: 0;
 }
 
 .download-links {
   list-style: none;
+  display: flex;
 }
 
 .download-programm_link {
@@ -30,4 +47,17 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main_header {
+    width: 660px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .main_header--background {
+    background-image: none;
+  }
 }
