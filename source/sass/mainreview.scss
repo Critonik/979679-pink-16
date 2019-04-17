@@ -11,6 +11,7 @@
 .review {
   text-align: center;
   height: 443px;
+  overflow: hidden;
 }
 
 .author_name {
@@ -24,8 +25,4 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-}
-
-.review {
-  overflow: hidden;
 }
