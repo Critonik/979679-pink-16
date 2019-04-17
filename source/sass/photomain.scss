@@ -3,9 +3,23 @@
   font-size: 24px;
   line-height: normal;
   text-align: center;
-  color: #283645;
+  color: #ffffff;
   padding: 0;
   margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 39px;
+  padding-bottom: 76px;
+}
+
+.main_description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding: 53px 38px;
 }
 
 .page-main_header {
@@ -22,6 +36,9 @@
 
 .panorama-of-the-day {
   margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .panorama-of-the-day_logo {
@@ -32,14 +49,26 @@
   color: #ffffff;
   background-color: #d22856;
   width: 140px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .user-photo_user-block {
   margin: 0;
   background-color: #f2f2f2;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.user-photo-image {
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .user-block_name {
@@ -72,6 +101,7 @@
 
 .user-photo-list_item {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .user-photo_motivation {
@@ -81,4 +111,5 @@
   text-align: center;
   color: #283645;
   margin: 0;
+  padding: 50px 20px;
 }

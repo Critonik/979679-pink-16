@@ -1,11 +1,16 @@
 .contest_description {
-  padding: 0;
   margin: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #283645;
+  padding: 45px 20px 30px 20px;
+}
+
+.form_field {
+  display: flex;
+  flex-direction: column;
 }
 
 .form_text-label {
