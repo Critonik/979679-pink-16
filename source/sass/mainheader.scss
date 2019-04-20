@@ -83,3 +83,12 @@ $desktop-width: 1200px;
     background-color: transparent;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main_header {
+    width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

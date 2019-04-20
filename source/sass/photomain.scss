@@ -1,4 +1,8 @@
-.main_title {
+$tablet-width: 768px;
+
+$desktop-width: 1200px;
+
+.photo_title {
   font-weight: lighter;
   font-size: 24px;
   line-height: normal;
@@ -12,16 +16,22 @@
   padding-bottom: 76px;
 }
 
-.main_description {
+.photo_header--background {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #243141;
+}
+
+.photo_description {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   margin: 0;
   padding: 53px 38px;
+  color: #283645;
 }
 
-.page-main_header {
+.page-photo_header {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -111,4 +121,105 @@
   color: #283645;
   margin: 0;
   padding: 50px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo_header--background {
+    width: 660px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .photo_title {
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    padding-left: 155px;
+    padding-right: 155px;
+    padding-top: 81px;
+    padding-bottom: 135px;
+  }
+
+  .photo_description {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 104px;
+    padding-top: 95px;
+    padding-bottom: 78px;
+    color: #283645;
+  }
+
+  .panorama-of-the-day {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-photo_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .user-photo-list_item {
+    height: 450px;
+    width: 300px;
+    margin: 0 auto;
+    outline: 1px red solid;
+  }
+
+  .user-photo_motivation {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #283645;
+    margin: 0;
+    padding: 70px 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo_header--background {
+    width: 100%;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .photo_title {
+    padding-left: 415px;
+    padding-right: 415px;
+    padding-top: 81px;
+    padding-bottom: 135px;
+  }
+
+  .photo_description {
+    padding-left: 309px;
+    padding-right: 309px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    color: #283645;
+  }
+
+  .panorama-of-the-day_photo {
+    width: 100%
+  }
+
+  .panorama-of-the-day_block {
+    width: 100%;
+  }
+
+  .user-photo-list_item {
+    height: 450px;
+    width: 300px;
+    margin-right: 20px;
+    outline: 1px red solid;
+  }
 }
