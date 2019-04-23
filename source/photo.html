@@ -10,31 +10,31 @@
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
-  <div class="center">
-    <header class="page-header">
-      <a class="logo page-header_logo" href="#">
-        <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="25" alt="PINK">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav_toggle" type="button">Открыть меню</button>
-        <div class="main-nav_wrapper">
-          <ul class="site-list main-nav_list site-list--active">
-            <li class="site-list_item">
-              <a class="site-list_link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list_item">
-              <a class="site-list_link" href="#">Фотографии</a>
-            </li>
-            <li class="site-list_item">
-              <a class="site-list_link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list_item">
-              <a class="site-list_link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <header class="page-header">
+    <a class="logo page-header_logo" href="#">
+      <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="25" alt="PINK">
+    </a>
+    <nav class="main-nav">
+      <label class="main-nav_toggle" for="menu" type="checkbox">Открыть</label>
+      <input type="checkbox" id="menu" class="hidden-input">
+      <div class="main-nav_wrapper">
+        <ul class="site-list main-nav_list site-list--active">
+          <li class="site-list_item">
+            <a class="site-list_link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list_item">
+            <a class="site-list_link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list_item">
+            <a class="site-list_link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list_item">
+            <a class="site-list_link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <main class="photo_user">
       <div class="photo_header photo_header--background">
         <h1 class="photo_title">Фотографии пользователей</h1>
@@ -209,6 +209,5 @@
     </div>
   </div>
 </footer>
-</div>
 </body>
 </html>

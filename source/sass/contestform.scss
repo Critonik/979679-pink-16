@@ -1,19 +1,11 @@
-$tablet-width: 768px;
-
-$desktop-width: 1200px;
-
 .form_heading {
   font-weight: lighter;
   font-size: 24px;
   line-height: normal;
   text-align: center;
   color: #ffffff;
-  padding: 0;
   margin: 0;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 39px;
-  padding-bottom: 76px;
+  padding: 39px 50px 76px;
 }
 
 .form_header--background {
@@ -76,7 +68,6 @@ $desktop-width: 1200px;
 
 @media (min-width: $tablet-width) {
   .form_header--background {
-    width: 660px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
@@ -126,3 +117,5 @@ $desktop-width: 1200px;
     justify-content: space-between;
   }
 }
+
+@import "variables.scss";

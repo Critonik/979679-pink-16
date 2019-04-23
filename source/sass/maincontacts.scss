@@ -1,7 +1,3 @@
-$tablet-width: 768px;
-
-$desktop-width: 1200px;
-
 .contacts {
   display: flex;
   flex-direction: column;
@@ -48,8 +44,7 @@ $desktop-width: 1200px;
     line-height: normal;
     text-align: center;
     color: #283645;
-    margin: 0 50px;
-    margin-bottom: 45px;
+    margin: 0 50px 45px;
   }
 
   .contacts_inner {
@@ -66,3 +61,5 @@ $desktop-width: 1200px;
     padding: 0 300px;
   }
 }
+
+@import "variables.scss";

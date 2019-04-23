@@ -12,11 +12,6 @@ body {
   color: #000000;
 }
 
-$tablet-width: 768px;
-
-$desktop-width: 1200px;
-
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -30,24 +25,6 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.center {
-  width: 320px;
-  margin: 0 auto;
-  position: relative;
-}
-
-@media (min-width: $tablet-width) {
-  .center {
-    width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .center {
-    width: 1200px;
-  }
 }
 
 img {
@@ -70,3 +47,4 @@ a {
 @import "photoeditor.scss";
 @import "contestform.scss";
 @import "effect.scss";
+@import "variables.scss";

@@ -10,17 +10,17 @@
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
-  <div class="center">
     <header class="page-header">
       <a class="logo page-header_logo" href="#">
         <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="25" alt="PINK">
       </a>
       <nav class="main-nav">
-        <button class="main-nav_toggle" type="button">Открыть меню</button>
+        <label class="main-nav_toggle" for="menu" type="checkbox">Открыть</label>
+        <input type="checkbox" id="menu" class="hidden-input">
         <div class="main-nav_wrapper">
           <ul class="site-list main-nav_list site-list--active">
             <li class="site-list_item">
-              <a class="site-list_link" href="#">Главная</a>
+              <a class="site-list_link" href="index.html">Главная</a>
             </li>
             <li class="site-list_item">
               <a class="site-list_link" href="photo.html">Фотографии</a>
@@ -38,7 +38,7 @@
     <main class="main">
       <section class="main_header">
         <div class="main_header--background">
-          <img class="main_header--background iphone-5-in-hand_logo" width="320" height="314" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
+          <img class="iphone-5-in-hand_logo" width="320" height="314" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
         </div>
         <div class="download-programm">
           <h2 class="download-programm_title">Взгляните на жизнь иначе!</h2>
@@ -89,27 +89,27 @@
       <section class="review">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="review_author_wrapper slider">
-          <ul class="review_list slider_list">
-            <li class="review review_item slider_item">
+          <div class="review_list slider_list">
+            <input class="slider_toggle-input" type="radio" id="slider-comment1" name="user_review" checked>
+            <div class="review review_item slider_item">
               <span class="author_name">Николай Петров</span>
               <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="review review_item slider_item">
+            </div>
+              <input class="slider_toggle-input" type="radio" id="slider-comment2" name="user_review">
+            <div class="review review_item slider_item">
               <span class="author_name">Николай Петров</span>
               <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="review review_item slider_item">
+            </div>
+              <input class="slider_toggle-input" type="radio" id="slider-comment3" name="user_review">
+            <div class="review review_item slider_item">
               <span class="author_name">Николай Петров</span>
               <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-          </ul>
+            </div>
+          </div>
           <footer class="advantages_toggles slider_toggles">
-            <label class="slider_toggle-label" for="slider-comment1">Комментарий 1</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment1" name="comment" value="Комментарий 1" checked>
-            <label class="slider_toggle-label" for="slider-comment2">Комментарий 2</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment2" name="comment" value="Комментарий 2">
-            <label class="slider_toggle-label" for="slider-comment3">Комментарий 3</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment3" name="comment" value="Комментарий 3">
+            <label class="slider_toggle-label" for="slider-comment1">O</label>
+            <label class="slider_toggle-label" for="slider-comment2">O</label>
+            <label class="slider_toggle-label" for="slider-comment3">O</label>
           </footer>
         </div>
       </section>
@@ -262,6 +262,5 @@
         </div>
       </div>
     </footer>
-  </div>
 </body>
 </html>
