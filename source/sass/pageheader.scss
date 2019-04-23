@@ -5,7 +5,11 @@
   padding: 20px;
 }
 
-.hidden-input, .main-nav_wrapper {
+.hidden-input {
+  display: none;
+}
+
+.main-nav_wrapper {
   display: none;
 }
 
@@ -82,7 +86,11 @@
     display: block;
   }
 
-  .hidden-input:checked, .hidden-input {
+  .hidden-input:checked {
+    display: none;
+  }
+
+  .hidden-input {
     display: none;
   }
 
