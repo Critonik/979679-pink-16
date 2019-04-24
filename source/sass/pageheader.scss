@@ -1,0 +1,134 @@
+.page-header {
+  background-color: #2b3848;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.main-nav_wrapper {
+  display: none;
+}
+
+.hidden-input:checked ~ .main-nav_wrapper {
+  display: block;
+}
+
+.main-nav_toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.main-nav_toggle::before {
+  content: url("../img/icon-menu-burger.svg");
+  position: absolute;
+  height: 25px;
+  width: 52px;
+  top: 21px;
+  right: 21px;
+}
+
+.hidden-input:checked ~ .main-nav_toggle::before {
+  content: url("../img/icon-menu-cross.svg");
+  position: absolute;
+  height: 25px;
+  width: 52px;
+}
+
+.main-nav {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list_link {
+  color: #ffffff;
+}
+
+.site-list_item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    height: 111px;
+    position: relative;
+  }
+
+  .main-nav_toggle::before {
+    top: 21px;
+    right: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav {
+    margin: 0;
+    margin-left: 150px;
+  }
+
+  .main-nav_wrapper {
+    display: block;
+  }
+
+  .hidden-input:checked {
+    display: none;
+  }
+
+  .hidden-input {
+    display: none;
+  }
+
+  .site-list {
+    background-color: #2b3848;
+    display: flex;
+    width: 700px;
+  }
+
+  .main-nav__wrapper {
+    width: 960px;
+  }
+
+  .main-nav_toggle {
+    display: none;
+  }
+
+  .site-list_item {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: none;
+    margin: 0 auto;
+    padding-top: 34px;
+    padding-bottom: 43px;
+  }
+
+  .logo {
+    width: 160px;
+    margin-left: 120px;
+  }
+}
+
+@import "variables.scss";

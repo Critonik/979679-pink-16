@@ -1,69 +1,266 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Pink</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Pink</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+</head>
+<body>
     <header class="page-header">
-      <a class="logo page-header__logo" href="#">
-        <img class="logo__image" src="img/logotype-mobile.svg" width="75" height="22" alt="PINK">
+      <a class="logo page-header_logo" href="#">
+        <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="25" alt="PINK">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="site-list main-nav__list site-list--active">
-            <li class="site-list__item">
-              <a href="#">Главная</a>
+        <input type="checkbox" id="menu" class="hidden-input">
+        <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
+        <div class="main-nav_wrapper">
+          <ul class="site-list main-nav_list site-list--active">
+            <li class="site-list_item">
+              <a class="site-list_link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+            <li class="site-list_item">
+              <a class="site-list_link" href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+            <li class="site-list_item">
+              <a class="site-list_link" href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="site-list_item">
+              <a class="site-list_link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <section class="main__header">
-        <img class="iphone-5-in-hand__logo" src="#" alt="Iphone 5">
+    <main class="main">
+      <section class="main_header">
+        <div class="main_header--background">
+          <img class="iphone-5-in-hand_logo" width="320" height="314" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
+        </div>
         <div class="download-programm">
-          <a href="#" class="download-programm__link">
+          <h2 class="download-programm_title">Взгляните на жизнь иначе!</h2>
+          <a href="#" class="download-programm_link">
             Скачать приложение
           </a>
-          <ul class="download-links download-programm__store-list">
-            <li class="download-links__item"><a href="#" class="download-links__link">AppStore</a></li>
-            <li class="download-links__item"><a href="#" class="download-links__link">PlayMarket</a></li>
-            <li class="download-links__item"><a href="#" class="download-links__link">WindowsMarket</a></li>
+          <ul class="download-links download-programm_store-list">
+            <li class="download-links_item"><a href="#" class="download-links_link">AppStore</a></li>
+            <li class="download-links_item"><a href="#" class="download-links_link">PlayMarket</a></li>
+            <li class="download-links_item"><a href="#" class="download-links_link">WindowsMarket</a></li>
           </ul>
-          <p class="download-programm__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="download-programm_info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="advantages_header">Устали от серости мегаполиса?</p>
         <p class="advantages_header">Нам есть, что вам предложить!</p>
-        <ul class="advantages__list">
-          <li class="advantages advantages__item">
-            <h3 class="advantage__title">Поднимает настроение</h3>
-            <p class="advantage__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <div class="advantages_list_wrapper">
+        <ul class="advantages_list">
+          <li class="advantages advantages_item">
+            <h3 class="advantage_title">Поднимает настроение</h3>
+            <p class="advantage_description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="advantages advantages__item">
-            <h3 class="advantage__title">Меняет мир вокруг</h3>
-            <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="advantages advantages_item">
+            <h3 class="advantage_title">Меняет мир вокруг</h3>
+            <p class="advantage_description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="advantages advantages__item">
-            <h3 class="advantage__title">Заводит новых друзей</h3>
-            <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="advantages advantages_item">
+            <h3 class="advantage_title">Заводит новых друзей</h3>
+            <p class="advantage_description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages__iphone" src="#" alt="Всем привет!">
+        <img class="advantages_iphone" width="156" height="276" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
+      </div>
+      </section>
+      <section class="effect">
+        <h2 class="visually-hidden">Эффект PINK</h2>
+        <div class="effect effect--background">
+          <img class="effect--background timer" width="238" height="276" src="img/icon-timer.svg" alt="timer">
+        </div>
+        <div class="effect_description">
+          <h2 class="description_header">Эффект на 24 часа!</h2>
+          <p class="description_text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="description_link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="review">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="review_author_wrapper slider">
+          <div class="review_list slider_list">
+            <input class="slider_toggle-input" type="radio" id="slider-comment1" name="user_review" checked>
+            <div class="review review_item slider_item">
+              <span class="author_name">Николай Петров</span>
+              <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+              <input class="slider_toggle-input" type="radio" id="slider-comment2" name="user_review">
+            <div class="review review_item slider_item">
+              <span class="author_name">Николай Петров</span>
+              <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+              <input class="slider_toggle-input" type="radio" id="slider-comment3" name="user_review">
+            <div class="review review_item slider_item">
+              <span class="author_name">Николай Петров</span>
+              <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+          </div>
+          <footer class="advantages_toggles slider_toggles">
+            <label class="slider_toggle-label" for="slider-comment1">O</label>
+            <label class="slider_toggle-label" for="slider-comment2">O</label>
+            <label class="slider_toggle-label" for="slider-comment3">O</label>
+          </footer>
+        </div>
+      </section>
+      <section class="tariff">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="tariff_wrapper slider">
+          <table class="tariff_table">
+            <tr class="tariff_table-header">
+              <td class="tariff_features-header">
+                <span class="visually-hidden">Опции</span>
+              </td>
+              <th class="tariff_header">
+                <div class="tariff_name">База</div>
+                <div class="tariff_price">1,99 USD</div>
+              </th>
+              <th class="tariff_header  tariff_header--flag">
+                <div class="tariff_name">Стандарт</div>
+                <div class="tariff_flag">Хит</div>
+                <div class="tariff_price">3,99 USD</div>
+              </th>
+              <th class="tariff_header">
+                <div class="tariff_name">Анлим</div>
+                <div class="tariff_price">9,99 USD</div>
+              </th>
+            </tr>
+            <tr>
+              <td class="tariff_item  tariff_item--feature-title">
+                <span class="tariff_feature">Розовый фильтр</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Розовый фильтр</span>
+                <span class="tariff_feature-status  tariff_feature-status--on">Включено</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Розовый фильтр</span>
+                <span class="tariff_feature-status  tariff_feature-status--on">Включено</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Розовый фильтр</span>
+                <span class="tariff_feature-status  tariff_feature-status--on">Включено</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff_item  tariff_item--feature-title">
+                <span class="tariff_feature">Смайлики</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Смайлики</span>
+                <span class="tariff_feature-status  tariff_feature-status--off">Не включено</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Смайлики</span>
+                <span class="tariff_feature-status  tariff_feature-status--on">Включено</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Смайлики</span>
+                <span class="tariff_feature-status  tariff_feature-status--on">Включено</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff_item  tariff_item--feature-title">
+                <span class="tariff_feature">Комментарии</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Комментарии</span>
+                <span class="tariff_feature-status  tariff_feature-status--off">Не включено</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Комментарии</span>
+                <span class="tariff_feature-status  tariff_feature-status--off">Не включено</span>
+              </td>
+              <td class="tariff_item">
+                <span class="tariff_feature  tariff_feature--name">Комментарии</span>
+                <span class="tariff_feature-status  tariff_feature-status--on">Включено</span>
+              </td>
+            </tr>
+          </table>
+          <footer class="tariff_toggles slider_toggles">
+            <label class="slider_toggle-label" for="slider-comment1">Тариф 1</label>
+            <input class="slider_toggle-input" type="radio" id="slider-comment1" name="tariff" value="Тариф 1" checked>
+            <label class="slider_toggle-label" for="slider-comment2">Тариф 2</label>
+            <input class="slider_toggle-input" type="radio" id="slider-comment2" name="tariff" value="Тариф 2">
+            <label class="slider_toggle-label" for="slider-comment3">Тариф 3</label>
+            <input class="slider_toggle-input" type="radio" id="slider-comment3" name="tariff" value="Тариф 3">
+          </footer>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts_title">
+          Остались вопросы?
+          Свяжитесь с нами!
+        </p>
+        <address class="contacts_inner">
+          <div class="contacts_item  contacts_item--phone">
+            <h3 class="contacts_item-lead">Звоните:</h3>
+            <a class="contacts_item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts_item  contacts_item--email">
+            <h3 class="contacts_item-lead">Пишите:</h3>
+            <a class="contacts_item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts_item  contacts_item--address">
+            <h3 class="contacts_item-lead">Приезжайте в гости:</h3>
+            <span class="contacts_item-info">ул. Большая Конюшенная, 19/8</span>
+          </div>
+        </address>
       </section>
     </main>
-  </body>
+    <footer class="page-footer">
+      <div class="page-footer_wrapper">
+        <div class="logo page-footer_logo">
+          <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+        </div>
+        <div class="social page-footer_social">
+          <ul class="social_list">
+            <li class="social_item">
+              <a href="#" class="social_link social_link--twitter">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                  <g id="W6EeEF_1_">
+                    <g>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="social_item">
+              <a href="#" class="social_link social_link--facebook">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                  <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social_item">
+              <a href="#" class="social_link social_link--instagram">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                  <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright page-footer_copyright">
+          <span class="copyright_text">Разработано:</span>
+          <a class="copyright_link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+</body>
 </html>
