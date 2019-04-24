@@ -1,3 +1,7 @@
+.tariff {
+  height: 382px;
+}
+
 .tariff_item {
   margin: 0;
   padding: 0;
@@ -43,3 +47,11 @@
   text-align: center;
   color: #283645;
 }
+
+@media (min-width: $desktop-width) {
+  .tariff_table {
+    width: 100%;
+  }
+}
+
+@import "variables.scss";

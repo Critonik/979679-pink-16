@@ -1,5 +1,16 @@
+.page-footer_logo {
+  width: 147px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
 .social_list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 31px;
 }
 
 .social_link path {
@@ -22,3 +33,35 @@
   text-align: center;
   color: #283645;
 }
+
+.page-footer_copyright {
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer_wrapper {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    justify-content: space-between;
+  }
+
+  .page-footer_logo {
+    margin: 0;
+  }
+
+  .social_list {
+    margin: auto;
+    width: 185px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer_copyright {
+    margin: 0;
+  }
+}
+
+@import "variables.scss";

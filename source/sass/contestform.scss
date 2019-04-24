@@ -1,11 +1,35 @@
+.form_heading {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 39px 50px 76px;
+}
+
+.form_header--background {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #243141;
+}
+
 .contest_description {
-  padding: 0;
   margin: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #283645;
+  padding: 45px 20px 30px 20px;
+}
+
+.contest_description_invitation {
+  display: none;
+}
+
+.form_field {
+  display: flex;
+  flex-direction: column;
 }
 
 .form_text-label {
@@ -41,3 +65,57 @@
   color: #283645;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .form_header--background {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .form_heading {
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    padding-left: 95px;
+    padding-right: 90px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .contest_description {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top: 92px;
+    padding-bottom: 56px;
+    color: #283645;
+  }
+
+  .contest_description_invitation {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .form_fieldset_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form_footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@import "variables.scss";

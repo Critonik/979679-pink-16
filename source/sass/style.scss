@@ -27,12 +27,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.center {
-  width: 320px;
-  margin: 0 auto;
-  position: relative;
-}
-
 img {
   max-width: 100%;
 }
@@ -51,4 +45,6 @@ a {
 @import "maintariff.scss";
 @import "maincontacts.scss";
 @import "photoeditor.scss";
-@import "contestform.scss"
+@import "contestform.scss";
+@import "effect.scss";
+@import "variables.scss";

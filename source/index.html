@@ -7,19 +7,20 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 <body>
-  <div class="center">
     <header class="page-header">
       <a class="logo page-header_logo" href="#">
         <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="25" alt="PINK">
       </a>
       <nav class="main-nav">
-        <button class="main-nav_toggle" type="button">Открыть меню</button>
+        <input type="checkbox" id="menu" class="hidden-input">
+        <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
         <div class="main-nav_wrapper">
           <ul class="site-list main-nav_list site-list--active">
             <li class="site-list_item">
-              <a class="site-list_link" href="#">Главная</a>
+              <a class="site-list_link" href="index.html">Главная</a>
             </li>
             <li class="site-list_item">
               <a class="site-list_link" href="photo.html">Фотографии</a>
@@ -36,10 +37,11 @@
     </header>
     <main class="main">
       <section class="main_header">
-        <div class="main_header main_header--background">
-          <img class="main_header--background iphone-5-in-hand_logo" width="287" height="265" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
+        <div class="main_header--background">
+          <img class="iphone-5-in-hand_logo" width="320" height="314" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
         </div>
         <div class="download-programm">
+          <h2 class="download-programm_title">Взгляните на жизнь иначе!</h2>
           <a href="#" class="download-programm_link">
             Скачать приложение
           </a>
@@ -55,6 +57,7 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="advantages_header">Устали от серости мегаполиса?</p>
         <p class="advantages_header">Нам есть, что вам предложить!</p>
+        <div class="advantages_list_wrapper">
         <ul class="advantages_list">
           <li class="advantages advantages_item">
             <h3 class="advantage_title">Поднимает настроение</h3>
@@ -70,31 +73,43 @@
           </li>
         </ul>
         <img class="advantages_iphone" width="156" height="276" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
+      </div>
+      </section>
+      <section class="effect">
+        <h2 class="visually-hidden">Эффект PINK</h2>
+        <div class="effect effect--background">
+          <img class="effect--background timer" width="238" height="276" src="img/icon-timer.svg" alt="timer">
+        </div>
+        <div class="effect_description">
+          <h2 class="description_header">Эффект на 24 часа!</h2>
+          <p class="description_text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="description_link" href="#">Узнать больше об исследовании</a>
+        </div>
       </section>
       <section class="review">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="review_author_wrapper slider">
-          <ul class="review_list slider_list">
-            <li class="review review_item slider_item">
+          <div class="review_list slider_list">
+            <input class="slider_toggle-input" type="radio" id="slider-comment1" name="user_review" checked>
+            <div class="review review_item slider_item">
               <span class="author_name">Николай Петров</span>
               <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="review review_item slider_item">
+            </div>
+              <input class="slider_toggle-input" type="radio" id="slider-comment2" name="user_review">
+            <div class="review review_item slider_item">
               <span class="author_name">Николай Петров</span>
               <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="review review_item slider_item">
+            </div>
+              <input class="slider_toggle-input" type="radio" id="slider-comment3" name="user_review">
+            <div class="review review_item slider_item">
               <span class="author_name">Николай Петров</span>
               <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-          </ul>
+            </div>
+          </div>
           <footer class="advantages_toggles slider_toggles">
-            <label class="slider_toggle-label" for="slider-comment1">Комментарий 1</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment1" name="Комментарий 1" value="Комментарий 1" checked>
-            <label class="slider_toggle-label" for="slider-comment2">Комментарий 2</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment2" name="Комментарий 2" value="Комментарий 2">
-            <label class="slider_toggle-label" for="slider-comment3">Комментарий 3</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment3" name="Комментарий 3" value="Комментарий 3">
+            <label class="slider_toggle-label" for="slider-comment1">O</label>
+            <label class="slider_toggle-label" for="slider-comment2">O</label>
+            <label class="slider_toggle-label" for="slider-comment3">O</label>
           </footer>
         </div>
       </section>
@@ -174,11 +189,11 @@
           </table>
           <footer class="tariff_toggles slider_toggles">
             <label class="slider_toggle-label" for="slider-comment1">Тариф 1</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment1" name="Тариф 1" value="Тариф 1" checked>
+            <input class="slider_toggle-input" type="radio" id="slider-comment1" name="tariff" value="Тариф 1" checked>
             <label class="slider_toggle-label" for="slider-comment2">Тариф 2</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment2" name="Тариф 2" value="Тариф 2">
+            <input class="slider_toggle-input" type="radio" id="slider-comment2" name="tariff" value="Тариф 2">
             <label class="slider_toggle-label" for="slider-comment3">Тариф 3</label>
-            <input class="slider_toggle-input" type="radio" id="slider-comment3" name="Тариф 3" value="Тариф 3">
+            <input class="slider_toggle-input" type="radio" id="slider-comment3" name="tariff" value="Тариф 3">
           </footer>
         </div>
       </section>
@@ -247,6 +262,5 @@
         </div>
       </div>
     </footer>
-  </div>
 </body>
 </html>
