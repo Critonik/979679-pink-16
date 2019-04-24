@@ -32,7 +32,7 @@
   right: 21px;
 }
 
-.hidden-input:checked ~ .main-nav_toggle:before {
+.hidden-input:checked ~ .main-nav_toggle::before {
   content: url("../img/icon-menu-cross.svg");
   position: absolute;
   height: 25px;
