@@ -1,8 +1,12 @@
+.logo {
+  align-self: flex-start;
+  padding: 20px;
+}
+
 .page-header {
   background-color: #2b3848;
   display: flex;
   flex-direction: column;
-  padding: 20px;
   position: relative;
 }
 
@@ -46,7 +50,6 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0 auto;
 }
 
 .site-list {
@@ -62,6 +65,11 @@
 .site-list_item {
   padding-top: 15px;
   padding-bottom: 15px;
+  border-bottom: 1px #000000 solid;
+}
+
+.site-list_item:first-child {
+  border-top: 1px #000000 solid;
 }
 
 @media (min-width: 768px) {

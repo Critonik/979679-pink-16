@@ -2,21 +2,17 @@
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .advantages_header {
   margin: 0;
-  padding: 0;
   font-size: 24px;
   line-height: normal;
   font-weight: lighter;
   text-align: center;
   color: #283645;
   background-color: #ffffff;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 50px;
 }
 
 .advantages_list {
@@ -24,7 +20,8 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 75px;
+  padding-top: 53px;
+  position: relative;
 }
 
 .advantages_item {
