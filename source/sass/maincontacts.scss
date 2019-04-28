@@ -1,6 +1,8 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
 }
 
 .contacts_title {
@@ -10,7 +12,27 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  margin-bottom: 45px;
+  padding-top: 47px;
+  padding-bottom: 35px;
+  background-color: #ffffff;
+}
+
+.contacts_inner {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+.contacts_inner::after {
+  content: "";
+  background-image: url("bg-triangle-white-footer.svg");
+  position: absolute;
+  bottom: -35px;
+  right: 0;
+  width: 100%;
+  outline: 1px red solid;
+  z-index: 11;
+  height: 35px;
 }
 
 .contacts_item {
@@ -35,6 +57,11 @@
   text-align: center;
   color: #d22856;
   font-style: normal;
+}
+
+.contacts-map {
+  position: absolute;
+  z-index: -1;
 }
 
 @media (min-width: $tablet-width) {

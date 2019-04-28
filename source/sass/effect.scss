@@ -31,9 +31,42 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .effect_background {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
   }
+
+  .timer {
+    font-size: 96px;
+    line-height: 170px;
+    font-weight: bold;
+    color: #d22856;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    border: 15px #d22856 solid;
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+  }
+
+  /*.timer::before {
+    content: "";
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+  }*/
 }
 
 @import "variables.scss";

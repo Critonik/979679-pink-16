@@ -4,13 +4,17 @@
   line-height: normal;
   text-align: center;
   color: #ffffff;
+  padding: 90px 44px 50px;
   margin: 0;
-  padding: 39px 50px 76px;
 }
 
 .form_header--background {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #243141;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 238px;
 }
 
 .contest_description {
@@ -37,6 +41,7 @@
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
+  padding-left: 10%;
 }
 
 .form_text-input {
@@ -44,10 +49,24 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  width: 80%;
+  margin: 0 auto;
+  height: 54px;
+  padding-left: 22px;
+}
+
+.form_field-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .form_fieldset {
   border: none;
+  margin: 0;
+}
+
+.form_fieldset--achievements {
+  background-color: #f2f2f2;
 }
 
 .form_title {
@@ -56,14 +75,143 @@
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding: 40px 22px;
 }
 
 .form_checkbox-label {
+  display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-transform: uppercase;
+  position: relative;
+  margin-left: 25%;
+  padding: 22px 0;
+}
+
+.form_checkbox-input {
+  display: none;
+}
+
+.form_checkbox-input ~ .form_checkbox-label::before {
+  content: "";
+  position: absolute;
+  border: 2px #e5e5e5 solid;
+  background-color: white;
+  width: 38px;
+  height: 38px;
+  top: 14px;
+  left: -62px;
+}
+
+.form_checkbox-input:checked ~ .form_checkbox-label::before {
+  content: "";
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: center;
+  position: absolute;
+  border: 2px #e5e5e5 solid;
+  background-color: white;
+  width: 38px;
+  height: 38px;
+  top: 14px;
+  left: -62px;
+}
+
+.form_fieldset--contacts {
+  padding: 41px 0;
+}
+
+.form_text-input--contacts {
+  margin: 0 5%;
+}
+
+.form_fieldset--apps {
+  background-color: #f2f2f2;
+}
+
+.form_radio-input {
+  display: none;
+}
+
+.form_radio-label {
+  display: block;
+  position: relative;
+  margin-left: 25%;
+  padding: 22px 0;
+}
+
+.form_radio-input ~ .form_radio-label::before {
+  content: "";
+  position: absolute;
+  border: 2px #e5e5e5 solid;
+  border-radius: 50%;
+  background-color: white;
+  width: 38px;
+  height: 38px;
+  top: 12px;
+  left: -55px;
+}
+
+.form_radio-input:checked ~ .form_radio-label::before {
+  content: "";
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
+  position: absolute;
+  border: 2px #e5e5e5 solid;
+  border-radius: 50%;
+  background-color: #ffffff;
+  width: 38px;
+  height: 38px;
+  top: 12px;
+  left: -55px;
+}
+
+.form_fieldset-inner {
+  width: 100%;
+}
+
+.form_textarea--emotions {
+  margin: 0 auto;
+}
+
+.form_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form_submit-button {
+  border: 0;
+  width: 280px;
+  margin: 0 auto;
+  padding: 22px 0;
+  background-color: #2aab6d;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 44px;
+}
+
+.form_note {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+.form_note-symbol {
+  color: #d22856;
 }
 
 @media (min-width: $tablet-width) {

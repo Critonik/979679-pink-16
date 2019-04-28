@@ -2,6 +2,7 @@
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .advantages_header {
@@ -21,11 +22,24 @@
   margin: 0;
   padding: 0;
   padding-top: 53px;
+  padding-bottom: 320px;
   position: relative;
+}
+
+.advantages_list::before {
+  content: '';
+  position: absolute;
+  top: -24px;
+  right: 0;
+  border: 25px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 660px solid #f2f2f2;
 }
 
 .advantages_item {
   margin-bottom: 25px;
+  padding: 0 20px;
 }
 
 .advantage_title {
@@ -44,7 +58,25 @@
   line-height: 24px;
 }
 
+.advantages_iphone {
+  position: absolute;
+  bottom: -31px;
+  transform: translateX(50%);
+  z-index: 0;
+}
+
 @media (min-width: $tablet-width) {
+  .advantages_header {
+    &:nth-child(2) {
+      padding-bottom: 0;
+    }
+    &:nth-child(3) {
+      padding-top: 0;
+      padding-left: 32%;
+      padding-right: 32%;
+    }
+  }
+
   .advantages_list_wrapper {
     display: flex;
     flex-direction: row-reverse;
@@ -52,6 +84,17 @@
 
   .advantages_list {
     margin: 0;
+    width: 330px;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .advantages_iphone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(84%);
+    z-index: 0;
   }
 }
 

@@ -10,12 +10,12 @@
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
+  <input type="checkbox" id="menu" class="hidden-input">
   <header class="page-header">
     <a class="logo page-header_logo" href="#">
-      <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="25" alt="PINK">
+      <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
     </a>
     <nav class="main-nav">
-      <input type="checkbox" id="menu" class="hidden-input">
       <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
       <div class="main-nav_wrapper">
         <ul class="site-list main-nav_list site-list--active">
@@ -38,7 +38,7 @@
   <main class="main">
     <section class="main_header">
       <div class="main_header--background">
-        <img class="iphone-5-in-hand_logo" width="256" height="287" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
+        <img class="iphone-5-in-hand_logo" width="256" height="290" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
       </div>
       <div class="download-programm">
         <h2 class="download-programm_title">Взгляните на жизнь иначе!</h2>
@@ -98,13 +98,13 @@
             <p class="advantage_description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages_iphone" width="156" height="276" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
+        <img class="advantages_iphone" width="156" height="281" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
       </div>
     </section>
     <section class="effect">
       <h2 class="visually-hidden">Эффект PINK</h2>
-      <div class="effect effect--background">
-        <img class="effect--background timer" width="238" height="276" src="img/icon-timer.svg" alt="timer">
+      <div class="effect_background">
+        <span class="effect--background timer">24</span>
       </div>
       <div class="effect_description">
         <h2 class="description_header">Эффект на 24 часа!</h2>
@@ -117,25 +117,25 @@
       <div class="review_author_wrapper slider">
         <div class="review_list slider_list">
           <input class="slider_toggle-input" type="radio" id="slider-comment1" name="user_review" checked>
-          <div class="review review_item slider_item">
+          <div class="review review_item">
             <span class="author_name">Николай Петров</span>
             <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <input class="slider_toggle-input" type="radio" id="slider-comment2" name="user_review">
-          <div class="review review_item slider_item">
+          <div class="review review_item">
             <span class="author_name">Николай Петров</span>
             <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <input class="slider_toggle-input" type="radio" id="slider-comment3" name="user_review">
-          <div class="review review_item slider_item">
+          <div class="review review_item">
             <span class="author_name">Николай Петров</span>
             <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
         </div>
         <footer class="advantages_toggles slider_toggles">
-          <label class="slider_toggle-label" for="slider-comment1">0</label>
-          <label class="slider_toggle-label" for="slider-comment2">0</label>
-          <label class="slider_toggle-label" for="slider-comment3">0</label>
+          <label class="slider_toggle-label" for="slider-comment1">О</label>
+          <label class="slider_toggle-label" for="slider-comment2">О</label>
+          <label class="slider_toggle-label" for="slider-comment3">О</label>
         </footer>
       </div>
     </section>
@@ -243,9 +243,10 @@
           <span class="contacts_item-info">ул. Большая Конюшенная, 19/8</span>
         </div>
       </address>
+      <img class="contacts-map" src="img/bg-map-mobile@1x.png" alt="map">
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer main-footer">
     <div class="page-footer_wrapper">
       <div class="logo page-footer_logo">
         <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
