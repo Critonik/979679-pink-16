@@ -71,13 +71,19 @@
     line-height: normal;
     text-align: center;
     color: #283645;
-    margin: 0 50px 45px;
+    margin: 0;
+    padding: 0 20% 50px;
   }
 
   .contacts_inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0 10%;
+  }
+
+  .contacts_item--address {
+    padding: 0 25%;
   }
 }
 
