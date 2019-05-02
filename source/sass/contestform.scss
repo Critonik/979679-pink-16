@@ -214,9 +214,17 @@
   color: #d22856;
 }
 
+.form_title--contacts {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form_header--background {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 440px;
   }
 
   .form_heading {
@@ -229,7 +237,7 @@
     margin: 0;
     padding-left: 95px;
     padding-right: 90px;
-    padding-top: 80px;
+    padding-top: 156px;
     padding-bottom: 80px;
   }
 
@@ -263,6 +271,67 @@
   .form_footer {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    margin: 0 5%;
+  }
+
+  .form_field-text {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form_field {
+    padding: 0 3%;
+  }
+
+  .form_text-label {
+    padding-left: 0;
+  }
+
+  .form_text-input {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .form_field-text--fullname {
+    margin-bottom: 50px;
+  }
+
+  .form_fieldset--apps {
+    background-color: #ffffff;
+    padding: 50px 20px;
+  }
+
+  .form_fieldset-inner {
+    border: 2px #f2f2f2 solid;
+  }
+
+  .form_title--contacts {
+    display: inline;
+  }
+
+  .form_text-fields--contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form_field-text--contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+
+  .form_text-input--contacts {
+    width: 500px;
+  }
+
+  .form_fieldset--achievements {
+    background-color: #ffffff;
+  }
+
+  .form_submit-button {
+    margin: 0;
   }
 }
 

@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Pink</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +12,11 @@
   <input type="checkbox" id="menu" class="hidden-input">
   <header class="page-header">
     <a class="logo page-header_logo" href="#">
-      <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+      </picture>
     </a>
     <nav class="main-nav">
       <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
@@ -37,8 +40,13 @@
   </header>
   <main class="main">
     <section class="main_header">
+      <div class="main_header--wrapper">
       <div class="main_header--background">
-        <img class="iphone-5-in-hand_logo" width="256" height="290" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
+        <picture class="main_header--container">
+          <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+          <img class="iphone-5-in-hand_logo" src="img/iphone-hand-mobile@1x.png" alt="Iphone 5">
+        </picture>
       </div>
       <div class="download-programm">
         <h2 class="download-programm_title">Взгляните на жизнь иначе!</h2>
@@ -78,6 +86,7 @@
         </ul>
         <p class="download-programm_info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
+    </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
@@ -98,7 +107,11 @@
             <p class="advantage_description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages_iphone" width="156" height="281" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
+        <picture class="advantage_iPhone--contain">
+          <!--<source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png">-->
+          <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+          <img class="advantages_iphone" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
+        </picture>
       </div>
     </section>
     <section class="effect">
@@ -133,9 +146,9 @@
           </div>
         </div>
         <footer class="advantages_toggles slider_toggles">
-          <label class="slider_toggle-label" for="slider-comment1">О</label>
-          <label class="slider_toggle-label" for="slider-comment2">О</label>
-          <label class="slider_toggle-label" for="slider-comment3">О</label>
+          <label class="slider_toggle-label" for="slider-comment1">.</label>
+          <label class="slider_toggle-label" for="slider-comment2">.</label>
+          <label class="slider_toggle-label" for="slider-comment3">.</label>
         </footer>
       </div>
     </section>
@@ -243,13 +256,20 @@
           <span class="contacts_item-info">ул. Большая Конюшенная, 19/8</span>
         </div>
       </address>
-      <img class="contacts-map" src="img/bg-map-mobile@1x.png" alt="map">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
+        <img class="contacts-map" src="img/bg-map-mobile@1x.png" alt="map">
+      </picture>
     </section>
   </main>
   <footer class="page-footer main-footer">
     <div class="page-footer_wrapper">
       <div class="logo page-footer_logo">
-        <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+        </picture>
       </div>
       <div class="social page-footer_social">
         <ul class="social_list">

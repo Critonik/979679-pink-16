@@ -62,27 +62,19 @@
 
 .slider_toggles {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .slider_toggle-label {
-  font-size: 0;
-  position: relative;
+  font-size: 70px;
+  color: #bec2c7;
 }
 
-.slider_toggle-label::before {
-  content: "";
-  background-image: url("../img/icon-map-marker.svg");
-  background-repeat: no-repeat;
-  background-size: 20px;
-  background-position: center;
-  position: absolute;
-  border: 2px #e5e5e5 solid;
+.slider_toggle-label ~ .slider_toggle-input:checked {
+  border: 3px #56616c solid;
   border-radius: 50%;
-  background-color: #ffffff;
   width: 10px;
   height: 10px;
-  top: 0;
 }
 
 @media (min-width: $tablet-width) {

@@ -12,7 +12,11 @@
   <input type="checkbox" id="menu" class="hidden-input">
   <header class="page-header">
     <a class="logo page-header_logo" href="#">
-      <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+      </picture>
     </a>
     <nav class="main-nav">
       <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
@@ -99,6 +103,7 @@
             <div class="form_fieldset  form_fieldset--contacts">
               <div class="form_fieldset-inner">
                 <div class="form_text-fields  form_text-fields--contacts">
+                  <h2 class="form_title form_title--contacts">Контактная информация</h2>
                   <div class="form_field-text  form_field-text--contacts">
                     <label class="form_text-label  form_text-label--contacts" for="user-phone">Номер телефона</label>
                     <div class="form_input-wrapper  form_input-wrapper--contacts  form_input-wrapper--phone">
@@ -152,7 +157,10 @@
     <footer class="page-footer">
       <div class="page-footer_wrapper">
         <div class="logo page-footer_logo">
-          <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+          </picture>
         </div>
         <div class="social page-footer_social">
           <ul class="social_list">

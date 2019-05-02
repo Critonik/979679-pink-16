@@ -74,6 +74,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-footer {
+    display: block;
+    position: relative;
+    z-index: 11;
+    background-color: #ffffff;
+  }
+
   .page-footer_wrapper {
     display: flex;
     align-items: center;
@@ -94,6 +101,12 @@
 
   .page-footer_copyright {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 46px 0;
   }
 }
 

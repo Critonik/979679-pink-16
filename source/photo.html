@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Pink</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +12,11 @@
   <input type="checkbox" id="menu" class="hidden-input">
   <header class="page-header">
     <a class="logo page-header_logo" href="#">
-      <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+      </picture>
     </a>
     <nav class="main-nav">
       <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
@@ -42,7 +45,11 @@
       <p class="photo_description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <section class="user-photo">
         <figure class="user-photo panorama-of-the-day">
-          <img class="panorama-of-the-day_photo" src="img/panorama-mobile@1x.jpg" alt="Винтовой мост">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+            <img class="panorama-of-the-day_photo" src="img/panorama-mobile@1x.jpg" alt="Винтовой мост">
+          </picture>
           <p class="panorama-of-the-day_logo">Панорама дня</p>
           <figcaption class="user-photo_user-block panorama-of-the-day_block">
             <span class="user-block_name">Анна</span>
@@ -53,7 +60,11 @@
         </figure>
         <div class="user-photo_wrapper">
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Левон</span>
             <time datetime="2019-04" class="user-block_timer">(5 часов назад)</time>
@@ -62,7 +73,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" alt="Ударная установка">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-drumset-mobile@1x.jpg" alt="Ударная установка">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Антон</span>
             <time datetime="2019-04" class="user-block_timer">(12 часов назад)</time>
@@ -71,7 +86,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Стеклянный потолок">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-wing-mobile@1x.jpg" alt="Стеклянный потолок">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Борис</span>
             <time datetime="2019-04" class="user-block_timer">(20 часов назад)</time>
@@ -80,7 +99,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" alt="Рынок">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-fair-mobile@1x.jpg" alt="Рынок">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Сергей</span>
             <time datetime="2019-04" class="user-block_timer">(25 часов назад)</time>
@@ -89,7 +112,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" alt="Горы">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-pov-mobile@1x.jpg" alt="Горы">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Максим</span>
             <time datetime="2019-04" class="user-block_timer">(40 часов назад)</time>
@@ -98,7 +125,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Надежда</span>
             <time datetime="2019-04" class="user-block_timer">(45 часов назад)</time>
@@ -110,7 +141,11 @@
         <h2 class="user-photo_motivation">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
       </section>
       <section class="photo-editor">
-        <img class="photo-editor_image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+          <img class="photo-editor_image" src="img/photo-road-mobile@1x.jpg" alt="Дорога">
+        </picture>
         <div class="photo-editor_wrapper">
         <ul class="photo-editor_tools">
           <li class="photo-editor_tool">
@@ -169,7 +204,10 @@
 <footer class="page-footer">
   <div class="page-footer_wrapper">
     <div class="logo page-footer_logo">
-      <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+      </picture>
     </div>
     <div class="social page-footer_social">
       <ul class="social_list">

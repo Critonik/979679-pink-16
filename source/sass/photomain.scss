@@ -36,7 +36,7 @@
 
 .user-photo {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .panorama-of-the-day {
@@ -46,9 +46,14 @@
   margin-bottom: 20px;
 }
 
+.panorama-of-the-day_photo {
+  width: 100%;
+}
+
 .panorama-of-the-day_logo {
   font-weight: bold;
   font-size: 12px;
+  text-transform: uppercase;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
@@ -137,6 +142,10 @@
 @media (min-width: $tablet-width) {
   .photo_header--background {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 443px;
   }
 
   .photo_title {
@@ -149,7 +158,7 @@
     margin: 0;
     padding-left: 155px;
     padding-right: 155px;
-    padding-top: 81px;
+    padding-top: 172px;
     padding-bottom: 135px;
   }
 
@@ -171,11 +180,24 @@
     flex-wrap: wrap;
   }
 
+  .panorama-of-the-day_photo {
+    width: 100%;
+  }
+
+  .panorama-of-the-day_logo {
+    top: 65px;
+    margin-right: 3%;
+  }
+
   .user-photo_wrapper {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
+  }
+
+  .user-photo-image {
+    padding: 0;
   }
 
   .user-photo-list_item {
@@ -193,6 +215,24 @@
     color: #283645;
     margin: 0;
     padding: 70px 95px;
+  }
+
+  .user-block_like {
+    margin: 0;
+  }
+
+  .user-block_like::before {
+    display: none;
+  }
+
+  .user-block_like::after {
+    content: "";
+    background-image: url("../img/icon-heart.svg");
+    position: absolute;
+    top: 2px;
+    right: -187px;
+    width: 12px;
+    height: 12px;
   }
 }
 

@@ -15,11 +15,18 @@
   height: 462px;
 }
 
+.main_header--container {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
 .download-programm {
   background-color: #243141;
   color: #ffffff;
   height: 242px;
-  padding: 30px 20px;
+  padding: 30px 7%;
   display: flex;
   flex-direction: column;
 }
@@ -47,7 +54,7 @@
   font-size: 18px;
   line-height: 18px;
   border: 4px #ffffff solid;
-  padding: 18px 33px;
+  padding: 18px 32px;
   border-radius: 40px;
   align-self: center;
   margin-bottom: 30px;
@@ -58,7 +65,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding: 0;
+  padding: 0 8%;
   text-align: center;
 }
 
@@ -69,14 +76,40 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto;
+    background-position: center;
     align-items: center;
     height: 730px;
+  }
+
+  .main_header--wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 660px;
+    height: 730px;
+    margin: 0 auto;
   }
 
   .main_header--background {
     background-color: transparent;
     background-image: none;
-    height: none;
+    z-index: 1;
+    height: 730px;
+    position: absolute;
+    transform: translateX(0%);
+  }
+
+  .main_header--container {
+    width: 700px;
+  }
+
+  .download-programm {
+    background-color: transparent;
+    margin-right: 46%;
+    width: 330px;
+    height: 360px;
+    z-index: 10;
+    position: relative;
   }
 
   .download-programm_title {
@@ -91,17 +124,7 @@
   }
 
   .download-programm_store-list {
-    padding: 0 40px;
-  }
-
-  .download-programm {
-    background-color: transparent;
-    margin-right: auto;
-    width: 330px;
-  }
-
-  .download-programm_info {
-    padding: 0 50px;
+    padding: 0 14%;
   }
 }
 
@@ -110,6 +133,41 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    align-items: center;
+  }
+
+  .main_header--wrapper {
+    width: 1000px;
+  }
+
+  .main_header--container {
+    width: 900px;
+  }
+
+  .main_header--background {
+    transform: translateX(13%);
+  }
+
+  .download-programm_title {
+    font-size: 50px;
+    font-weight: lighter;
+    width: 300px;
+    padding: 0 12px;
+  }
+
+  .download-programm_link {
+    font-size: 21px;
+    border: 3px #ffffff solid;
+    text-align: center;
+    width: 240px;
+  }
+
+  .download-programm {
+    padding: 0 2%;
   }
 }
 
