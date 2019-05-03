@@ -36,8 +36,9 @@
 }
 
 .contacts_item {
-  margin-bottom: 30px;
+  margin-bottom: 14px;
   text-align: center;
+  padding: 0 8%;
 }
 
 .contacts_item-lead {
@@ -74,18 +75,17 @@
     text-align: center;
     color: #283645;
     margin: 0;
-    padding: 0 20% 50px;
+    padding: 0 20% 30px;
   }
 
   .contacts_inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 10%;
   }
 
   .contacts_item--address {
-    padding: 0 25%;
+    padding: 0 34%;
   }
 
   .contacts-map {

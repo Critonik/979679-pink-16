@@ -99,7 +99,7 @@
 
   .logo {
     align-self: flex-start;
-    padding: 30px;
+    padding: 30px 17px;
   }
 
   .page-header__logo {
@@ -109,7 +109,7 @@
 
   .main-nav_toggle::before {
     top: 44px;
-    right: 25px;
+    right: 5px;
   }
 }
 
@@ -120,18 +120,12 @@
     background-color: rgba(#1d2631, 0.5);
   }
 
-  .logo {
-    padding: 28px 0;
-    margin: 0;
-  }
-
   .logo_image {
-    margin-left: 120px;
+    margin-left: 73%;
   }
 
   .main-nav {
     margin: 0;
-    margin-left: 150px;
   }
 
   .main-nav_wrapper {
@@ -168,8 +162,7 @@
     text-transform: none;
     margin: 0 auto;
     border: 0;
-    padding-top: 34px;
-    padding-bottom: 43px;
+    padding-top: 52px;
   }
 }
 

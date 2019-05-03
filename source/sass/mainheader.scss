@@ -25,7 +25,7 @@
 .download-programm {
   background-color: #243141;
   color: #ffffff;
-  height: 242px;
+  height: 213px;
   padding: 30px 7%;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@
 
 .download-programm_store-list {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .download-links {
@@ -45,7 +45,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .download-programm_link {
@@ -54,7 +54,7 @@
   font-size: 18px;
   line-height: 18px;
   border: 4px #ffffff solid;
-  padding: 18px 32px;
+  padding: 15px 32px;
   border-radius: 40px;
   align-self: center;
   margin-bottom: 30px;
@@ -78,7 +78,7 @@
     background-size: auto;
     background-position: center;
     align-items: center;
-    height: 730px;
+    height: 683px;
   }
 
   .main_header--wrapper {
@@ -94,9 +94,9 @@
     background-color: transparent;
     background-image: none;
     z-index: 1;
-    height: 730px;
+    height: 683px;
     position: absolute;
-    transform: translateX(0%);
+    transform: translateX(-3%);
   }
 
   .main_header--container {
@@ -106,8 +106,9 @@
   .download-programm {
     background-color: transparent;
     margin-right: 46%;
+    padding: 0;
     width: 330px;
-    height: 360px;
+    height: 382px;
     z-index: 10;
     position: relative;
   }
@@ -120,11 +121,23 @@
     margin: 0;
     padding: 0 55px;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 17px;
+  }
+
+  .download-programm_link {
+    padding: 15px 43px;
+    margin-bottom: 45px;
   }
 
   .download-programm_store-list {
     padding: 0 14%;
+    margin-bottom: 31px;
+  }
+
+  .download-programm_info {
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 0 5%;
   }
 }
 
