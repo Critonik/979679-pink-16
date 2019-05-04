@@ -38,17 +38,18 @@
   position: relative;
 }
 
-.tariff_name::after {
+.tariff_flag--img::after {
   content: "";
   background-image: url("/img/bg-hit.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 0;
+  width: 74px;
+  height: 74px;
+  top: 24px;
   left: 0;
-  transform: rotate(0deg);
+  transform: rotate(48deg) translateX(-48%);
+  z-index: -1;
 }
 
 .tariff_price {
@@ -70,7 +71,7 @@
   content: "";
   background-color: transparent;
   position: absolute;
-  top: 3px;
+  top: 9px;
   left: 9px;
   text-transform: uppercase;
   transform: rotate(-48deg);
@@ -192,7 +193,7 @@
     position: relative;
   }
 
-  .tariff_name::after {
+  .tariff_flag--img::after {
     content: "";
     background-image: url("/img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
@@ -200,9 +201,10 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 0;
+    top: 21px;
     left: 0;
-    transform: rotate(0deg);
+    transform: rotate(48deg) translateX(-50%);
+    z-index: -1;
   }
 
   .tariff_flag {
@@ -213,6 +215,7 @@
     left: 9px;
     text-transform: uppercase;
     transform: rotate(-48deg);
+    z-index: 11;
   }
 
   .tariff_feature-status--on {
