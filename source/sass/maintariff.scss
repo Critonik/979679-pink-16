@@ -11,7 +11,6 @@
 
 .tariff_item {
   margin: 0;
-  padding: 0;
   background-color: #ffffff;
   border: 1px #e5e5e5 solid;
   border-collapse: collapse;
@@ -109,21 +108,11 @@
   display: none;
 }
 
-.tariff_header {
-  transition: transform 0.3s;
-  transform: translate3d(-100%, 0, 0);
-}
-
-.tariff_item {
-  transition: transform 0.3s;
-  transform: translate3d(-100%, 0, 0);
-}
-
 .tariff_toggle-input:checked ~ .tariff_header {
   transform: translate3d(100%, 0, 0);
 }
 
-.tariff_toggle-input:checked + .tariff_header  {
+.tariff_toggle-input:checked + .tariff_header {
   transform: translate3d(0, 0, 0);
 }
 
@@ -131,7 +120,7 @@
   transform: translate3d(100%, 0, 0);
 }
 
-.tariff_toggle-input:checked + .tariff_item  {
+.tariff_toggle-input:checked + .tariff_item {
   transform: translate3d(0, 0, 0);
 }
 
@@ -236,21 +225,11 @@
     margin-left: 39px;
   }
 
-  .tariff_header {
-    transition: none;
-    transform: none;
-  }
-
-  .tariff_item {
-    transition: none;
-    transform: none;
-  }
-
   .tariff_toggle-input:checked ~ .tariff_header {
     transform: none;
   }
 
-  .tariff_toggle-input:checked + .tariff_header  {
+  .tariff_toggle-input:checked + .tariff_header {
     transform: none;
   }
 
@@ -258,11 +237,10 @@
     transform: none;
   }
 
-  .tariff_toggle-input:checked + .tariff_item  {
+  .tariff_toggle-input:checked + .tariff_item {
     transform: none;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .tariff_table {
