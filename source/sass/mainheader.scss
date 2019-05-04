@@ -151,6 +151,7 @@
     background-size: auto;
     background-position: center;
     align-items: center;
+    height: 853px;
   }
 
   .main_header--wrapper {
@@ -162,7 +163,18 @@
   }
 
   .main_header--background {
-    transform: translateX(13%);
+    transform: translateX(0);
+    height: 853px;
+  }
+
+  .iphone-5-in-hand_logo {
+    max-width: none;
+  }
+
+  .download-programm {
+    padding: 0 2%;
+    height: 413px;
+    margin: 0;
   }
 
   .download-programm_title {
@@ -170,6 +182,7 @@
     font-weight: lighter;
     width: 300px;
     padding: 0 12px;
+    margin-bottom: 34px;
   }
 
   .download-programm_link {
@@ -177,10 +190,12 @@
     border: 3px #ffffff solid;
     text-align: center;
     width: 240px;
+    padding: 15px 30px;
+    margin-bottom: 62px;
   }
 
-  .download-programm {
-    padding: 0 2%;
+  .download-programm_store-list {
+    margin-bottom: 53px;
   }
 }
 

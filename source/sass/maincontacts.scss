@@ -25,14 +25,15 @@
 
 .contacts_inner::after {
   content: "";
-  background-image: url("bg-triangle-white-footer.svg");
+  background-image: url("/img/bg-triangle-white-footer.svg");
   position: absolute;
-  bottom: -35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -72px;
   right: 0;
   width: 100%;
-  outline: 1px red solid;
   z-index: 11;
-  height: 35px;
+  height: 71px;
 }
 
 .contacts_item {

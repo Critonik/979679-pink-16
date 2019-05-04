@@ -120,8 +120,13 @@
     background-color: rgba(#1d2631, 0.5);
   }
 
+  .page-header_logo {
+    padding: 17px;
+  }
+
   .logo_image {
-    margin-left: 73%;
+    padding: 0;
+    margin-left: 0;
   }
 
   .main-nav {
@@ -143,10 +148,7 @@
   .site-list {
     display: flex;
     width: 700px;
-  }
-
-  .main-nav__wrapper {
-    width: 960px;
+    margin-left: 6%;
   }
 
   .main-nav_toggle {
@@ -162,7 +164,7 @@
     text-transform: none;
     margin: 0 auto;
     border: 0;
-    padding-top: 52px;
+    padding: 39px;
   }
 }
 
