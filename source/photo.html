@@ -11,33 +11,35 @@
 <body>
   <input type="checkbox" id="menu" class="hidden-input">
   <header class="page-header">
-    <a class="logo page-header_logo" href="#">
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-        <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
-      </picture>
-    </a>
-    <nav class="main-nav">
-      <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
-      <div class="main-nav_wrapper">
-        <ul class="site-list main-nav_list site-list--active">
-          <li class="site-list_item">
-            <a class="site-list_link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <div class="page-header__wrapper">
+      <a class="logo page-header_logo" href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+            </picture>
+          </a>
+          <nav class="main-nav">
+            <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
+            <div class="main-nav_wrapper">
+              <ul class="site-list main-nav_list site-list--active">
+                <li class="site-list_item">
+                  <a class="site-list_link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link" href="#">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
     <main class="photo_user">
       <div class="photo_header photo_header--background">
         <h1 class="photo_title">Фотографии пользователей</h1>
@@ -45,7 +47,7 @@
       <p class="photo_description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <section class="user-photo">
         <figure class="user-photo panorama-of-the-day">
-          <picture>
+          <picture class="panorama-of-the-day_photo">
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
             <img class="panorama-of-the-day_photo" src="img/panorama-mobile@1x.jpg" alt="Винтовой мост">

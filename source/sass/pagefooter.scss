@@ -103,7 +103,17 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 46px 0;
+    padding: 31px 0;
+  }
+
+  .page-footer_copyright {
+    width: auto;
+  }
+
+  .copyright_text {
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: top;
   }
 }
 

@@ -72,6 +72,34 @@
 @media (min-width: $desktop-width) {
   .effect {
     padding-bottom: 70px;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 95px;
+  }
+
+  .effect_background {
+    width: 272px;
+    margin-left: auto;
+  }
+
+  .effect_description {
+    width: 480px;
+    margin-right: auto;
+  }
+
+  .description_header {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .description_text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .description_link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

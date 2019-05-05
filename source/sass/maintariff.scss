@@ -243,13 +243,42 @@
 }
 
 @media (min-width: $desktop-width) {
-  .tariff_table {
-    width: 100%;
-  }
-
   .tariff_wrapper {
     width: 960px;
     margin: 0 auto;
+  }
+
+  .tariff_name {
+    margin: 0;
+    padding: 15px 2px 0px 2px;
+    width: auto;
+    text-transform: uppercase;
+  }
+
+  .tariff_price {
+    margin: 0;
+    padding: 0px 2px 20px 2px;
+    width: auto;
+    text-transform: uppercase;
+  }
+
+  .tariff_item {
+    padding: 15px 73px;
+  }
+
+  .tariff_item--feature-title {
+    font-weight: normal;
+    padding: 15px 87px 15px 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tariff_feature-status--on {
+    margin: 0
+  }
+
+  .tariff_feature-status--off {
+    margin: 0;
   }
 }
 

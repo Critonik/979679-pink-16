@@ -60,6 +60,10 @@
   font-weight: bold;
 }
 
+.author_description {
+  display: none;
+}
+
 .slider_toggles {
   display: flex;
   justify-content: center;
@@ -88,4 +92,57 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .review {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .review_author_wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 55px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .review_item {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .author_name {
+    font-size: 24px;
+    line-height: 30px;
+    display: block;
+  }
+
+  .author_review {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 39px;
+  }
+
+  .review_item::before {
+    content: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 426px;
+    z-index: 11;
+  }
+
+  .author_description {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    font-weight: normal;
+  }
+
+
+}
 @import "variables.scss";

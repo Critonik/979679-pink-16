@@ -204,7 +204,6 @@
     height: 450px;
     width: 300px;
     margin: 0 auto;
-    outline: 1px red solid;
   }
 
   .user-photo_motivation {
@@ -214,7 +213,7 @@
     text-align: center;
     color: #283645;
     margin: 0;
-    padding: 70px 95px;
+    padding: 0 95px;
   }
 
   .user-block_like {
@@ -240,20 +239,24 @@
   .photo_header--background {
     width: 100%;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 393px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
   }
 
   .photo_title {
     padding-left: 415px;
     padding-right: 415px;
-    padding-top: 81px;
-    padding-bottom: 135px;
+    padding-top: 168px;
+    padding-bottom: 89px;
   }
 
   .photo_description {
-    padding-left: 309px;
-    padding-right: 309px;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-top: 100px;
-    padding-bottom: 90px;
+    padding-bottom: 82px;
     color: #283645;
   }
 
@@ -266,10 +269,19 @@
   }
 
   .user-photo-list_item {
-    height: 450px;
+    height: 612px;
     width: 300px;
     margin-right: 20px;
-    outline: 1px red solid;
+  }
+
+  .panorama-of-the-day_block {
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  .user-photo_wrapper {
+    width: 960px;
+    margin: 0 auto;
   }
 }
 
