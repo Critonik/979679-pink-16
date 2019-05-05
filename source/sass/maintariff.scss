@@ -246,6 +246,11 @@
   .tariff_table {
     width: 100%;
   }
+
+  .tariff_wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
 @import "variables.scss";
