@@ -4,7 +4,7 @@
   line-height: normal;
   text-align: center;
   color: #ffffff;
-  padding: 90px 44px 50px;
+  padding: 97px 44px 50px;
   margin: 0;
 }
 
@@ -12,9 +12,8 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #243141;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  height: 238px;
+  height: 242px;
 }
 
 .contest_description {
@@ -88,7 +87,7 @@
 }
 
 .form_title--achievements {
-  padding: 20px 13%;
+  padding: 28px 13%;
   line-height: 18px;
 }
 
@@ -134,7 +133,8 @@
 }
 
 .form_fieldset--contacts {
-  padding: 41px 0;
+  padding-top: 41px;
+  padding-bottom: 26px;
 }
 
 .form_text-input--contacts {
@@ -201,10 +201,6 @@
   width: 100%;
 }
 
-.form_textarea--emotions {
-  margin: 0 auto;
-}
-
 .form_footer {
   display: flex;
   flex-direction: column;
@@ -216,7 +212,7 @@
   border: 0;
   width: 280px;
   margin: 0 auto;
-  padding: 22px 0;
+  padding: 17px 0;
   background-color: #2aab6d;
   font-size: 18px;
   font-weight: bold;
@@ -232,14 +228,33 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+  text-transform: uppercase;
 }
 
 .form_note-symbol {
   color: #d22856;
+  text-transform: uppercase;
 }
 
 .form_title--contacts {
   display: none;
+}
+
+.form_title--emotions {
+  padding: 20px 22px;
+}
+
+.form_textarea--emotions {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #283645;
+  text-align: justify;
+  display: flex;
+  width: 275px;
+  height: 188px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -293,10 +308,12 @@
   }
 
   .form_footer {
+    width: 626px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 0 5%;
+    margin: 0 auto;
+    margin-bottom: 57px;
   }
 
   .form_field-text {
@@ -393,6 +410,19 @@
 
   .form_submit-button {
     margin: 0;
+    width: 289px;
+  }
+
+  .form_textarea--emotions {
+    color: #283645;
+    text-align: center;
+    display: flex;
+    width: 494px;
+    height: 189px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

@@ -69,6 +69,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 38px;
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .contacts_title {
     font-weight: lighter;
     font-size: 40px;
@@ -83,6 +89,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .contacts_item {
+    margin-bottom: 46px;
   }
 
   .contacts_item--address {

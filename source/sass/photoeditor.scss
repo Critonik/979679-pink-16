@@ -9,11 +9,13 @@
 
 .photo-editor_tools {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 38px;
   padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 235px;
 }
 
 .photo-editor_tool-name {

@@ -83,12 +83,39 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    height: 403px;
+    width: 100%;
+  }
+
+  .review_author_wrapper {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .review_item {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-bottom: 20px;
   }
 
   .author_review {
-    padding-left: 12%;
-    padding-right: 12%;
+    font-size: 18px;
+  }
+
+  .author_name {
+    font-size: 18px;
+    line-height: 30px;
+    display: block;
+  }
+
+  .author_description {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    font-weight: normal;
   }
 }
 
@@ -106,12 +133,6 @@
     padding-bottom: 55px;
     position: relative;
     z-index: -1;
-  }
-
-  .review_item {
-    display: flex;
-    flex-direction: column-reverse;
-    position: relative;
   }
 
   .author_name {
@@ -139,8 +160,6 @@
     display: block;
     font-size: 18px;
     line-height: 30px;
-    color: #283645;
-    font-weight: normal;
   }
 }
 
