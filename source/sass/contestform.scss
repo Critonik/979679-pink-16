@@ -257,6 +257,10 @@
   line-height: 30px;
 }
 
+.form_note-symbol--desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form_header--background {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -427,9 +431,59 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contest_form {
+  .form_heading {
+    padding-top: 167px;
+  }
+
+  .contest_block {
     width: 960px;
     margin: 0 auto;
+  }
+
+  .contest_description {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .contest_description_invitation {
+    display: inline;
+  }
+
+  .form_field {
+    width: 480px;
+    margin: 0;
+  }
+
+  .form_fieldset--apps {
+    width: 480px;
+    margin: 0;
+  }
+
+  .form_fieldset--contacts {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form_checkbox-fields--achievements {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form_fieldset-inner {
+    padding-top: 22px;
+  }
+
+  .form_textarea--emotions {
+    width: 814px;
+  }
+
+  .form_footer {
+    width: 940px;
+  }
+
+  .form_note-symbol--desktop {
+    display: inline;
   }
 }
 
