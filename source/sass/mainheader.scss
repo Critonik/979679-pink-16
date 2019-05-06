@@ -58,6 +58,15 @@
   border-radius: 40px;
   align-self: center;
   margin-bottom: 30px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .download-programm_info {

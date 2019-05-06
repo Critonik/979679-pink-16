@@ -59,6 +59,17 @@
   text-align: center;
   color: #d22856;
   font-style: normal;
+
+  &:hover {
+    color: #283645;
+    border-bottom: 1px #283645 solid;
+  }
+
+  &:active {
+    color: #283645;
+    border-bottom: 1px #283645 solid;
+    opacity: 0.5;
+  }
 }
 
 .contacts-map {

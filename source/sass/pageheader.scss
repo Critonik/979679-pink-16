@@ -80,6 +80,14 @@
 
 .site-list_link {
   color: #ffffff;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .site-list_item {
@@ -173,6 +181,21 @@
     margin: 0 auto;
     border: 0;
     padding: 46px 35px;
+  }
+
+  .site-list_link--active {
+    border-bottom: 1px #ffffff solid;
+    padding-bottom: 10px;
+  }
+
+  .site-list_link {
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      color: #7f858c;
+    }
   }
 }
 
