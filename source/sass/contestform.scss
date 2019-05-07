@@ -55,6 +55,7 @@
   margin: 0 auto;
   height: 58px;
   padding-left: 22px;
+  border: 2px #f2f2f2 solid;
 }
 
 .form_field-text--fullname {
@@ -67,12 +68,13 @@
 }
 
 .form_fieldset {
-  border: none;
   margin: 0;
+  padding: 0;
 }
 
 .form_fieldset--achievements {
   background-color: #f2f2f2;
+  border: none;
 }
 
 .form_title {
@@ -87,8 +89,9 @@
 }
 
 .form_title--achievements {
-  padding: 28px 13%;
+  padding: 38px 13% 20px;
   line-height: 18px;
+  background-color: #f2f2f2;
 }
 
 .form_checkbox-label {
@@ -134,7 +137,7 @@
 
 .form_fieldset--contacts {
   padding-top: 41px;
-  padding-bottom: 26px;
+  border: none;
 }
 
 .form_text-input--contacts {
@@ -143,13 +146,17 @@
 
 .form_fieldset--apps {
   background-color: #f2f2f2;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  border: none;
 }
 
 .form_title--apps {
+  padding: 38px 13% 20px;
   line-height: 18px;
-  padding: 20px 13%;
+  background-color: #f2f2f2;
+}
+
+.form_fieldset--emotions {
+  border: none;
 }
 
 .form_radio-input {
@@ -199,6 +206,7 @@
 
 .form_fieldset-inner {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .form_footer {
@@ -219,7 +227,7 @@
   text-transform: uppercase;
   line-height: 30px;
   color: #ffffff;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 }
 
 .form_note {
@@ -241,7 +249,7 @@
 }
 
 .form_title--emotions {
-  padding: 20px 22px;
+  padding: 30px 22px 10px;
 }
 
 .form_textarea--emotions {
@@ -250,9 +258,11 @@
   text-align: justify;
   display: flex;
   width: 275px;
-  height: 188px;
+  height: 182px;
+  text-align: center;
+  padding-top: 20px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -365,7 +375,6 @@
   }
 
   .form_fieldset-inner {
-    border: 2px #f2f2f2 solid;
   }
 
   .form_title--contacts {

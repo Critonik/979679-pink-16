@@ -25,17 +25,11 @@
   }
 }
 
-.advantages_list {
-  list-style: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  padding-top: 45px;
-  padding-bottom: 280px;
+.advantages_list_wrapper {
   position: relative;
 }
 
-.advantages_list::before {
+.advantages_list_wrapper::before {
   content: "";
   position: absolute;
   top: -25px;
@@ -44,6 +38,16 @@
   border-bottom: 0;
   border-left: 0;
   border-right: 660px solid #f2f2f2;
+}
+
+.advantages_list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 45px;
+  padding-bottom: 280px;
+  position: relative;
 }
 
 .advantages_item {
@@ -99,7 +103,12 @@
     }
   }
 
-  .advantages_list::before {
+  .advantages_list_wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .advantages_list_wrapper::before {
     content: "";
     position: absolute;
     top: -76px;
@@ -108,11 +117,6 @@
     border-bottom: 0;
     border-left: 0;
     border-right: 660px solid #f2f2f2;
-  }
-
-  .advantages_list_wrapper {
-    display: flex;
-    flex-direction: row-reverse;
   }
 
   .advantages_list {
@@ -131,9 +135,9 @@
 
   .advantages_iphone {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 19px;
-    transform: translateY(52%);
+    transform: translateY(0%);
     z-index: 0;
   }
 }
@@ -185,27 +189,19 @@
   }
 
   .advantages_item::before {
-    content: url("/img/iphone-screen-1-desktop@1x.png");
+    content: url("../img/iphone-screen-1-desktop@1x.png");
     position: absolute;
     top: -94px;
     right: 19px;
     height: 300px;
     z-index: 11;
 
-    &:nth-child(1)::before {
-      content: url("/img/iphone-screen-2-desktop@1x.png");
-      top: -94px;
-      right: 19px;
-      height: 300px;
-      z-index: 11;
+    &::before:nth-child(3) {
+      content: url("../img/iphone-screen-2-desktop@1x.png");
     }
 
-    &:nth-child(2)::before {
-      content: url("/img/iphone-screen-3-desktop@1x.png");
-      top: -94px;
-      right: 19px;
-      height: 300px;
-      z-index: 11;
+    &::before:last-child {
+      content: url("../img/iphone-screen-3-desktop@1x.png");
     }
   }
 
@@ -226,9 +222,8 @@
     display: none;
   }
 
-  .advantages_list::before {
+  .advantages_list_wrapper::before {
     border-right: 1200px solid #f2f2f2;
-    transform: translateX(10%);
   }
 }
 

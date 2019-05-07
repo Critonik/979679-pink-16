@@ -50,6 +50,7 @@
             <span class="contest_description_invitation">Пожалуйста, заполните форму ниже:</span>
           </p>
           <form class="contest_form" method="post" action="http://echo.htmlacademy.ru">
+            <div class="form_fieldset_wrapper">
             <div class="contest_form form_field">
               <div class="form_field-text  form_field-text--fullname">
                 <label class="form_text-label  form_text-label--fullname" for="user-last-name">Фамилия:</label>
@@ -64,9 +65,8 @@
                 <input class="form_text-input  form_text-input--middle-name" id="user-middle-name" type="text" name="Отчество" value="Ну и отчество тоже">
               </div>
             </div>
-            <div class="form_fieldset_wrapper">
             <fieldset class="form_fieldset  form_fieldset--achievements">
-              <h2 class="form_title form_title--achievements">Ваши безбашенные достижения в путешествии</h2>
+              <legend class="form_title form_title--achievements">Ваши безбашенные достижения в путешествии</legend>
               <div class="form_fieldset-inner">
                 <div class="form_checkbox-fields  form_checkbox-fields--achievements">
                   <div class="form_checkbox-wrapper">
@@ -102,10 +102,10 @@
                 </div>
               </div>
             </fieldset>
-            <div class="form_fieldset  form_fieldset--contacts">
+            <fieldset class="form_fieldset  form_fieldset--contacts">
+              <legend class="form_title form_title--contacts">Контактная информация</legend>
               <div class="form_fieldset-inner">
                 <div class="form_text-fields  form_text-fields--contacts">
-                  <h2 class="form_title form_title--contacts">Контактная информация</h2>
                   <div class="form_field-text  form_field-text--contacts">
                     <label class="form_text-label  form_text-label--contacts" for="user-phone">Номер телефона</label>
                     <div class="form_input-wrapper  form_input-wrapper--contacts  form_input-wrapper--phone">
@@ -120,9 +120,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="form_fieldset  form_fieldset--apps">
-              <h2 class="form_title  form_title--apps">С каким приложением путешествовали?</h2>
+            </fieldset>
+            <fieldset class="form_fieldset  form_fieldset--apps">
+              <legend class="form_title  form_title--apps">С каким приложением путешествовали?</legend>
               <div class="form_fieldset-inner">
                 <div class="form_radio-fields  form_radio-fields--apps">
                   <div class="form_field-radio">
@@ -139,16 +139,16 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </fieldset>
           </div>
-            <div class="form_fieldset  form_fieldset--emotions">
-              <h2 class="form_title  form_title--emotions">Опишите свои эмоции</h2>
+            <fieldset class="form_fieldset  form_fieldset--emotions">
+              <legend class="form_title  form_title--emotions">Опишите свои эмоции</legend>
               <div class="form_fieldset-inner">
                 <div class="form_textarea-fields  form_textarea-fields--emotions">
                   <textarea class="form_textarea  form_textarea--emotions" name="Сообщение" rows="8" cols="30">Можно прям в красках, не стесняясь в выражениях</textarea>
                 </div>
               </div>
-            </div>
+            </fieldset>
           <div class="form_footer">
             <button class="form_submit-button" type="submit">Отправить форму</button>
             <div class="form_note"><span class="form_note-symbol">*</span> — обязательные<span class="form_note-symbol--desktop">для заполнения</span> поля</div>
