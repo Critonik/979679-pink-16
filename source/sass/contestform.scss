@@ -255,7 +255,6 @@
 .form_textarea--emotions {
   font-family: "Open Sans", "Arial", sans-serif;
   color: #283645;
-  text-align: justify;
   display: flex;
   width: 275px;
   height: 182px;
@@ -372,9 +371,6 @@
   .form_radio-input:checked ~ .form_radio-label::before {
     top: 23px;
     left: -61px;
-  }
-
-  .form_fieldset-inner {
   }
 
   .form_title--contacts {
