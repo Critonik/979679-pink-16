@@ -15,8 +15,8 @@
   background-repeat: no-repeat;
   height: 238px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 

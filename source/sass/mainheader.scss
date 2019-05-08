@@ -14,9 +14,9 @@
   align-items: flex-end;
   height: 462px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-      background-size: contain;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: contain;
   }
 }
 
