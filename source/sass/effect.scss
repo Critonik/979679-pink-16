@@ -31,8 +31,93 @@
 @media (min-width: $tablet-width) {
   .effect {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 660px;
+    padding-top: 100px;
+    margin-bottom: 52px;
+  }
+
+  .effect_description {
+    width: 330px;
+    margin-right: auto;
+  }
+
+  .effect_background {
+    display: flex;
+    justify-content: space-around;
+    width: 330px;
+    margin-left: auto;
+  }
+
+  .description_header {
+    margin-bottom: 12px;
+  }
+
+  .description_text {
+    padding-right: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .timer {
+    font-size: 96px;
+    line-height: 170px;
+    font-weight: bold;
+    color: #d22856;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    border: 15px #d22856 solid;
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+  }
+
+  /*.timer::before {
+    content: "";
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+  }*/
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    padding-bottom: 70px;
+    margin: 0;
+    background-color: #f2f2f2;
     width: 100%;
+    padding-top: 95px;
+  }
+
+  .effect_background {
+    width: 272px;
+    margin-left: auto;
+  }
+
+  .effect_description {
+    width: 480px;
+    margin-right: auto;
+  }
+
+  .description_header {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .description_text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .description_link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 

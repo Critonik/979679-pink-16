@@ -4,17 +4,16 @@
   line-height: normal;
   text-align: center;
   color: #ffffff;
-  padding: 0;
+  padding: 94px 50px 78px;
   margin: 0;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 39px;
-  padding-bottom: 76px;
 }
 
 .photo_header--background {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #243141;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 238px;
 }
 
 .photo_description {
@@ -23,7 +22,7 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding: 53px 38px;
+  padding: 47px 38px;
   color: #283645;
 }
 
@@ -36,7 +35,7 @@
 
 .user-photo {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .panorama-of-the-day {
@@ -46,27 +45,39 @@
   margin-bottom: 20px;
 }
 
+.panorama-of-the-day_photo {
+  width: 100%;
+}
+
 .panorama-of-the-day_logo {
   font-weight: bold;
   font-size: 12px;
+  text-transform: uppercase;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
   background-color: #d22856;
   width: 140px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 9px;
   margin: 0;
+  margin-right: 7%;
   position: absolute;
   top: 0;
   right: 0;
 }
 
 .user-photo_user-block {
-  margin: 0;
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 280px;
   background-color: #f2f2f2;
-  padding-right: 20px;
-  padding-left: 20px;
+  transform: translateY(-6%);
+}
+
+.panorama-of-the-day_block {
+  transform: translateY(-4%);
 }
 
 .user-photo-image {
@@ -80,6 +91,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  margin-left: 5%;
 }
 
 .user-block_timer {
@@ -87,6 +99,7 @@
   font-size: 12px;
   line-height: 24px;
   color: #283645;
+  text-transform: uppercase;
 }
 
 .user-block_text {
@@ -95,6 +108,8 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  padding: 0 16px;
+  margin-bottom: 5px;
 }
 
 .user-block_like {
@@ -102,11 +117,25 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
+  position: relative;
+  margin-left: 49px;
+  text-transform: uppercase;
+}
+
+.user-block_like::before {
+  content: "";
+  background-image: url("../img/icon-heart.svg");
+  position: absolute;
+  top: 2px;
+  left: -28px;
+  width: 12px;
+  height: 12px;
 }
 
 .user-photo-list_item {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  width: 320px;
 }
 
 .user-photo_motivation {
@@ -116,12 +145,16 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  padding: 50px 20px;
+  padding: 26px 20px 34px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .photo_header--background {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 393px;
   }
 
   .photo_title {
@@ -134,8 +167,8 @@
     margin: 0;
     padding-left: 155px;
     padding-right: 155px;
-    padding-top: 81px;
-    padding-bottom: 135px;
+    padding-top: 120px;
+    padding-bottom: 137px;
   }
 
   .photo_description {
@@ -156,18 +189,43 @@
     flex-wrap: wrap;
   }
 
+  .panorama-of-the-day_photo {
+    width: 100%;
+    height: 510px;
+  }
+
+  .panorama-of-the-day_logo {
+    top: 55px;
+    margin-right: 5%;
+  }
+
+  .user-photo_user-block {
+    width: 300px;
+    transform: translateY(-5%);
+  }
+
+  .panorama-of-the-day_block {
+    width: 620px;
+    transform: translateY(-0%);
+  }
+
   .user-photo_wrapper {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .user-photo-image {
+    padding: 0;
   }
 
   .user-photo-list_item {
     height: 450px;
     width: 300px;
-    margin: 0 auto;
-    outline: 1px red solid;
+    margin: 0;
   }
 
   .user-photo_motivation {
@@ -177,7 +235,25 @@
     text-align: center;
     color: #283645;
     margin: 0;
-    padding: 70px 95px;
+    padding: 0 95px;
+  }
+
+  .user-block_like {
+    margin: 0;
+  }
+
+  .user-block_like::before {
+    display: none;
+  }
+
+  .user-block_like::after {
+    content: "";
+    background-image: url("../img/icon-heart.svg");
+    position: absolute;
+    top: 2px;
+    right: -187px;
+    width: 12px;
+    height: 12px;
   }
 }
 
@@ -185,20 +261,24 @@
   .photo_header--background {
     width: 100%;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 393px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
   }
 
   .photo_title {
     padding-left: 415px;
     padding-right: 415px;
-    padding-top: 81px;
-    padding-bottom: 135px;
+    padding-top: 168px;
+    padding-bottom: 89px;
   }
 
   .photo_description {
-    padding-left: 309px;
-    padding-right: 309px;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-top: 100px;
-    padding-bottom: 90px;
+    padding-bottom: 82px;
     color: #283645;
   }
 
@@ -207,14 +287,19 @@
   }
 
   .panorama-of-the-day_block {
-    width: 100%;
+    width: 850px;
+    margin: 0 auto;
   }
 
   .user-photo-list_item {
-    height: 450px;
+    height: 612px;
     width: 300px;
     margin-right: 20px;
-    outline: 1px red solid;
+  }
+
+  .user-photo_wrapper {
+    width: 960px;
+    margin: 0 auto;
   }
 }
 

@@ -3,38 +3,43 @@
 <head>
   <meta charset="utf-8">
   <title>Pink</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
+  <input type="checkbox" id="menu" class="hidden-input">
   <header class="page-header">
-    <a class="logo page-header_logo" href="#">
-      <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="25" alt="PINK">
-    </a>
-    <nav class="main-nav">
-      <label class="main-nav_toggle" for="menu" type="checkbox">Открыть</label>
-      <input type="checkbox" id="menu" class="hidden-input">
-      <div class="main-nav_wrapper">
-        <ul class="site-list main-nav_list site-list--active">
-          <li class="site-list_item">
-            <a class="site-list_link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <div class="page-header__wrapper">
+      <a class="logo page-header_logo" href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+            </picture>
+          </a>
+          <nav class="main-nav">
+            <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
+            <div class="main-nav_wrapper">
+              <ul class="site-list main-nav_list site-list--active">
+                <li class="site-list_item">
+                  <a class="site-list_link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link site-list_link--active" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link" href="#">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
     <main class="form">
       <div class="form_header form_header--background">
         <h1 class="form_heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -45,6 +50,7 @@
             <span class="contest_description_invitation">Пожалуйста, заполните форму ниже:</span>
           </p>
           <form class="contest_form" method="post" action="http://echo.htmlacademy.ru">
+            <div class="form_fieldset_wrapper">
             <div class="contest_form form_field">
               <div class="form_field-text  form_field-text--fullname">
                 <label class="form_text-label  form_text-label--fullname" for="user-last-name">Фамилия:</label>
@@ -59,9 +65,8 @@
                 <input class="form_text-input  form_text-input--middle-name" id="user-middle-name" type="text" name="Отчество" value="Ну и отчество тоже">
               </div>
             </div>
-            <div class="form_fieldset_wrapper">
             <fieldset class="form_fieldset  form_fieldset--achievements">
-              <h2 class="form_title">Ваши безбашенные достижения в путешествии</h2>
+              <legend class="form_title form_title--achievements">Ваши безбашенные достижения в путешествии</legend>
               <div class="form_fieldset-inner">
                 <div class="form_checkbox-fields  form_checkbox-fields--achievements">
                   <div class="form_checkbox-wrapper">
@@ -97,7 +102,8 @@
                 </div>
               </div>
             </fieldset>
-            <div class="form_fieldset  form_fieldset--contacts">
+            <fieldset class="form_fieldset  form_fieldset--contacts">
+              <legend class="form_title form_title--contacts">Контактная информация</legend>
               <div class="form_fieldset-inner">
                 <div class="form_text-fields  form_text-fields--contacts">
                   <div class="form_field-text  form_field-text--contacts">
@@ -114,9 +120,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="form_fieldset  form_fieldset--apps">
-              <h2 class="form_title  form_title--apps">С каким приложением путешествовали?</h2>
+            </fieldset>
+            <fieldset class="form_fieldset  form_fieldset--apps">
+              <legend class="form_title  form_title--apps">С каким приложением путешествовали?</legend>
               <div class="form_fieldset-inner">
                 <div class="form_radio-fields  form_radio-fields--apps">
                   <div class="form_field-radio">
@@ -133,19 +139,19 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </fieldset>
           </div>
-            <div class="form_fieldset  form_fieldset--emotions">
-              <h2 class="form_title  form_title--emotions">Опишите свои эмоции</h2>
+            <fieldset class="form_fieldset  form_fieldset--emotions">
+              <legend class="form_title  form_title--emotions">Опишите свои эмоции</legend>
               <div class="form_fieldset-inner">
                 <div class="form_textarea-fields  form_textarea-fields--emotions">
                   <textarea class="form_textarea  form_textarea--emotions" name="Сообщение" rows="8" cols="30">Можно прям в красках, не стесняясь в выражениях</textarea>
                 </div>
               </div>
-            </div>
+            </fieldset>
           <div class="form_footer">
             <button class="form_submit-button" type="submit">Отправить форму</button>
-            <div class="form_note"><span class="form_note-symbol">*</span> — обязательные поля</div>
+            <div class="form_note"><span class="form_note-symbol">*</span> — обязательные<span class="form_note-symbol--desktop">для заполнения</span> поля</div>
           </div>
         </form>
       </section>
@@ -153,7 +159,10 @@
     <footer class="page-footer">
       <div class="page-footer_wrapper">
         <div class="logo page-footer_logo">
-          <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+          </picture>
         </div>
         <div class="social page-footer_social">
           <ul class="social_list">

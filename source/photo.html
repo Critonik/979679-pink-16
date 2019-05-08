@@ -3,38 +3,43 @@
 <head>
   <meta charset="utf-8">
   <title>Pink</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 </head>
 <body>
+  <input type="checkbox" id="menu" class="hidden-input">
   <header class="page-header">
-    <a class="logo page-header_logo" href="#">
-      <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="25" alt="PINK">
-    </a>
-    <nav class="main-nav">
-      <label class="main-nav_toggle" for="menu" type="checkbox">Открыть</label>
-      <input type="checkbox" id="menu" class="hidden-input">
-      <div class="main-nav_wrapper">
-        <ul class="site-list main-nav_list site-list--active">
-          <li class="site-list_item">
-            <a class="site-list_link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list_item">
-            <a class="site-list_link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <div class="page-header__wrapper">
+      <a class="logo page-header_logo" href="#">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo_image" src="img/logo-pink-white-mobile.svg" width="70" height="24" alt="PINK">
+            </picture>
+          </a>
+          <nav class="main-nav">
+            <label class="main-nav_toggle" for="menu" type="checkbox" title="Меню" role="button"></label>
+            <div class="main-nav_wrapper">
+              <ul class="site-list main-nav_list site-list--active">
+                <li class="site-list_item">
+                  <a class="site-list_link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link site-list_link--active" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list_item">
+                  <a class="site-list_link" href="#">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
     <main class="photo_user">
       <div class="photo_header photo_header--background">
         <h1 class="photo_title">Фотографии пользователей</h1>
@@ -42,18 +47,26 @@
       <p class="photo_description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <section class="user-photo">
         <figure class="user-photo panorama-of-the-day">
-          <img class="panorama-of-the-day_photo" width="320" height="138" src="img/panorama-mobile@1x.jpg" alt="Винтовой мост">
+          <picture class="panorama-of-the-day_photo">
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+            <img class="panorama-of-the-day_photo" src="img/panorama-mobile@1x.jpg" alt="Винтовой мост">
+          </picture>
           <p class="panorama-of-the-day_logo">Панорама дня</p>
           <figcaption class="user-photo_user-block panorama-of-the-day_block">
             <span class="user-block_name">Анна</span>
-            <time datetime="2019-04" class="user-block_timer">(5 минут назад)</time>  <!---тег time Хочет аттрибут datetime. Без него - невалидно-->
+            <time datetime="2019-04" class="user-block_timer">(5 минут назад)</time>
             <p class="user-block_text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <span class="user-block_like">Нравится: 215</span>
           </figcaption>
         </figure>
         <div class="user-photo_wrapper">
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Левон</span>
             <time datetime="2019-04" class="user-block_timer">(5 часов назад)</time>
@@ -62,7 +75,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-drumset-mobile@1x.jpg" alt="Ударная установка">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-drumset-mobile@1x.jpg" alt="Ударная установка">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Антон</span>
             <time datetime="2019-04" class="user-block_timer">(12 часов назад)</time>
@@ -71,7 +88,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Стеклянный потолок">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-wing-mobile@1x.jpg" alt="Стеклянный потолок">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Борис</span>
             <time datetime="2019-04" class="user-block_timer">(20 часов назад)</time>
@@ -80,7 +101,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-fair-mobile@1x.jpg" alt="Рынок">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-fair-mobile@1x.jpg" alt="Рынок">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Сергей</span>
             <time datetime="2019-04" class="user-block_timer">(25 часов назад)</time>
@@ -89,7 +114,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-pov-mobile@1x.jpg" alt="Горы">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-pov-mobile@1x.jpg" alt="Горы">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Максим</span>
             <time datetime="2019-04" class="user-block_timer">(40 часов назад)</time>
@@ -98,7 +127,11 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
-          <img class="user-photo-image" width="280" height="180" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+            <img class="user-photo-image" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+          </picture>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Надежда</span>
             <time datetime="2019-04" class="user-block_timer">(45 часов назад)</time>
@@ -107,10 +140,14 @@
           </figcaption>
         </figure>
       </div>
-        <h2 class="user-photo_motivation">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <h2 class="user-photo_motivation">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
       </section>
       <section class="photo-editor">
-        <img class="photo-editor_image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+          <img class="photo-editor_image" src="img/photo-road-mobile@1x.jpg" alt="Дорога">
+        </picture>
         <div class="photo-editor_wrapper">
         <ul class="photo-editor_tools">
           <li class="photo-editor_tool">
@@ -122,7 +159,7 @@
             </div>
             <div class="photo-editor_control  photo-editor_control--crop">
               <div class="photo-editor_range  photo-editor_range--crop">
-                <div class="photo-editor_range-scale"><div class="photo-editor_range-value" style="width: 84%"></div></div>
+                <div class="photo-editor_range-scale"><div class="photo-editor_range-value"></div></div>
                 <div class="photo-editor_range-btn" tabindex="0"></div>
               </div>
             </div>
@@ -159,8 +196,8 @@
         </ul>
       <div class="photo-editor_btns">
         <div class="photo-editor_btns-inner">
-          <button class="photo-editor_upload-btn  btn  btn--upload" type="submit">Запостить</button>
-          <button class="photo-editor_cancel-btn  btn  btn--cancel" type="reset">Отмена</button>
+          <button class="photo-editor_upload-btn  btn--upload" type="submit">Запостить</button>
+          <button class="photo-editor_cancel-btn  btn--cancel" type="reset">Отмена</button>
         </div>
       </div>
     </div>
@@ -169,7 +206,10 @@
 <footer class="page-footer">
   <div class="page-footer_wrapper">
     <div class="logo page-footer_logo">
-      <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
+      </picture>
     </div>
     <div class="social page-footer_social">
       <ul class="social_list">
@@ -186,7 +226,7 @@
         </li>
         <li class="social_item">
           <a href="#" class="social_link social_link--facebook">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="19px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
               <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
             </svg>
           </a>

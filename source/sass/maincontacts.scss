@@ -1,6 +1,8 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 10;
 }
 
 .contacts_title {
@@ -10,12 +12,34 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  margin-bottom: 45px;
+  padding-top: 47px;
+  padding-bottom: 35px;
+  background-color: #ffffff;
+}
+
+.contacts_inner {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+.contacts_inner::after {
+  content: "";
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -72px;
+  right: 0;
+  width: 100%;
+  z-index: 11;
+  height: 71px;
 }
 
 .contacts_item {
-  margin-bottom: 30px;
+  margin-bottom: 14px;
   text-align: center;
+  padding: 0 8%;
 }
 
 .contacts_item-lead {
@@ -35,16 +59,41 @@
   text-align: center;
   color: #d22856;
   font-style: normal;
+
+  &:hover {
+    color: #283645;
+    border-bottom: 1px #283645 solid;
+  }
+
+  &:active {
+    color: #283645;
+    border-bottom: 1px #283645 solid;
+    opacity: 0.5;
+  }
+}
+
+.contacts-map {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 38px;
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .contacts_title {
     font-weight: lighter;
     font-size: 40px;
     line-height: normal;
     text-align: center;
     color: #283645;
-    margin: 0 50px 45px;
+    margin: 0;
+    padding: 0 20% 30px;
   }
 
   .contacts_inner {
@@ -52,13 +101,43 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  .contacts_item {
+    margin-bottom: 46px;
+  }
+
+  .contacts_item--address {
+    padding: 0 34%;
+  }
+
+  .contacts-map {
+    position: relative;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 58px;
+    width: 960px;
+  }
+
   .contacts_title {
     font-size: 50px;
+    padding: 0 30px;
+  }
+
+  .contacts_inner {
+    flex-direction: row;
+    padding: 10%;
+  }
+
+  .contacts_item {
+    padding: 0 2%;
+  }
+
+  .contacts_inner:nth-child(2) {
+    order: 5;
     outline: 1px red solid;
-    padding: 0 300px;
   }
 }
 
