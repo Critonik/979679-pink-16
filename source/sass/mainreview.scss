@@ -1,10 +1,10 @@
 .review {
   text-align: center;
-  height: 443px;
   overflow: hidden;
   position: relative;
   z-index: 10;
   background-color: #ffffff;
+  padding-bottom: 92px;
 }
 
 .review_list {
@@ -16,7 +16,8 @@
   flex-shrink: 1;
   position: relative;
   overflow: hidden;
-  height: 216px;
+  height: 210px;
+  margin-bottom: 46px;
 }
 
 .review_item {
@@ -31,7 +32,7 @@
 }
 
 .review_author_wrapper {
-  padding-top: 50px;
+  padding-top: 45px;
   overflow: hidden;
 }
 
@@ -59,6 +60,8 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .author_description {
@@ -100,6 +103,7 @@
 @media (min-width: $tablet-width) {
   .review {
     width: 100%;
+    padding: 29px 0 65px;
   }
 
   .review_author_wrapper {
@@ -107,6 +111,12 @@
     margin: 0 auto;
     padding: 0;
     position: relative;
+    margin-bottom: 14px;
+  }
+
+  .review_list {
+    height: auto;
+    margin-bottom: 4px;
   }
 
   .review_item {
@@ -117,7 +127,10 @@
   }
 
   .author_review {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 12px;
   }
 
   .author_name {

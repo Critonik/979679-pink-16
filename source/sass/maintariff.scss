@@ -178,6 +178,10 @@
   }
 
   .tariff::before {
+    border: 55px solid transparent;
+    border-bottom: 0;
+    border-left: 0;
+    top: -44px;
     border-right: 960px solid #f2f2f2;
   }
 

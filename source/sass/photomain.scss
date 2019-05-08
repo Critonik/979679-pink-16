@@ -72,6 +72,10 @@
   right: 0;
 }
 
+.user-photo_wrapper {
+  box-sizing: border-box;
+}
+
 .user-photo_user-block {
   padding: 20px 0;
   margin: 0 auto;
@@ -86,9 +90,8 @@
 
 .user-photo-image {
   margin: 0;
-  padding: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0 20px;
+  width: 280px;
 }
 
 .user-block_name {
@@ -138,7 +141,7 @@
 
 .user-photo-list_item {
   margin: 0 auto;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   width: 320px;
 }
 
@@ -149,7 +152,7 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  padding: 26px 20px 34px 20px;
+  padding: 26px 20px 41px 20px;
 }
 
 @media (min-width: $tablet-width) {
