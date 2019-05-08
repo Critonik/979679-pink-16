@@ -189,19 +189,32 @@
   }
 
   .advantages_item::before {
-    content: url("../img/iphone-screen-1-desktop@1x.png");
+    content: "";
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
     position: absolute;
     top: -94px;
     right: 19px;
     height: 300px;
     z-index: 11;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    }
+
     &::before:nth-child(3) {
-      content: url("../img/iphone-screen-2-desktop@1x.png");
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      }
     }
 
     &::before:last-child {
-      content: url("../img/iphone-screen-3-desktop@1x.png");
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      }
     }
   }
 

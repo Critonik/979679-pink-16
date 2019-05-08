@@ -13,6 +13,11 @@
   align-content: center;
   align-items: flex-end;
   height: 462px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: contain;
+  }
 }
 
 .main_header--container {
@@ -88,6 +93,10 @@
     background-position: bottom;
     align-items: center;
     height: 683px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .main_header--wrapper {
@@ -161,6 +170,11 @@
     background-position: center;
     align-items: center;
     height: 853px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .main_header--wrapper {
