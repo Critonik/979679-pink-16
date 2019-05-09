@@ -304,19 +304,24 @@
   }
 
   .tariff::before {
-    border-right: 1400px solid #f2f2f2;
+    border-right: 2200px solid #f2f2f2;
+    top: -53px;
   }
 
   .tariff_name {
     margin: 0;
-    padding: 15px 2px 0 2px;
+    font-size: 18px;
+    padding: 15px 18px 0 4px;
     width: auto;
     text-transform: uppercase;
   }
 
   .tariff_price {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: lighter;
     margin: 0;
-    padding: 0 2px 20px 2px;
+    padding: 0 16px 20px 8px;
     width: auto;
     text-transform: uppercase;
   }
@@ -325,11 +330,17 @@
     padding: 15px 73px;
   }
 
-  .tariff_item--feature-title {
-    font-weight: normal;
-    padding: 15px 87px 15px 30px;
+  .tariff_feature {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .tariff_item--feature-title {
+    font-weight: normal;
+    padding: 15px 84px 15px 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: none;
   }
 
   .tariff_feature-status--on {

@@ -152,7 +152,10 @@
   .review {
     width: 100%;
     height: auto;
-    padding: 0;
+  }
+
+  .advantages_toggles {
+    position: relative;
   }
 
   .review_author_wrapper {
@@ -173,15 +176,20 @@
   .author_review {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
+    padding: 0 94px;
+  }
+
+  .review_item {
+    height: 321px;
   }
 
   .review_item::before {
     content: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
-    right: 426px;
+    top: 44px;
+    right: 438px;
     z-index: 11;
   }
 
@@ -189,6 +197,36 @@
     display: block;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .slider_toggle-label {
+    display: none;
+  }
+
+  .slider_arrow-left {
+    content: "";
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    outline: 1px red solid;
+    width: 50px;
+    height: 50px;
+    left: 115px;
+    top: -248px;
+  }
+
+  .slider_arrow-right {
+    content: "";
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    outline: 1px blue solid;
+    width: 50px;
+    height: 50px;
+    right: 115px;
+    top: -248px;
   }
 }
 

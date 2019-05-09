@@ -51,7 +51,7 @@
     transform: translateX(-8%) translateY(4%);
   }
 
-  .effect_background:before {
+  .effect_background::before {
     content: "";
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
@@ -101,36 +101,65 @@
 
 @media (min-width: $desktop-width) {
   .effect {
-    padding-bottom: 70px;
+    padding-bottom: 104px;
     margin: 0;
     background-color: #f2f2f2;
     width: 100%;
-    padding-top: 95px;
+    padding-top: 83px;
+  }
+
+  .description_wrap {
+    display: none;
   }
 
   .effect_background {
-    width: 272px;
+    width: 351px;
     margin-left: auto;
   }
 
+  .effect_background::before {
+    background-size: 283px;
+    background-position: center;
+    position: absolute;
+    height: 165%;
+    top: -96px;
+    right: 12px;
+  }
+
   .effect_description {
-    width: 480px;
+    width: 561px;
     margin-right: auto;
   }
 
   .description_header {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 24px;
   }
 
   .description_text {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 30px;
   }
 
   .description_link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .timer {
+    font-size: 120px;
+    line-height: 186px;
+    transform: translateX(-8%);
+  }
+
+  .timer::before {
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    top: -21px;
+    right: -49px;
   }
 }
 

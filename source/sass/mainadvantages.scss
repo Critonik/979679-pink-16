@@ -163,8 +163,8 @@
     &:nth-child(3) {
       padding-top: 0;
       padding-bottom: 101px;
-      padding-left: 22%;
-      padding-right: 22%;
+      padding-left: 28%;
+      padding-right: 28%;
     }
   }
 
@@ -201,7 +201,7 @@
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
 
-    &::before:nth-child(3) {
+    &::before:nth-child(2) {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -236,7 +236,7 @@
   }
 
   .advantages_list_wrapper::before {
-    border-right: 1200px solid #f2f2f2;
+    border-right: 2200px solid #f2f2f2;
   }
 }
 

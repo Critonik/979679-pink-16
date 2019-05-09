@@ -165,7 +165,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: cover;
+      background-size: 1200px;
     }
   }
 
@@ -284,27 +284,58 @@
   }
 
   .photo_title {
-    padding-left: 415px;
-    padding-right: 415px;
+    width: 340px;
+    margin: 0 auto;
     padding-top: 168px;
     padding-bottom: 89px;
   }
 
   .photo_description {
-    padding-left: 20%;
+    padding-left: 18%;
     padding-right: 20%;
     padding-top: 100px;
     padding-bottom: 82px;
     color: #283645;
+    width: 576px;
+    margin: 0 auto;
   }
 
   .panorama-of-the-day_photo {
     width: 100%;
   }
 
+  .panorama-of-the-day_logo {
+    margin-right: 11%;
+  }
+
   .panorama-of-the-day_block {
-    width: 850px;
+    width: 939px;
     margin: 0 auto;
+    position: relative;
+  }
+
+  .user-block_name-panorama {
+    margin-left: 3%;
+  }
+
+  .user-block_text-panorama {
+    padding: 0 25px;
+  }
+
+  .user-block_like-panorama {
+    position: absolute;
+    top: 19px;
+    right: 65px;
+  }
+
+  .user-block_like-panorama::after {
+    content: "";
+    background-image: url("../img/icon-heart.svg");
+    position: absolute;
+    top: 5px;
+    right: -29px;
+    width: 12px;
+    height: 12px;
   }
 
   .user-photo-list_item {

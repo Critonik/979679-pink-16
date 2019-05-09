@@ -7,6 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <script src="picturefill.min.js" async></script>
 </head>
 <body>
   <input type="checkbox" id="menu" class="hidden-input">
@@ -121,7 +122,7 @@
                   <span class="effect--background timer">24</span>
                 </div>
                 <div class="effect_description">
-                  <h2 class="description_header">Эффект<br> на 24 часа!</h2>
+                  <h2 class="description_header">Эффект<br class="description_wrap"> на 24 часа!</h2>
                   <p class="description_text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
                   <a class="description_link" href="#">Узнать больше об исследовании</a>
                 </div>
@@ -149,8 +150,14 @@
                 </div>
                 <footer class="advantages_toggles slider_toggles">
                   <label class="slider_toggle-label" for="slider-comment1" title="отзыв 1"></label>
-                  <label class="slider_toggle-label" for="slider-comment2" title="отзыв 1"></label>
-                  <label class="slider_toggle-label" for="slider-comment3" title="отзыв 1"></label>
+                  <label class="slider_toggle-label" for="slider-comment2" title="отзыв 2"></label>
+                  <label class="slider_toggle-label" for="slider-comment3" title="отзыв 3"></label>
+                  <label class="slider_arrow-left slider_arrow-label--none" for="slider-comment3" title="отзыв 3"></label>
+                  <label class="slider_arrow-right slider_arrow-label--none" for="slider-comment2" title="отзыв 2"></label>
+                  <label class="slider_arrow-left slider_arrow-label--none" for="slider-comment1" title="отзыв 1"></label>
+                  <label class="slider_arrow-right slider_arrow-label--none" for="slider-comment3" title="отзыв 3"></label>
+                  <label class="slider_arrow-left slider_arrow-label--none" for="slider-comment2" title="отзыв 2"></label>
+                  <label class="slider_arrow-right slider_arrow-label--none" for="slider-comment2" title="отзыв 2"></label>
                 </footer>
               </section>
               <section class="tariff">
@@ -254,7 +261,7 @@
                   </div>
                   <div class="contacts_item  contacts_item--address">
                     <h3 class="contacts_item-lead">Приезжайте в гости:</h3>
-                    <span class="contacts_item-info">ул. Большая Конюшенная, 19/8</span>
+                    <span class="contacts_item-info contacts_item-info-address">ул. Большая Конюшенная, 19/8</span>
                   </div>
                 </address>
                 <picture class="contacts-map-size">
