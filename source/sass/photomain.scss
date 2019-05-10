@@ -288,8 +288,8 @@
     content: "";
     background-image: url("../img/icon-heart.svg");
     position: absolute;
-    top: 2px;
-    right: -187px;
+    top: 1px;
+    right: -153px;
     width: 12px;
     height: 12px;
   }
@@ -299,11 +299,6 @@
     margin: 0;
     top: 23px;
     right: 59px;
-  }
-
-  .user-block_like::after {
-    top: 1px;
-    right: -153px;
   }
 
   .user-block_like-panorama::after {
