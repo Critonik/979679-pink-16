@@ -191,17 +191,22 @@
   .advantages_item::before {
     content: "";
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     top: -94px;
-    right: 19px;
+    right: 9px;
     height: 300px;
+    width: 300px;
     z-index: 11;
+    outline: 1px red solid;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
 
-    &::before:nth-child(2) {
+    &:nth-child(2) {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -209,7 +214,7 @@
       }
     }
 
-    &::before:last-child {
+    &:last-child {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
