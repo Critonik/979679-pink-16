@@ -10,10 +10,10 @@
   <script src="picturefill.min.js" async></script>
 </head>
 <body>
-  <input type="checkbox" id="menu" class="hidden-input">
+  <input type="checkbox" id="menu" class="hidden-input" checked>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="logo page-header_logo" href="#">
+      <a class="logo page-header_logo" href="index.html">
         <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -48,11 +48,13 @@
       <p class="photo_description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <section class="user-photo">
         <figure class="user-photo panorama-of-the-day">
+          <a class="user-photo_link" href="#">
           <picture class="panorama-of-the-day_photo">
             <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
             <img class="panorama-of-the-day_photo" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="Винтовой мост">
           </picture>
+          </a>
           <p class="panorama-of-the-day_logo">Панорама дня</p>
           <figcaption class="user-photo_user-block panorama-of-the-day_block">
             <span class="user-block_name user-block_name-panorama">Анна</span>
@@ -63,11 +65,13 @@
         </figure>
         <div class="user-photo_wrapper">
         <figure class="user-photo-list_item">
+          <a class="user-photo_link" href="#">
           <picture>
             <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
             <img class="user-photo-image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="Автомобиль">
           </picture>
+          </a>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Левон</span>
             <time datetime="2019-04" class="user-block_timer">(5 часов назад)</time>
@@ -76,11 +80,13 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
+          <a class="user-photo_link" href="#">
           <picture>
             <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, photo-drumset-desktop@2x.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
             <img class="user-photo-image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" alt="Ударная установка">
           </picture>
+          </a>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Антон</span>
             <time datetime="2019-04" class="user-block_timer">(12 часов назад)</time>
@@ -89,11 +95,13 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
+          <a class="user-photo_link" href="#">
           <picture>
             <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
             <img class="user-photo-image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" alt="Стеклянный потолок">
           </picture>
+        </a>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Борис</span>
             <time datetime="2019-04" class="user-block_timer">(20 часов назад)</time>
@@ -102,11 +110,13 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
+          <a class="user-photo_link" href="#">
           <picture>
             <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
             <img class="user-photo-image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" alt="Рынок">
           </picture>
+        </a>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Сергей</span>
             <time datetime="2019-04" class="user-block_timer">(25 часов назад)</time>
@@ -115,11 +125,13 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
+          <a class="user-photo_link" href="#">
           <picture>
             <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
             <img class="user-photo-image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" alt="Горы">
           </picture>
+        </a>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Максим</span>
             <time datetime="2019-04" class="user-block_timer">(40 часов назад)</time>
@@ -128,11 +140,13 @@
           </figcaption>
         </figure>
         <figure class="user-photo-list_item">
+          <a class="user-photo_link" href="#">
           <picture>
             <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
             <img class="user-photo-image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" alt="Крыло самолета">
           </picture>
+        </a>
           <figcaption class="user-photo_user-block">
             <span class="user-block_name">Надежда</span>
             <time datetime="2019-04" class="user-block_timer">(45 часов назад)</time>
@@ -203,12 +217,12 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer_wrapper">
-    <div class="logo page-footer_logo">
+    <a class="logo page-footer_logo" href="index.html">
       <picture>
         <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
         <img class="logo_image" width="154" height="48" src="img/logo-pink-blue-mobile.svg" alt="PINK">
       </picture>
-    </div>
+    </a>
     <div class="social page-footer_social">
       <ul class="social_list">
         <li class="social_item">
