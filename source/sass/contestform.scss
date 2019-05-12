@@ -63,6 +63,14 @@
   border: 2px #f2f2f2 solid;
 }
 
+.form_text-input:hover {
+  border: 2px #283645 solid;
+}
+
+.form_text-input:active {
+  border: 2px #d22856 solid;
+}
+
 .form_field-text--fullname {
   margin-bottom: 16px;
 }
@@ -125,6 +133,14 @@
   left: -62px;
 }
 
+.form_checkbox-input ~ .form_checkbox-label:hover::before {
+  border: 2px #283645 solid;
+}
+
+.form_checkbox-input ~ .form_checkbox-label:active::before {
+  border: 2px #d22856 solid;
+}
+
 .form_checkbox-input:checked ~ .form_checkbox-label::before {
   content: "";
   background-image: url("../img/icon-yes.svg");
@@ -138,6 +154,14 @@
   height: 34px;
   top: 18px;
   left: -62px;
+}
+
+.form_checkbox-input:checked ~ .form_checkbox-label:hover::before {
+  border: 2px #283645 solid;
+}
+
+.form_checkbox-input:checked ~ .form_checkbox-label:active::before {
+  border: 2px #d22856 solid;
 }
 
 .form_fieldset--contacts {
@@ -204,6 +228,15 @@
   top: 15px;
   left: -71px;
 }
+
+.form_radio-input ~ .form_radio-label:hover::before {
+  border: 2px #283645 solid;
+}
+
+.form_radio-input ~ .form_radio-label:active::before {
+  border: 2px #d22856 solid;
+}
+
 
 .form_field-text--contacts {
   margin-bottom: 17px;
@@ -302,6 +335,10 @@
   line-height: 30px;
   color: #ffffff;
   margin-bottom: 35px;
+}
+
+.form_submit-button:active {
+  color: #61b98f;
 }
 
 .form_submit-error {
