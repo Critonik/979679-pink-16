@@ -250,6 +250,11 @@
   .photo-editor_range-scale--contrast {
     left: 100px;
   }
+
+  .photo-editor-form {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -364,6 +369,10 @@
   .photo-editor_cancel-btn {
     padding: 16px 55px;
     margin: 0;
+  }
+
+  .photo-editor-form {
+    display: flex;
   }
 }
 

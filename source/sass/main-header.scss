@@ -27,62 +27,6 @@
   align-items: center;
 }
 
-.download-programm {
-  background-color: #243141;
-  color: #ffffff;
-  height: 213px;
-  padding: 30px 7%;
-  display: flex;
-  flex-direction: column;
-}
-
-.download-programm_title {
-  display: none;
-}
-
-.download-programm_store-list {
-  margin: 0;
-  padding: 0 10px;
-}
-
-.download-links {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin-bottom: 15px;
-}
-
-.download-programm_link {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  border: 4px #ffffff solid;
-  padding: 15px 32px;
-  border-radius: 40px;
-  align-self: center;
-  margin-bottom: 30px;
-
-  &:hover {
-    background-color: #ffffff;
-    color: #d22856;
-  }
-
-  &:active {
-    background-color: #ffffff;
-    color: #f1becc;
-  }
-}
-
-.download-programm_info {
-  font-weight: lighter;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-  padding: 0 8%;
-  text-align: center;
-}
 
 @media (min-width: $tablet-width) {
   .main_header {
@@ -122,43 +66,6 @@
   .main_header--container {
     width: 700px;
   }
-
-  .download-programm {
-    background-color: transparent;
-    margin-right: 46%;
-    padding: 0;
-    width: 330px;
-    height: 382px;
-    z-index: 10;
-    position: relative;
-  }
-
-  .download-programm_title {
-    display: block;
-    font-weight: lighter;
-    font-size: 40px;
-    line-height: normal;
-    margin: 0;
-    padding: 0 55px;
-    text-align: center;
-    margin-bottom: 17px;
-  }
-
-  .download-programm_link {
-    padding: 15px 43px;
-    margin-bottom: 45px;
-  }
-
-  .download-programm_store-list {
-    padding: 0 14%;
-    margin-bottom: 31px;
-  }
-
-  .download-programm_info {
-    font-weight: lighter;
-    font-size: 18px;
-    padding: 0 5%;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -190,37 +97,6 @@
   .main_header--background {
     transform: translateX(6%);
     height: 853px;
-  }
-
-  .iphone-5-in-hand_logo {
-    max-width: none;
-  }
-
-  .download-programm {
-    padding: 0 2%;
-    height: 431px;
-    margin: 0;
-  }
-
-  .download-programm_title {
-    font-size: 50px;
-    font-weight: lighter;
-    width: 300px;
-    padding: 0 12px;
-    margin-bottom: 34px;
-  }
-
-  .download-programm_link {
-    font-size: 21px;
-    border: 3px #ffffff solid;
-    text-align: center;
-    width: 240px;
-    padding: 15px 29px;
-    margin-bottom: 67px;
-  }
-
-  .download-programm_store-list {
-    margin-bottom: 53px;
   }
 }
 

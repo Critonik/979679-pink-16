@@ -1,51 +1,17 @@
-html {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-@import "pageheader.scss";
-@import "mainheader.scss";
-@import "mainadvantages.scss";
-@import "photomain.scss";
-@import "pagefooter.scss";
-@import "formmain.scss";
-@import "mainreview.scss";
-@import "maintariff.scss";
-@import "maincontacts.scss";
-@import "photoeditor.scss";
-@import "contestform.scss";
-@import "effect.scss";
-@import "variables.scss";
 @import "scaffolding.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "logo.scss";
+@import "page-header.scss";
+@import "main-header.scss";
+@import "download.scss";
+@import "main-advantages.scss";
+@import "photo-main.scss";
+@import "user-photo.scss";
+@import "page-footer.scss";
+@import "main-review.scss";
+@import "main-tariff.scss";
+@import "main-contacts.scss";
+@import "photo-editor.scss";
+@import "contest-form.scss";
+@import "effect.scss";

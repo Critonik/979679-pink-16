@@ -1,0 +1,114 @@
+.photo_title {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 94px 50px 78px;
+  margin: 0;
+}
+
+.photo_header--background {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #243141;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 238px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.photo_description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 47px 38px;
+  color: #283645;
+}
+
+.page-photo_header {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo_header--background {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 393px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px;
+    }
+  }
+
+  .photo_title {
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 0;
+    margin: 0 auto;
+    width: 330px;
+    padding-top: 120px;
+    padding-bottom: 137px;
+  }
+
+  .photo_description {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 104px;
+    padding-top: 95px;
+    padding-bottom: 78px;
+    color: #283645;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo_header--background {
+    width: 100%;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 393px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2400px;
+    }
+  }
+
+  .photo_title {
+    width: 340px;
+    margin: 0 auto;
+    padding-top: 168px;
+    padding-bottom: 89px;
+  }
+
+  .photo_description {
+    padding-left: 18%;
+    padding-right: 20%;
+    padding-top: 100px;
+    padding-bottom: 82px;
+    color: #283645;
+    width: 576px;
+    margin: 0 auto;
+  }
+}
+
+@import "variables.scss";

@@ -394,6 +394,7 @@
   margin-bottom: 28px;
   font-size: 18px;
   line-height: 30px;
+  resize: none;
 }
 
 .form_note-symbol--desktop {
@@ -770,7 +771,7 @@
   }
 
   .form_fieldset_wrapper {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
