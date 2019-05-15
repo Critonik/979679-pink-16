@@ -85,9 +85,8 @@
           <div class="main_header_wrapper">
             <div class="main_header_container">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
                   <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-                    <img class="iphone-5-in-hand_logo" src="img/iphone-hand-mobile@1x.png" scrset="img/iphone-hand-mobile@2x.png 2x" alt="Iphone 5">
+                    <img class="iphone-5-in-hand_logo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Iphone 5">
                   </picture>
                 </div>
                 <div class="download-programm">
@@ -149,16 +148,16 @@
                     <p class="advantage_description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                   </li>
                 </ul>
-                <picture class="advantage_iPhone--contain">
+                <picture class="advantage_iPhone_contain">
                   <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-                    <img class="advantages_iphone" src="img/iphone-screen-mobile@1x.png" scrset="img/iphone-screen-mobile@2x.png 2x" alt="Всем привет!">
+                    <img class="advantages_iphone" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Всем привет!">
                   </picture>
                 </div>
               </section>
               <section class="effect">
                 <h2 class="visually-hidden">Эффект PINK</h2>
                 <div class="effect_background">
-                  <span class="effect--background timer">24</span>
+                  <span class="timer">24</span>
                 </div>
                 <div class="effect_description">
                   <h2 class="description_header">Эффект<br class="description_wrap"> на 24 часа!</h2>
@@ -168,35 +167,29 @@
               </section>
               <section class="review">
                 <h2 class="visually-hidden">Отзывы пользователей</h2>
+                <input class="slider_toggle-input" type="radio" id="slider-comment1" name="user_review" checked>
+                <input class="slider_toggle-input" type="radio" id="slider-comment2" name="user_review">
+                <input class="slider_toggle-input" type="radio" id="slider-comment3" name="user_review">
                 <div class="review_author_wrapper slider">
-                  <div class="review_list slider_list">
-                    <input class="slider_toggle-input" type="radio" id="slider-comment1" name="user_review" checked>
-                    <div class="review review_item">
+                  <ul class="review_list slider_list">
+                    <li class="review review_item" id="slide1">
                       <div class="author_name">Николай Петров<p class="author_description">25 лет, водитель трамвая</p></div>
                       <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                    </div>
-                    <input class="slider_toggle-input" type="radio" id="slider-comment2" name="user_review">
-                    <div class="review review_item">
+                    </li>
+                    <li class="review review_item" id="slide2">
                       <div class="author_name">Николай Петров<p class="author_description">25 лет, водитель трамвая</p></div>
                       <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                    </div>
-                    <input class="slider_toggle-input" type="radio" id="slider-comment3" name="user_review">
-                    <div class="review review_item">
+                    </li>
+                    <li class="review review_item" id="slide3">
                       <div class="author_name">Николай Петров<p class="author_description">25 лет, водитель трамвая</p></div>
                       <p class="author_review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
                 <div class="advantages_toggles slider_toggles">
                   <label class="slider_toggle-label" for="slider-comment1" title="отзыв 1"></label>
                   <label class="slider_toggle-label" for="slider-comment2" title="отзыв 2"></label>
                   <label class="slider_toggle-label" for="slider-comment3" title="отзыв 3"></label>
-                  <label class="slider_arrow-left slider_arrow-label--none" for="slider-comment3" title="отзыв 3"></label>
-                  <label class="slider_arrow-right slider_arrow-label--none" for="slider-comment2" title="отзыв 2"></label>
-                  <label class="slider_arrow-left slider_arrow-label--none" for="slider-comment1" title="отзыв 1"></label>
-                  <label class="slider_arrow-right slider_arrow-label--none" for="slider-comment3" title="отзыв 3"></label>
-                  <label class="slider_arrow-left slider_arrow-label--none" for="slider-comment2" title="отзыв 2"></label>
-                  <label class="slider_arrow-right slider_arrow-label--none" for="slider-comment2" title="отзыв 2"></label>
                 </div>
               </section>
               <section class="tariff">

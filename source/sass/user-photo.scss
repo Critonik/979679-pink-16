@@ -3,38 +3,6 @@
   margin: 0 auto;
 }
 
-.panorama-of-the-day {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.panorama-of-the-day_photo {
-  width: 100%;
-}
-
-.panorama-of-the-day_logo {
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  line-height: 24px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #d22856;
-  width: 140px;
-  padding: 0;
-  padding-top: 6px;
-  padding-bottom: 9px;
-  margin: 0;
-  margin-right: 7%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .user-photo_wrapper {
   box-sizing: border-box;
 }
@@ -45,10 +13,6 @@
   width: 280px;
   background-color: #f2f2f2;
   transform: translateY(-6%);
-}
-
-.panorama-of-the-day_block {
-  transform: translateY(-3%);
 }
 
 .user-photo-image {
@@ -132,31 +96,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .panorama-of-the-day {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 48px;
-  }
-
-  .panorama-of-the-day_photo {
-    width: 100%;
-    height: 510px;
-  }
-
-  .panorama-of-the-day_logo {
-    top: 53px;
-    margin-right: 3%;
-  }
-
   .user-photo_user-block {
     width: 300px;
     padding: 23px 0;
-    transform: translateY(-5%);
-  }
-
-  .panorama-of-the-day_block {
-    width: 620px;
-    padding: 22px 0;
     transform: translateY(-5%);
   }
 
@@ -234,37 +176,11 @@
     top: 23px;
     right: 59px;
   }
-
-  .user-block_heart-panorama {
-    background-image: url("../img/icon-heart.svg");
-    position: absolute;
-    top: 30px;
-    left: 577px;
-    width: 16px;
-    height: 16px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .user-photo {
     margin-bottom: 61px;
-  }
-
-  .user-block_text {
-    height: 58px;
-    padding: 0 27px;
-  }
-
-  .panorama-of-the-day {
-    margin-bottom: 48px;
-  }
-
-  .panorama-of-the-day_photo {
-    width: 100%;
-  }
-
-  .panorama-of-the-day_logo {
-    margin-right: 11%;
   }
 
   .user-photo_user-block {
@@ -274,53 +190,21 @@
     transform: translateY(-7%);
   }
 
-  .panorama-of-the-day_block {
-    width: 939px;
-    margin: 0 auto;
-    position: relative;
-    transform: translateY(2%);
-    padding-bottom: 17px;
-  }
-
   .user-photo_link {
     height: 399px;
-  }
-
-  .user-photo_link_panorama {
-    height: 509px;
   }
 
   .user-block_name {
     margin-left: 9%;
   }
 
-  .user-block_name-panorama {
-    margin-left: 3%;
-  }
-
-  .user-block_text-panorama {
-    padding: 0 25px;
-    height: auto;
-  }
-
   .user-block_like {
     margin-left: 9%;
-  }
-
-  .user-block_like-panorama {
-    position: absolute;
-    top: 19px;
-    right: 65px;
   }
 
   .user-block_heart {
     bottom: 22px;
     left: 255px;
-  }
-
-  .user-block_heart-panorama {
-    top: 27px;
-    left: 895px;
   }
 
   .user-photo-list_item {

@@ -84,15 +84,28 @@
     }
   }
 
+  .iphone-5-in-hand_logo {
+    display: none;
+  }
+
   .main_header_wrapper {
     width: 940px;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-  }
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position: 20px 208px;
+    height: 100%;
 
-  .iphone-5-in-hand_logo {
-    width: 100%;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-position: 20px 212px;
+      background-size: 1043px;
+    }
   }
 }
 
