@@ -25,6 +25,7 @@
 
 .tariff_table {
   margin: 0 auto;
+  transform: translateX(-32%);
 }
 
 .tariff_item {
@@ -187,6 +188,7 @@
 
   .tariff_table {
     margin: 0 auto;
+    transform: none;
   }
 
   .tariff_toggles {
@@ -306,6 +308,10 @@
   .tariff::before {
     border-right: 2200px solid #f2f2f2;
     top: -53px;
+  }
+
+  .tariff_table {
+    transform: none;
   }
 
   .tariff_name {

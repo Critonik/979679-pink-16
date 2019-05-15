@@ -1,18 +1,11 @@
 .main_header {
   padding: 0;
   width: 100%;
-}
-
-.main_header--background {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #243141;
-  display: flex;
-  align-content: center;
-  align-items: flex-end;
-  height: 462px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -20,24 +13,29 @@
   }
 }
 
-.main_header--container {
+.main_header_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_header_container {
+  height: 463px;
   width: 320px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
+.iphone-5-in-hand_logo {
+  transform: translateY(2%);
+}
 
 @media (min-width: $tablet-width) {
   .main_header {
-    display: flex;
-    flex-direction: row-reverse;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: bottom;
-    align-items: center;
-    height: 683px;
+    background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -45,26 +43,26 @@
     }
   }
 
-  .main_header--wrapper {
+  .main_header_wrapper {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
+    height: 728px;
     position: relative;
-    width: 660px;
-    height: 730px;
     margin: 0 auto;
-  }
-
-  .main_header--background {
-    background-color: transparent;
-    background-image: none;
-    z-index: 1;
-    height: 683px;
-    position: absolute;
-    transform: translateX(-3%);
-  }
-
-  .main_header--container {
     width: 660px;
+  }
+
+  .main_header_container {
+    width: 700px;
+    margin: 0 auto;
+    height: 548px;
+    position: absolute;
+  }
+
+  .iphone-5-in-hand_logo {
+    height: 548px;
+    transform: translateY(18%) translateX(0%);
   }
 }
 
@@ -86,17 +84,15 @@
     }
   }
 
-  .main_header--wrapper {
-    width: 960px;
+  .main_header_wrapper {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
   }
 
-  .main_header--container {
-    width: 900px;
-  }
-
-  .main_header--background {
-    transform: translateX(6%);
-    height: 853px;
+  .iphone-5-in-hand_logo {
+    width: 100%;
   }
 }
 

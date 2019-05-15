@@ -57,8 +57,17 @@
   fill: #d22856;
 }
 
-.copyright_link svg {
+.copyright_logo {
   width: 40px;
+}
+
+.copyright_logo:hover path {
+  fill: #283645;
+}
+
+.copyright_logo:active path {
+  fill: #283645;
+  opacity: 0.5;
 }
 
 .copyright_text {
@@ -73,6 +82,8 @@
   width: 140px;
   margin: 0 auto;
   margin-bottom: 36px;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -110,16 +121,18 @@
   .page-footer_copyright {
     margin: 0;
     margin-left: auto;
+    height: 40px;
+    width: 145px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 58px 0 31px;
+    padding: 41px 0 27px;
   }
 
   .page-footer_wrapper {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
   }
 
@@ -135,6 +148,7 @@
     width: 320px;
     display: flex;
     justify-content: flex-end;
+    height: 40px;
   }
 
   .copyright_text {

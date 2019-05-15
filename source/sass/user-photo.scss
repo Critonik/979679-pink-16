@@ -92,14 +92,16 @@
   text-transform: uppercase;
 }
 
-.user-block_like::before {
-  content: "";
+.user-block_heart {
   background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
   position: absolute;
-  top: 2px;
-  left: -28px;
-  width: 12px;
-  height: 12px;
+  border: 0;
+  background-color: transparent;
+  bottom: 24px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .user-photo-list_item {
@@ -121,7 +123,12 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  padding: 26px 20px 41px 20px;
+  padding: 26px 20px 0 20px;
+}
+
+.user-photo_motivation:last-child {
+  padding: 0 20px 41px 20px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -201,6 +208,9 @@
     color: #283645;
     margin: 0;
     padding: 0 95px;
+  }
+
+  .user-photo_motivation:last-child {
     margin-bottom: 67px;
   }
 
@@ -209,16 +219,11 @@
     margin-left: 9%;
   }
 
-  .user-block_like::before {
-    display: none;
-  }
-
-  .user-block_like::after {
-    content: "";
+  .user-block_heart {
     background-image: url("../img/icon-heart.svg");
     position: absolute;
-    top: 1px;
-    right: -153px;
+    bottom: 35px;
+    left: 253px;
     width: 12px;
     height: 12px;
   }
@@ -230,14 +235,13 @@
     right: 59px;
   }
 
-  .user-block_like-panorama::after {
-    content: "";
+  .user-block_heart-panorama {
     background-image: url("../img/icon-heart.svg");
     position: absolute;
-    top: 5px;
-    right: -29px;
-    width: 12px;
-    height: 12px;
+    top: 30px;
+    left: 577px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -265,15 +269,25 @@
 
   .user-photo_user-block {
     width: 300px;
-    padding: 23px 0;
-    transform: translateY(-17%);
+    padding-top: 23px;
+    padding-bottom: 0;
+    transform: translateY(-7%);
   }
 
   .panorama-of-the-day_block {
     width: 939px;
     margin: 0 auto;
     position: relative;
-    transform: translateY(-6%);
+    transform: translateY(2%);
+    padding-bottom: 17px;
+  }
+
+  .user-photo_link {
+    height: 399px;
+  }
+
+  .user-photo_link_panorama {
+    height: 509px;
   }
 
   .user-block_name {
@@ -299,24 +313,20 @@
     right: 65px;
   }
 
-  .user-block_like::after {
-    top: 1px;
-    right: -153px;
+  .user-block_heart {
+    bottom: 22px;
+    left: 255px;
   }
 
-  .user-block_like-panorama::after {
-    content: "";
-    background-image: url("../img/icon-heart.svg");
-    position: absolute;
-    top: 5px;
-    right: -29px;
-    width: 12px;
-    height: 11px;
+  .user-block_heart-panorama {
+    top: 27px;
+    left: 895px;
   }
 
   .user-photo-list_item {
-    height: 612px;
+    height: 557px;
     margin: 0;
+    margin-bottom: 49px;
   }
 
   .user-photo_wrapper {
