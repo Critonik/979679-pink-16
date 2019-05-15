@@ -8,9 +8,11 @@ button.addEventListener("click", function (evt) {
     if (menu.classList.contains("menu-show")) {
       menu.classList.remove("menu-show");
       head.classList.remove("menu-position");
+      button.classList.remove("main-nav_toggle_cross");
     }
     else {
       menu.classList.add("menu-show");
       head.classList.add("menu-position");
+      button.classList.add("main-nav_toggle_cross");
     }
   });
