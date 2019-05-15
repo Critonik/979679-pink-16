@@ -55,22 +55,34 @@
   0% {
     opacity: 0.1;
   }
+
   60% {
     opacity: 0.3;
   }
+
   70% {
     opacity: 0.5;
   }
+
   90% {
     opacity: 0.7;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-#slider-comment1:checked ~ .review_author_wrapper #slide1,
-#slider-comment2:checked ~ .review_author_wrapper #slide2,
+#slider-comment1:checked ~ .review_author_wrapper #slide1 {
+  animation: op 0.4s;
+  display: block;
+}
+
+#slider-comment2:checked ~ .review_author_wrapper #slide2 {
+  animation: op 0.4s;
+  display: block;
+}
+
 #slider-comment3:checked ~ .review_author_wrapper #slide3 {
   animation: op 0.4s;
   display: block;
@@ -170,8 +182,16 @@
     font-weight: normal;
   }
 
-  #slider-comment1:checked ~ .review_author_wrapper #slide1,
-  #slider-comment2:checked ~ .review_author_wrapper #slide2,
+  #slider-comment1:checked ~ .review_author_wrapper #slide1 {
+    animation: op 0.4s;
+    display: flex;
+  }
+
+  #slider-comment2:checked ~ .review_author_wrapper #slide2 {
+    animation: op 0.4s;
+    display: flex;
+  }
+
   #slider-comment3:checked ~ .review_author_wrapper #slide3 {
     animation: op 0.4s;
     display: flex;
