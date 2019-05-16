@@ -1,68 +1,55 @@
 .main_header {
   padding: 0;
   width: 100%;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #243141;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: cover;
-  }
 }
 
 .main_header_wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 110px;
+  background-size: auto;
+  height: 397px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 260px;
+  }
 }
 
 .main_header_container {
-  height: 463px;
-  width: 320px;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-end;
-}
-
-.iphone-5-in-hand_logo {
-  transform: translateY(2%);
 }
 
 @media (min-width: $tablet-width) {
   .main_header {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    display: flex;
+    flex-direction: row-reverse;
+    width: 660px;
+    margin: 0 auto;
+    height: 619px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: bottom;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px;
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 700px;
     }
   }
 
   .main_header_wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    height: 728px;
-    position: relative;
-    margin: 0 auto;
-    width: 660px;
-  }
-
-  .main_header_container {
-    width: 700px;
-    margin: 0 auto;
-    height: 548px;
-    position: absolute;
-  }
-
-  .iphone-5-in-hand_logo {
-    height: 548px;
-    transform: translateY(18%) translateX(0%);
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    background-image: none;
   }
 }
 
@@ -71,42 +58,21 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    align-items: center;
-    height: 853px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: cover;
-    }
-  }
-
-  .iphone-5-in-hand_logo {
-    display: none;
-  }
-
-  .main_header_wrapper {
     width: 940px;
-    display: flex;
-    flex-direction: row;
     margin: 0 auto;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: bottom;
+    background-position-x: -17%;
+    background-position-y: bottom;
     background-repeat: no-repeat;
-    background-position-x: 20px;
-    background-position-y: 208px;
-    height: 100%;
+    background-size: auto;
+    height: 745px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
-      background-position: bottom;
       background-repeat: no-repeat;
-      background-position-x: 20px;
-      background-position-y: 212px;
-      background-size: 1043px;
+      background-size: 1054px;
+      background-position-x: -17%;
+      background-position-y: bottom;
     }
   }
 }

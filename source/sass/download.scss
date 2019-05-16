@@ -61,10 +61,10 @@
 @media (min-width: $tablet-width) {
   .download-programm {
     background-color: transparent;
-    margin-right: 52%;
     padding: 0;
     width: 300px;
-    height: 335px;
+    padding-top: 86px;
+    margin-left: 19px;
     z-index: 10;
     position: relative;
   }
@@ -100,8 +100,8 @@
 
 @media (min-width: $desktop-width) {
   .download-programm {
-    padding: 0;
-    height: 431px;
+    padding-top: 104px;
+    height: 500px;
     margin: 0;
   }
 

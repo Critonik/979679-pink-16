@@ -160,18 +160,6 @@
   }
 }
 
-#tariff-comment1:checked ~ .tariff_table-header #1 {
-  transform: translateX(32%);
-}
-
-#tariff-comment2:checked ~ .tariff_table-header #2 {
-  transform: translateX(62%);
-}
-
-#tariff-comment3:checked ~ .tariff_table-header #3 {
-  transform: translateX(92%);
-}
-
 @media (min-width: $tablet-width) {
   .tariff {
     padding: 40px 0 70px;

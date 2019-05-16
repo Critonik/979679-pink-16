@@ -1,6 +1,6 @@
 var button = document.querySelector(".main-nav_toggle");
 var menu = document.querySelector(".main-nav_wrapper");
-var head = document.querySelector(".page-header")
+var head = document.querySelector(".page-header_top")
 
 
 button.addEventListener("click", function (evt) {

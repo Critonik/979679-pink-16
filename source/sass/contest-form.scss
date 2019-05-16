@@ -4,21 +4,8 @@
   line-height: normal;
   text-align: center;
   color: #ffffff;
-  padding: 97px 44px 50px;
+  padding: 21px 44px 50px;
   margin: 0;
-}
-
-.form_header--background {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: #243141;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 242px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: cover;
-  }
 }
 
 .contest_description {
@@ -402,19 +389,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form_header--background {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top;
-    background-size: auto;
-    background-repeat: no-repeat;
-    height: 393px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px;
-    }
-  }
-
   .form_heading {
     font-weight: lighter;
     font-size: 50px;
@@ -425,8 +399,8 @@
     margin: 0;
     padding-left: 95px;
     padding-right: 90px;
-    padding-top: 127px;
-    padding-bottom: 80px;
+    padding-top: 65px;
+    padding-bottom: 63px;
   }
 
   .contest_description {
@@ -735,18 +709,9 @@
 
 @media (min-width: $desktop-width) {
   .form_heading {
-    padding: 0;
-    width: 820px;
+    width: 750px;
+    padding: 65px 0 82px;
     margin: 0 auto;
-    padding-top: 167px;
-  }
-
-  .form_header--background {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
   }
 
   .contest_block {
