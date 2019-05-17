@@ -1,13 +1,6 @@
 .main_header {
   padding: 0;
   width: 100%;
-}
-
-.main_header_wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 320px;
-  margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: left;
@@ -24,8 +17,6 @@
 
 @media (min-width: $tablet-width) {
   .main_header {
-    display: flex;
-    flex-direction: row-reverse;
     width: 660px;
     margin: 0 auto;
     height: 619px;
@@ -41,20 +32,10 @@
       background-size: 700px;
     }
   }
-
-  .main_header_wrapper {
-    margin: 0;
-    width: inherit;
-    height: inherit;
-    background-image: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .main_header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
     width: 940px;
     margin: 0 auto;
     background-image: url("../img/iphone-hand-desktop@1x.png");
