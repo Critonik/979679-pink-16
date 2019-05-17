@@ -7,12 +7,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-position-x: center;
-  background-position-y: top;
+  background-position-y: center;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: cover;
   }
 }
 
