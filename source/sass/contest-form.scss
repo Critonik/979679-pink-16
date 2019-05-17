@@ -804,6 +804,13 @@
     align-items: flex-start;
   }
 
+  .form_field-text--contacts::after {
+    width: 64px;
+    height: 60px;
+    right: 1px;
+    top: 1px;
+  }
+
   .form_field-text--contacts:last-child {
     margin-left: 77px;
   }
