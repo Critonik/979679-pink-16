@@ -87,13 +87,6 @@
   line-height: 24px;
 }
 
-.advantages_iphone {
-  position: absolute;
-  bottom: -36px;
-  transform: translateX(50%);
-  z-index: 0;
-}
-
 @media (min-width: $tablet-width) {
   .advantages_header {
     font-size: 40px;
@@ -238,6 +231,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
     }
+  }
+
+  .advantages_list::after {
+    display: none;
   }
 
   .advantage_title {
