@@ -1,0 +1,132 @@
+.download-programm {
+  background-color: #243141;
+  color: #ffffff;
+  min-height: 213px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.download-programm_title {
+  display: none;
+}
+
+.download-programm_store-list {
+  width: 214px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.download-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.download-programm_link {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border: 4px #ffffff solid;
+  padding: 15px 32px;
+  border-radius: 40px;
+  align-self: center;
+  margin-bottom: 30px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: #f1becc;
+  }
+}
+
+.download-programm_info {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+  width: 240px;
+  margin: 0 auto;
+  padding: 0 8%;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .download-programm {
+    background-color: transparent;
+    padding: 0;
+    width: 300px;
+    padding-top: 86px;
+    margin-left: 19px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .download-programm_title {
+    display: block;
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: normal;
+    margin: 0;
+    padding: 0 55px;
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  .download-programm_link {
+    padding: 15px 43px;
+    margin-bottom: 45px;
+  }
+
+  .download-programm_store-list {
+    padding: 0 10%;
+    margin-bottom: 28px;
+  }
+
+  .download-programm_info {
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 0;
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-programm {
+    padding-top: 104px;
+    min-height: 500px;
+    margin: 0;
+  }
+
+  .download-programm_title {
+    font-size: 50px;
+    font-weight: lighter;
+    width: 300px;
+    padding: 0;
+    margin-bottom: 34px;
+  }
+
+  .download-programm_link {
+    font-size: 21px;
+    border: 3px #ffffff solid;
+    text-align: center;
+    width: 240px;
+    padding: 15px 29px;
+    margin-bottom: 67px;
+  }
+
+  .download-programm_store-list {
+    margin-bottom: 53px;
+    padding: 0;
+    width: 240px;
+  }
+}
+
+@import "variables.scss";

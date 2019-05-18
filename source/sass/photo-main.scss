@@ -1,0 +1,75 @@
+.photo_title {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 94px 50px 78px;
+  margin: 0;
+}
+
+.photo_description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 47px 38px;
+  color: #283645;
+}
+
+.page-photo_header {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo_title {
+    font-weight: lighter;
+    font-size: 50px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 0;
+    margin: 0 auto;
+    width: 358px;
+    padding-top: 120px;
+    padding-bottom: 137px;
+  }
+
+  .photo_description {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 104px;
+    padding-top: 95px;
+    padding-bottom: 78px;
+    color: #283645;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo_title {
+    width: 355px;
+    margin: 0 auto;
+    padding-top: 59px;
+    padding-bottom: 89px;
+  }
+
+  .photo_description {
+    padding-left: 18%;
+    padding-right: 20%;
+    padding-top: 100px;
+    padding-bottom: 82px;
+    color: #283645;
+    width: 576px;
+    margin: 0 auto;
+  }
+}
+
+@import "variables.scss";
