@@ -128,6 +128,17 @@
   border: 3px #b5b9be solid;
 }
 
+.photo-editor_tool-icon {
+  margin-bottom: 30px;
+  width: 48px;
+  height: 48px;
+}
+
+.photo-editor_tool-icon--contrast {
+  height: 36px;
+  width: 36px;
+}
+
 .btn--cancel:active {
   color: #cbced2;
   background-color: #b5b9be;
@@ -135,6 +146,7 @@
 
 .photo-editor_tool-icon--fill {
   fill: #b5b9be;
+  margin-bottom: 30px;
 }
 
 .photo-editor_tool-icon--active {
@@ -185,11 +197,9 @@
     flex-direction: row;
     align-items: center;
     width: 275px;
-    height: 30px;
     border-bottom: 1px #dddfe0 solid;
     padding: 0;
     margin: 0;
-    padding-bottom: 19px;
   }
 
   .photo-editor_tool-name {
