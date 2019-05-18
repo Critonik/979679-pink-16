@@ -1,12 +1,15 @@
 .main_header {
   padding: 0;
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: 110px;
   background-size: auto;
-  height: 397px;
+  height: 670px;
+  display: flex;
+  flex-direction: column-reverse;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png");
