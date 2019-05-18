@@ -166,7 +166,7 @@
 
   .page-header_wrapper {
     display: flex;
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
     box-sizing: border-box;
     justify-content: space-between;
@@ -211,7 +211,7 @@
   .main-nav_list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .main-nav_wrapper {
