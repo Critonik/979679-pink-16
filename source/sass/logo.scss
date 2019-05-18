@@ -1,0 +1,84 @@
+.logo {
+  align-self: flex-start;
+  padding: 17px;
+  display: block;
+}
+
+.logo_image {
+  width: 70px;
+  height: 24px;
+}
+
+.logo_tablet {
+  display: none;
+}
+
+.logo_desktop {
+  display: none;
+}
+
+.logo_image:hover path {
+  fill: #d22856;
+}
+
+.logo_image:active path {
+  opacity: 0.3;
+}
+
+.logo_desktop_footer {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .logo_mobile {
+    display: none;
+  }
+
+  .logo_tablet {
+    display: block;
+  }
+
+  .logo_image {
+    width: 150px;
+    height: 45px;
+  }
+
+  .logo {
+    align-self: flex-start;
+    padding: 30px 17px;
+  }
+
+  .page-header__logo {
+    height: 111px;
+    position: relative;
+  }
+}
+
+@media (min-width: 960px) {
+  .logo_tablet {
+    display: none;
+  }
+
+  .logo_mobile_footer {
+    display: none;
+  }
+
+  .logo_desktop {
+    display: block;
+  }
+
+  .logo_desktop_footer {
+    display: block;
+  }
+
+  .page-header_logo {
+    padding: 25px 10px;
+  }
+
+  .logo_image {
+    padding: 0;
+    margin-left: 0;
+  }
+}
+
+@import "variables.scss";

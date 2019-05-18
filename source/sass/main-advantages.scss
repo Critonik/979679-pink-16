@@ -78,7 +78,7 @@
   z-index: 0;
 }
 
-.advantage_iPhone--contain {
+.advantage_iPhone_contain {
   display: flex;
   width: 320px;
   margin: 0 auto;
@@ -120,7 +120,7 @@
   }
 
   .advantages_list {
-    margin: 0;
+    margin: 0 auto;
     width: 339px;
     padding-top: 54px;
     padding-bottom: 0;
@@ -163,8 +163,8 @@
     &:nth-child(3) {
       padding-top: 0;
       padding-bottom: 101px;
-      padding-left: 22%;
-      padding-right: 22%;
+      padding-left: 28%;
+      padding-right: 28%;
     }
   }
 
@@ -189,21 +189,40 @@
   }
 
   .advantages_item::before {
-    content: url("../img/iphone-screen-1-desktop@1x.png");
+    content: "";
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     top: -94px;
-    right: 19px;
+    right: 9px;
     height: 300px;
+    width: 300px;
     z-index: 11;
 
-    &::before:nth-child(3) {
-      content: url("../img/iphone-screen-2-desktop@1x.png");
-    }
-
-    &::before:last-child {
-      content: url("../img/iphone-screen-3-desktop@1x.png");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
   }
+
+  .advantages_item:last-child::before {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    left: -2px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
+  }
+
+  .advantages_item:nth-child(2)::before {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
+  }
+
 
   .advantage_title {
     font-size: 30px;
@@ -218,12 +237,12 @@
     padding-right: 21px;
   }
 
-  .advantage_iPhone--contain {
+  .advantage_iPhone_contain {
     display: none;
   }
 
   .advantages_list_wrapper::before {
-    border-right: 1200px solid #f2f2f2;
+    border-right: 2200px solid #f2f2f2;
   }
 }
 

@@ -33,8 +33,9 @@
     display: flex;
     justify-content: space-around;
     width: 660px;
-    padding-top: 100px;
-    margin-bottom: 52px;
+    padding-top: 95px;
+    margin: 0 auto;
+    margin-bottom: 56px;
   }
 
   .effect_description {
@@ -47,6 +48,22 @@
     justify-content: space-around;
     width: 330px;
     margin-left: auto;
+    position: relative;
+    transform: translateX(-8%) translateY(4%);
+  }
+
+  .effect_background::before {
+    content: "";
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 237px;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 153%;
+    z-index: 5;
+    top: -68px;
+    right: 0;
   }
 
   .description_header {
@@ -60,64 +77,90 @@
   }
 
   .timer {
-    font-size: 96px;
-    line-height: 170px;
+    font-size: 95px;
+    line-height: 209px;
     font-weight: bold;
     color: #d22856;
     text-align: center;
     position: relative;
     z-index: 10;
-    border: 15px #d22856 solid;
-    border-radius: 50%;
-    height: 190px;
-    width: 190px;
   }
 
-  /*.timer::before {
+  .timer::before {
     content: "";
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-size: 23px;
     background-position: center;
     position: absolute;
-    background-color: white;
-    top: 0;
-    right: 0;
-  }*/
+    border: 15px #d22856 solid;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    background-color: transparent;
+    top: 14px;
+    right: -46px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .effect {
-    padding-bottom: 70px;
+    padding-bottom: 104px;
     margin: 0;
     background-color: #f2f2f2;
     width: 100%;
-    padding-top: 95px;
+    padding-top: 94px;
+  }
+
+  .description_wrap {
+    display: none;
   }
 
   .effect_background {
-    width: 272px;
+    width: 351px;
     margin-left: auto;
   }
 
+  .effect_background::before {
+    background-size: 297px;
+    background-position: center;
+    position: absolute;
+    height: 172%;
+    top: -101px;
+    right: 12px;
+  }
+
   .effect_description {
-    width: 480px;
+    width: 561px;
     margin-right: auto;
   }
 
   .description_header {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 24px;
   }
 
   .description_text {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 30px;
   }
 
   .description_link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .timer {
+    font-size: 120px;
+    line-height: 186px;
+    transform: translateX(-8%);
+  }
+
+  .timer::before {
+    height: 220px;
+    width: 219px;
+    background-color: transparent;
+    top: -29px;
+    right: -56px;
   }
 }
 

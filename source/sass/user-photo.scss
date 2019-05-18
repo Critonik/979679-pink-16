@@ -1,0 +1,226 @@
+.user-photo {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.user-photo_wrapper {
+  box-sizing: border-box;
+}
+
+.user-photo_user-block {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 280px;
+  background-color: #f2f2f2;
+  transform: translateY(-6%);
+}
+
+.user-photo-image {
+  margin: 0;
+  padding: 0 20px;
+  width: 280px;
+}
+
+.user-block_name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 5%;
+}
+
+.user-block_timer {
+  font-weight: lighter;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.user-block_text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  padding: 0 16px;
+  margin-bottom: 5px;
+}
+
+.user-block_like {
+  color: #d22856;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  position: relative;
+  margin-left: 49px;
+  text-transform: uppercase;
+}
+
+.user-block_heart {
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  bottom: 24px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+.user-photo-list_item {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-photo_link {
+  width: 100%;
+}
+
+.user-photo_motivation {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #283645;
+  margin: 0;
+  padding: 26px 20px 0 20px;
+}
+
+.user-photo_motivation:last-child {
+  padding: 0 20px 41px 20px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo_user-block {
+    width: 300px;
+    padding: 23px 0;
+    transform: translateY(-5%);
+  }
+
+  .user-photo_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+  }
+
+  .user-photo-image {
+    padding: 0;
+    width: auto;
+  }
+
+  .user-photo-list_item {
+    height: 450px;
+    width: 300px;
+    margin: 0;
+    margin-bottom: 23px;
+  }
+
+  .user-block_name {
+    margin-left: 9%;
+  }
+
+  .user-block_name-panorama {
+    margin-left: 4%;
+  }
+
+  .user-block_text {
+    height: 56px;
+    padding: 0 28px;
+  }
+
+  .user-block_text-panorama {
+    padding: 0 25px;
+    height: auto;
+  }
+
+  .user-photo_motivation {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    color: #283645;
+    margin: 0;
+    padding: 0 95px;
+  }
+
+  .user-photo_motivation:last-child {
+    margin-bottom: 67px;
+  }
+
+  .user-block_like {
+    margin: 0;
+    margin-left: 9%;
+  }
+
+  .user-block_heart {
+    background-image: url("../img/icon-heart.svg");
+    position: absolute;
+    bottom: 35px;
+    left: 253px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .user-block_like-panorama {
+    position: absolute;
+    margin: 0;
+    top: 23px;
+    right: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo {
+    margin-bottom: 61px;
+  }
+
+  .user-photo_user-block {
+    width: 300px;
+    padding-top: 23px;
+    padding-bottom: 0;
+    transform: translateY(-7%);
+  }
+
+  .user-photo_link {
+    height: 399px;
+  }
+
+  .user-block_name {
+    margin-left: 9%;
+  }
+
+  .user-block_like {
+    margin-left: 9%;
+  }
+
+  .user-block_heart {
+    bottom: 22px;
+    left: 255px;
+  }
+
+  .user-photo-list_item {
+    height: 557px;
+    margin: 0;
+    margin-bottom: 49px;
+  }
+
+  .user-photo_wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .user-photo-image {
+    width: 300px;
+  }
+}
+
+@import "variables.scss";
