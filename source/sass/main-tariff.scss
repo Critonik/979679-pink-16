@@ -60,7 +60,7 @@
   position: relative;
 }
 
-.tariff_flag--img::after {
+.tariff_header--flag::before {
   content: "";
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
@@ -68,10 +68,25 @@
   position: absolute;
   width: 74px;
   height: 74px;
-  top: 24px;
+  top: 0;
   left: 0;
-  transform: rotate(48deg) translateX(-48%);
-  z-index: -1;
+  z-index: 4;
+}
+
+.tariff_header--flag::after {
+  content: "Хит";
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  top: 7px;
+  left: 0;
+  transform: rotate(-48deg) translateX(10%);
+  z-index: 5;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .tariff_price {
@@ -82,22 +97,6 @@
   color: #ffffff;
   background-color: #283645;
   padding-bottom: 23px;
-}
-
-.tariff_flag {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  color: #ffffff;
-  margin: 0;
-  content: "";
-  background-color: transparent;
-  position: absolute;
-  top: 9px;
-  left: 9px;
-  text-transform: uppercase;
-  transform: rotate(-48deg);
 }
 
 .tariff_feature {
@@ -231,29 +230,22 @@
     position: relative;
   }
 
-  .tariff_flag--img::after {
+  .tariff_header--flag::before {
     content: "";
     background-image: url("../img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
     background-color: transparent;
+  }
+
+  .tariff_header--flag::after {
+    content: "ХИТ";
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 21px;
-    left: 0;
-    transform: rotate(48deg) translateX(-50%);
-    z-index: -1;
-  }
-
-  .tariff_flag {
-    content: "";
-    background-color: transparent;
-    position: absolute;
-    top: 3px;
-    left: 9px;
-    text-transform: uppercase;
-    transform: rotate(-48deg);
-    z-index: 11;
+    top: -21px;
+    left: 23px;
+    transform: rotate(-46deg) translateX(-50%);
+    z-index: 5;
   }
 
   .tariff_feature-status--on {
