@@ -184,6 +184,7 @@
     width: 940px;
     justify-content: space-between;
     height: 530px;
+    margin: 0 auto;
   }
 
   .advantages_list_wrapper {
@@ -231,6 +232,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
     }
+  }
+
+  .advantages_list::after {
+    display: none;
   }
 
   .advantage_title {

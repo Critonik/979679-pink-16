@@ -1,0 +1,262 @@
+.review {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
+  padding-bottom: 92px;
+}
+
+.review_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-shrink: 1;
+  position: relative;
+  overflow: hidden;
+  height: 210px;
+  margin-bottom: 46px;
+}
+
+.review_item {
+  display: block;
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.disable-slide {
+  display: none;
+}
+
+.slide {
+  display: block;
+}
+
+.review_author_wrapper {
+  padding-top: 45px;
+  overflow: hidden;
+}
+
+.author_review {
+  padding: 0 20px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.slider_toggle-input {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+@keyframes op {
+  0% {
+    opacity: 0.1;
+  }
+
+  60% {
+    opacity: 0.3;
+  }
+
+  70% {
+    opacity: 0.5;
+  }
+
+  90% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.author_name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.author_description {
+  display: none;
+  margin: 0;
+}
+
+.slider_toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.slider_toggle-label {
+  font-size: 0;
+  background-color: #b5b9be;
+  width: 2px;
+  height: 2px;
+  padding: 1px;
+  margin-right: 14px;
+  border: 3px #b5b9be solid;
+  border-radius: 50%;
+  vertical-align: top;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+
+  &:hover {
+    border: 3px #283645 solid;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #ffffff;
+  }
+}
+
+.slider_toggle-label ~ .slider_toggle-input:checked {
+  border: 3px #56616c solid;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 100%;
+    padding: 29px 0 65px;
+  }
+
+  .review_author_wrapper {
+    width: 660px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    margin-bottom: 14px;
+  }
+
+  .review_list {
+    height: auto;
+    margin-bottom: 4px;
+  }
+
+  .review_item {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .author_review {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 12px;
+  }
+
+  .author_name {
+    font-size: 18px;
+    line-height: 30px;
+    display: block;
+  }
+
+  .author_description {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    width: 100%;
+    height: auto;
+  }
+
+  .advantages_toggles {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .review_author_wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 55px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .author_name {
+    font-size: 24px;
+    line-height: 30px;
+    display: block;
+  }
+
+  .author_review {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 38px;
+    padding: 0 94px;
+  }
+
+  .review_item {
+    height: 321px;
+  }
+
+  .review_item::before {
+    content: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 44px;
+    right: 438px;
+    z-index: 11;
+  }
+
+  .author_description {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .slider_toggle-label {
+    display: block;
+    position: absolute;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    bottom: 196px;
+    right: -7px;
+    transform: translateX(1%);
+
+    &:hover {
+      border: 0;
+    }
+  }
+
+  .slider-arrow--left {
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+@import "variables.scss";
