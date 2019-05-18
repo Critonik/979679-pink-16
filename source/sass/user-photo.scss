@@ -180,7 +180,7 @@
 
 @media (min-width: $desktop-width) {
   .user-photo {
-    margin-bottom: 61px;
+    margin-bottom: 29px;
   }
 
   .user-photo_user-block {
@@ -220,6 +220,10 @@
 
   .user-photo-image {
     width: 300px;
+  }
+
+  .user-photo_motivation:last-child {
+    margin-bottom: 25px;
   }
 }
 

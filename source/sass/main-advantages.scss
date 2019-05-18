@@ -43,11 +43,12 @@
 .advantages_list {
   list-style: none;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 45px;
   padding-bottom: 280px;
   position: relative;
+  width: 320px;
 }
 
 .advantages_list::after {
@@ -59,6 +60,7 @@
   position: absolute;
   bottom: 0;
   right: 83px;
+  background-position-x: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.jpg");
