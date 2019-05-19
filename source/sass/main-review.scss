@@ -59,28 +59,6 @@
   clip: rect(0, 0, 0, 0);
 }
 
-@keyframes op {
-  0% {
-    opacity: 0.1;
-  }
-
-  60% {
-    opacity: 0.3;
-  }
-
-  70% {
-    opacity: 0.5;
-  }
-
-  90% {
-    opacity: 0.7;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .author_name {
   font-size: 18px;
   line-height: 30px;
@@ -246,6 +224,12 @@
 
     &:hover {
       border: 0;
+      background-image: url("../img/icon-review-arrow-right-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-review-arrow-right-hover.svg");
+      opacity: 0.2;
     }
   }
 
@@ -256,6 +240,16 @@
     left: 0;
     background-color: transparent;
     border: 0;
+
+    &:hover {
+      border: 0;
+      background-image: url("../img/icon-review-arrow-left-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-review-arrow-left-hover.svg");
+      opacity: 0.2;
+    }
   }
 }
 
