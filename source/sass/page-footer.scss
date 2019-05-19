@@ -49,11 +49,19 @@
   align-content: center;
 }
 
-.social_link path {
+.social_link--facebook {
+  padding: 3px 7px;
+}
+
+.social_link--youtube {
+  padding: 6px 6px;
+}
+
+.social_link {
   fill: #d22856;
 }
 
-.copyright_link path {
+.copyright_link {
   fill: #d22856;
 }
 
