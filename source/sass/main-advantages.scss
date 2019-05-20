@@ -43,25 +43,27 @@
 .advantages_list {
   list-style: none;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 45px;
   padding-bottom: 280px;
   position: relative;
+  width: 320px;
 }
 
 .advantages_list::after {
   content: "";
-  background-image: url("../img/iphone-screen-mobile@1x.jpg");
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   width: 154px;
   height: 277px;
   position: absolute;
   bottom: 0;
   right: 83px;
+  background-position-x: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/iphone-screen-mobile@2x.jpg");
+    background-image: url("../img/iphone-screen-mobile@2x.png");
     background-size: cover;
   }
 }
@@ -109,6 +111,8 @@
   .advantages_list_wrapper {
     display: flex;
     flex-direction: row-reverse;
+    width: 660px;
+    margin: 0 auto;
   }
 
   .advantages_list_wrapper::before {
@@ -123,8 +127,9 @@
   }
 
   .advantages_list {
+    margin: 0;
     margin-left: auto;
-    width: 316px;
+    width: 344px;
     padding-top: 54px;
     padding-bottom: 0;
     text-align: left;
@@ -133,7 +138,7 @@
 
   .advantages_list::after {
     content: "";
-    background-image: url("../img/iphone-screen-3-tablet@1x.jpg");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     position: absolute;
     width: 265px;
@@ -141,7 +146,7 @@
     left: -299px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-screen-3-tablet@2x.jpg");
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: cover;
     }
   }
@@ -149,6 +154,10 @@
   .advantages_item {
     padding: 0 10px;
     margin-bottom: 45px;
+  }
+
+  .advantages_item:nth-child(2) {
+    margin-bottom: 70px;
   }
 }
 
@@ -184,12 +193,14 @@
     width: 940px;
     justify-content: space-between;
     height: 530px;
+    margin: 0 auto;
   }
 
   .advantages_list_wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    width: 100%;
   }
 
   .advantages_item {

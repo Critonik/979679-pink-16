@@ -57,6 +57,16 @@
   border: 0;
 }
 
+.main-nav_toggle:hover {
+  background-image: url("../img/icon-menu-burger-hover.svg");
+}
+
+.main-nav_toggle:active {
+  background-image: url("../img/icon-menu-burger-hover.svg");
+  opacity: 0.5;
+}
+
+
 .main-nav_toggle_cross {
   cursor: pointer;
   user-select: none;
@@ -70,6 +80,15 @@
   top: 21px;
   right: 17px;
   border: 0;
+}
+
+.main-nav_toggle_cross:hover {
+  background-image: url("../img/icon-menu-cross-hover.svg");
+}
+
+.main-nav_toggle_cross:active {
+  background-image: url("../img/icon-menu-cross-hover.svg");
+  opacity: 0.5;
 }
 
 .site-list {

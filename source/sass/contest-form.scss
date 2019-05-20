@@ -89,9 +89,11 @@
 }
 
 .form_title--achievements {
-  padding: 38px 13% 20px;
+  width: 300px;
+  margin: 0 auto;
   line-height: 18px;
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 .form_checkbox-label {
@@ -482,6 +484,8 @@
   .form_title--apps {
     background-color: transparent;
     padding: 0 5%;
+    width: 330px;
+    margin: 0 auto;
   }
 
   .form_fieldset--apps {
@@ -510,8 +514,10 @@
   }
 
   .form_title--contacts {
-    display: inline;
+    display: block;
     padding: 0 22px;
+    width: 207px;
+    margin: 0 auto;
   }
 
   .form_fieldset-inner--contacts {
@@ -585,7 +591,8 @@
 
   .form_title--achievements {
     background-color: transparent;
-    padding: 38px 7% 20px;
+    width: 380px;
+    margin: 0 auto;
   }
 
   .form_checkbox-label {
@@ -614,6 +621,8 @@
 
   .form_title--emotions {
     padding: 30px 43px;
+    width: 207px;
+    margin: 0 auto;
   }
 
   .form_fieldset-inner--emotions {
@@ -776,15 +785,15 @@
 
   .form_fieldset--contacts {
     width: 940px;
-    display: flex;
-    flex-direction: row;
+    display: block;
     margin: 0 auto;
     padding: 0;
     margin-bottom: 40px;
   }
 
   .form_title--contacts {
-    margin: 0;
+    width: 208px;
+    margin: 0 auto;
   }
 
   .form_text-input--contacts {
@@ -808,7 +817,7 @@
   .form_field-text--contacts::after {
     width: 64px;
     height: 60px;
-    right: 1px;
+    right: -5px;
     top: 1px;
   }
 
@@ -817,7 +826,7 @@
   }
 
   .form_fieldset--achievements {
-    display: flex;
+    display: block;
     justify-content: space-around;
     width: 940px;
     box-sizing: border-box;

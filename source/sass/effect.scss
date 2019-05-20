@@ -36,14 +36,20 @@
     padding-top: 95px;
     margin: 0 auto;
     margin-bottom: 56px;
-    position: relative;
   }
 
   .effect_wrapper {
     width: 660px;
   }
 
-  .effect::before {
+  .effect_description {
+    width: 330px;
+    margin-left: auto;
+    padding-left: 70px;
+    position: relative;
+  }
+
+  .effect_description::before {
     content: "";
     background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
@@ -52,11 +58,11 @@
     position: absolute;
     width: 100%;
     height: 153%;
-    top: -42px;
-    right: 191px;
+    top: -62px;
+    right: 322px;
   }
 
-  .effect::after {
+  .effect_description::after {
     background-repeat: no-repeat;
     background-size: 200px;
     content: "24";
@@ -66,19 +72,13 @@
     height: 200px;
     width: 200px;
     background-color: transparent;
-    top: 113px;
-    left: 41px;
+    top: 20px;
+    left: -221px;
     font-size: 95px;
     line-height: 191px;
     font-weight: bold;
     color: #d22856;
     text-align: center;
-  }
-
-  .effect_description {
-    width: 330px;
-    margin-left: auto;
-    padding-left: 70px;
   }
 
   .effect_background {
@@ -109,26 +109,6 @@
     width: 100%;
   }
 
-  .effect::before {
-    background-size: 297px;
-    background-position: center;
-    position: absolute;
-    height: 172%;
-    top: -214px;
-    right: 304px;
-  }
-
-  .effect::after {
-    font-size: 120px;
-    background-size: 251px;
-    line-height: 239px;
-    height: 253px;
-    width: 251px;
-    background-color: transparent;
-    top: 70px;
-    left: 49px;
-  }
-
   .effect_wrapper {
     width: 940px;
   }
@@ -141,6 +121,26 @@
     width: 554px;
     margin-left: auto;
     padding-top: 96px;
+  }
+
+  .effect_description::before {
+    background-size: 297px;
+    background-position: center;
+    position: absolute;
+    height: 172%;
+    top: -82px;
+    right: 462px;
+  }
+
+  .effect_description::after {
+    font-size: 120px;
+    background-size: 251px;
+    line-height: 239px;
+    height: 253px;
+    width: 251px;
+    background-color: transparent;
+    top: 70px;
+    left: -274px;
   }
 
   .description_header {

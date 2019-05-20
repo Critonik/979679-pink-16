@@ -47,13 +47,18 @@
   padding: 4px;
   align-items: center;
   align-content: center;
-}
-
-.social_link path {
   fill: #d22856;
 }
 
-.copyright_link path {
+.social_link--facebook {
+  padding: 3px 7px;
+}
+
+.social_link--youtube {
+  padding: 6px 6px;
+}
+
+.copyright_link {
   fill: #d22856;
 }
 
@@ -128,7 +133,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 41px 0 27px;
+    padding: 69px 0 27px;
   }
 
   .page-footer_wrapper {
