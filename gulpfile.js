@@ -59,7 +59,7 @@ gulp.task("webp", function () {
   .pipe(gulp.dest("source/img"));
 });
 gulp.task("gulp-uglify", function () {
-  return gulp.src("sourse/js/*.js")
+  return gulp.src("source/js/script.js")
   .pipe(plumber())
   .pipe(uglify())
   .pipe(rename("script.min.js"))
