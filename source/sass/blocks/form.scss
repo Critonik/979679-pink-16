@@ -1,27 +1,3 @@
-.form_heading {
-  font-weight: lighter;
-  font-size: 24px;
-  line-height: normal;
-  text-align: center;
-  color: #ffffff;
-  padding: 21px 44px 50px;
-  margin: 0;
-}
-
-.contest_description {
-  margin: 0;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  color: #283645;
-  padding: 45px 20px 35px 20px;
-}
-
-.contest_description_invitation {
-  display: none;
-}
-
 .form_field {
   display: flex;
   flex-direction: column;
@@ -391,49 +367,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form_heading {
-    font-weight: lighter;
-    font-size: 50px;
-    line-height: normal;
-    text-align: center;
-    color: #ffffff;
-    padding: 0;
-    margin: 0;
-    padding-left: 95px;
-    padding-right: 90px;
-    padding-top: 65px;
-    padding-bottom: 63px;
-  }
-
-  .contest_description {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    margin: 0;
-    padding-left: 82px;
-    padding-right: 82px;
-    padding-top: 92px;
-    padding-bottom: 56px;
-    color: #283645;
-  }
-
-  .contest_description_invitation {
-    display: block;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    margin: 0;
-  }
-
   .form_fieldset_wrapper {
     display: flex;
     flex-direction: column;
-  }
-
-  .contest_form {
-    order: 1;
   }
 
   .form_footer {
@@ -718,27 +654,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form_heading {
-    width: 750px;
-    padding: 65px 0 82px;
-    margin: 0 auto;
-  }
-
-  .contest_block {
-    width: 960px;
-    margin: 0 auto;
-  }
-
-  .contest_description {
-    padding-right: 35px;
-    padding-left: 35px;
-    margin-bottom: 30px;
-  }
-
-  .contest_description_invitation {
-    display: inline;
-  }
-
   .form_field {
     width: 447px;
     margin: 0;
