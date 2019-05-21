@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Pink</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <script src="js/svgxuse.min.js" defer></script>
 </head>
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--index">
     <div class="page-header_top">
       <div class="page-header_wrapper">
@@ -53,17 +56,17 @@
         <ul class="download-links download-programm_store-list">
           <li class="download-links_item">
             <a href="https://www.apple.com/ru/ios/app-store/" class="download-links_link">
-              <svg viewBox="0 0 47 57" class="download-links_logo"><use xlink:href="img/sprite.svg#apple"></use></svg>
+              <svg viewBox="0 0 47 57" class="download-links_logo"><use xlink:href="img/sprite.svg#icon-apple"></use></svg>
             </a>
           </li>
           <li class="download-links_item">
             <a href="https://play.google.com/store?hl=ru" class="download-links_link">
-              <svg viewBox="0 -6 44 51" class="download-links_logo"><use xlink:href="img/sprite.svg#Android"></use></svg>
+              <svg viewBox="0 -6 44 51" class="download-links_logo"><use xlink:href="img/sprite.svg#icon-android"></use></svg>
             </a>
           </li>
           <li class="download-links_item">
             <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="download-links_link">
-              <svg viewBox="0 -6 44 44" class="download-links_logo"><use xlink:href="img/sprite.svg#microsoft"></use></svg>
+              <svg viewBox="0 -6 44 44" class="download-links_logo"><use xlink:href="img/sprite.svg#icon-microsoft"></use></svg>
             </a>
           </li>
         </ul>
@@ -276,17 +279,17 @@
         <ul class="social_list">
           <li class="social_item">
             <a href="#" class="social_link social_link--twitter">
-              <svg><use xlink:href="img/sprite.svg#twitter"></use></svg>
+              <svg><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
             </a>
           </li>
           <li class="social_item">
             <a href="#" class="social_link social_link--facebook">
-              <svg><use xlink:href="img/sprite.svg#facebook"></use></svg>
+              <svg><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
             </a>
           </li>
           <li class="social_item">
             <a href="#" class="social_link social_link--youtube">
-              <svg><use xlink:href="img/sprite.svg#youtube"></use></svg>
+              <svg><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
             </a>
           </li>
         </ul>
@@ -300,6 +303,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
