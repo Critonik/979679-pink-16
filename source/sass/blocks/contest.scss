@@ -40,21 +40,21 @@
   }
 }
 
-  @media (min-width: $desktop-width) {
-    .contest_block {
-      width: 960px;
-      margin: 0 auto;
-    }
-
-    .contest_description {
-      padding-right: 35px;
-      padding-left: 35px;
-      margin-bottom: 30px;
-    }
-
-    .contest_description_invitation {
-      display: inline;
-    }
+@media (min-width: $desktop-width) {
+  .contest_block {
+    width: 960px;
+    margin: 0 auto;
   }
 
-  @import "variables.scss";
+  .contest_description {
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 30px;
+  }
+
+  .contest_description_invitation {
+    display: inline;
+  }
+}
+
+@import "variables.scss";
