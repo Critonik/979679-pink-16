@@ -58,13 +58,6 @@ gulp.task("webp", function () {
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("source/img"));
 });
-gulp.task("gulp-uglify", function () {
-  return gulp.src("source/js/script.js")
-  .pipe(plumber())
-  .pipe(uglify())
-  .pipe(rename("script.min.js"))
-  .pipe(gulp.dest("build/js"));
-});
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -77,6 +70,13 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+});
+gulp.task("gulp-uglify", function () {
+  return gulp.src("source/js/script.js")
+  .pipe(plumber())
+  .pipe(uglify())
+  .pipe(rename("script.min.js"))
+  .pipe(gulp.dest("build/js"));
 });
 gulp.task("refresh", function (done) {
   server.reload();
