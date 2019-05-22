@@ -1,4 +1,4 @@
-.form_heading {
+.form_header-title {
   font-weight: lighter;
   font-size: 24px;
   line-height: normal;
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form_heading {
+  .form_header-title {
     font-weight: lighter;
     font-size: 50px;
     line-height: normal;
@@ -17,15 +17,12 @@
     color: #ffffff;
     padding: 0;
     margin: 0;
-    padding-left: 95px;
-    padding-right: 90px;
-    padding-top: 65px;
-    padding-bottom: 63px;
+    padding: 56px 90px 68px 95px
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form_heading {
+  .form_header-title {
     width: 750px;
     padding: 65px 0 82px;
     margin: 0 auto;

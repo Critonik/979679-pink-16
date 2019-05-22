@@ -2,6 +2,7 @@ var button = document.querySelector(".main-nav_toggle");
 var menu = document.querySelector(".main-nav_wrapper");
 var head = document.querySelector(".page-header_top");
 
+button.classList.add("main-nav_burger")
 menu.classList.add("menu-show");
 button.addEventListener("click", function (evt) {
   evt.preventDefault();

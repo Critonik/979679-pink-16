@@ -1,32 +1,25 @@
-.photo_title {
+.photo-header_title {
   font-weight: lighter;
   font-size: 24px;
   line-height: normal;
   text-align: center;
   color: #ffffff;
-  padding: 94px 50px 78px;
+  padding: 27px 50px 78px;
   margin: 0;
 }
 
-.photo_description {
+.photo_user_description {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding: 47px 38px;
+  padding: 47px 39px;
   color: #283645;
 }
 
-.page-photo_header {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  margin: 0;
-}
-
 @media (min-width: $tablet-width) {
-  .photo_title {
+  .photo-header_title {
     font-weight: lighter;
     font-size: 50px;
     line-height: normal;
@@ -35,11 +28,11 @@
     padding: 0;
     margin: 0 auto;
     width: 358px;
-    padding-top: 120px;
+    padding-top: 57px;
     padding-bottom: 137px;
   }
 
-  .photo_description {
+  .photo_user_description {
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
@@ -54,14 +47,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photo_title {
+  .photo-header_title {
     width: 355px;
     margin: 0 auto;
-    padding-top: 59px;
-    padding-bottom: 89px;
+    padding-top: 54px;
+    padding-bottom: 90px;
   }
 
-  .photo_description {
+  .photo_user_description {
     padding-left: 18%;
     padding-right: 20%;
     padding-top: 100px;

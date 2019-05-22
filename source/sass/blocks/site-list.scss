@@ -17,7 +17,7 @@
 }
 
 .site-list_item {
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 15px;
   border-bottom: 1px #000000 solid;
 }
@@ -29,7 +29,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
-    width: 668px;
+    width: 640px;
     box-sizing: border-box;
   }
 
@@ -45,8 +45,12 @@
     padding: 46px 0;
   }
 
+  .site-list_item:first-child {
+    margin-left: 33px;
+  }
+
   .site-list_item:last-child {
-    margin-right: 10px;
+    margin-right: 0;
   }
 
   .site-list_link--active {

@@ -13,7 +13,7 @@
   color: #283645;
   margin: 0;
   padding-top: 41px;
-  padding-bottom: 29px;
+  padding-bottom: 32px;
   background-color: #ffffff;
 }
 
@@ -27,7 +27,7 @@
 .contacts_item {
   margin-bottom: 18px;
   text-align: center;
-  padding: 0 8%;
+  padding: 0 7%;
 }
 
 .contacts_item-lead {
@@ -98,18 +98,18 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 38px;
+    padding-top: 46px;
     margin: 0 auto;
   }
 
   .contacts_title {
     font-weight: lighter;
     font-size: 40px;
-    line-height: normal;
+    line-height: 50px;
     text-align: center;
     color: #283645;
     margin: 0;
-    padding: 0 20% 30px;
+    padding: 0 20% 39px;
   }
 
   .contacts_inner {
@@ -124,6 +124,7 @@
 
   .contacts_item--address {
     padding: 0 34%;
+    margin-bottom: 11px;
   }
 
   .contacts-map {
@@ -145,23 +146,24 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-top: 58px;
+    padding-top: 65px;
   }
 
   .contacts_title {
     font-size: 50px;
     width: 480px;
     margin: 0 auto;
+    padding: 0 0 39px;
   }
 
   .contacts_inner {
-    width: 933px;
+    width: 960px;
     margin: 0 auto;
     flex-wrap: nowrap;
     justify-content: space-around;
     flex-direction: row;
     padding: 0;
-    padding-top: 41px;
+    padding: 22px 0 13px;
     box-sizing: border-box;
   }
 
@@ -194,7 +196,7 @@
 
   .contacts-map {
     width: 100%;
-    height: 477px;
+    height: 493px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -205,7 +207,7 @@
   }
 
   .contacts::after {
-    bottom: 251px;
+    bottom: 268px;
     height: 226px;
   }
 }

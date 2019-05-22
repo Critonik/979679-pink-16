@@ -1,4 +1,24 @@
 .download-programm {
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 110px;
+  background-size: auto;
+  height: 670px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 260px;
+  }
+}
+
+.download-programm_wrapper {
   background-color: #243141;
   color: #ffffff;
   min-height: 213px;
@@ -65,10 +85,28 @@
 
 @media (min-width: $tablet-width) {
   .download-programm {
+    width: 660px;
+    margin: 0 auto;
+    height: 619px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: bottom;
+    display: inline;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 700px;
+    }
+  }
+
+  .download-programm_wrapper {
     background-color: transparent;
     padding: 0;
     width: 300px;
-    padding-top: 86px;
+    padding-top: 90px;
     margin-left: 19px;
     z-index: 10;
     position: relative;
@@ -78,11 +116,11 @@
     display: block;
     font-weight: lighter;
     font-size: 40px;
-    line-height: normal;
+    line-height: 49px;
     margin: 0;
     padding: 0 55px;
     text-align: center;
-    margin-bottom: 17px;
+    margin-bottom: 30px;
   }
 
   .download-programm_link {
@@ -105,7 +143,26 @@
 
 @media (min-width: $desktop-width) {
   .download-programm {
-    padding-top: 104px;
+    width: 940px;
+    margin: 0 auto;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position-x: -17%;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 745px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 1054px;
+      background-position-x: -17%;
+      background-position-y: bottom;
+    }
+  }
+
+  .download-programm_wrapper {
+    padding-top: 113px;
     min-height: 500px;
     margin: 0;
   }
@@ -113,9 +170,10 @@
   .download-programm_title {
     font-size: 50px;
     font-weight: lighter;
+    line-height: 58px;
     width: 300px;
     padding: 0;
-    margin-bottom: 34px;
+    margin-bottom: 56px;
   }
 
   .download-programm_link {
@@ -131,6 +189,10 @@
     margin-bottom: 53px;
     padding: 0;
     width: 240px;
+  }
+
+  .download-programm_info {
+    width: 314px;
   }
 }
 

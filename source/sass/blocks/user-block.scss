@@ -1,0 +1,112 @@
+.user-block {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 280px;
+  background-color: #f2f2f2;
+  transform: translateY(-6%);
+}
+
+.user-block_name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 5%;
+}
+
+.user-block_timer {
+  font-weight: lighter;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.user-block_text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  padding: 0 16px;
+  margin-bottom: 5px;
+}
+
+.user-block_like {
+  color: #d22856;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  position: relative;
+  margin-left: 49px;
+  text-transform: uppercase;
+}
+
+.user-block_heart {
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  bottom: 22px;
+  left: 19px;
+  width: 15px;
+  height: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-block {
+    width: 300px;
+    padding: 23px 0;
+    transform: translateY(-5%);
+  }
+
+  .user-block_name {
+    margin-left: 9%;
+  }
+
+  .user-block_text {
+    height: 56px;
+    padding: 0 28px;
+  }
+
+  .user-block_like {
+    margin: 0;
+    margin-left: 9%;
+  }
+
+  .user-block_heart {
+    background-image: url("../img/icon-heart.svg");
+    position: absolute;
+    bottom: 31px;
+    left: 254px;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-block {
+    width: 300px;
+    padding-top: 21px;
+    padding-bottom: 0;
+    transform: translateY(-9%);
+  }
+
+  .user-block_name {
+    margin-left: 9%;
+  }
+
+  .user-block_like {
+    margin-left: 9%;
+  }
+
+  .user-block_heart {
+    bottom: 22px;
+    left: 255px;
+  }
+
+  .user-block_text {
+    height: 58px;
+    padding: 0 27px;
+  }
+}
