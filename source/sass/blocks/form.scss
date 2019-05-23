@@ -88,7 +88,7 @@
   line-height: 18px;
   background-color: #f2f2f2;
   text-align: center;
-  padding: 40px 22px 20px
+  padding: 40px 22px 20px;
 }
 
 .form_checkbox-label {
@@ -774,11 +774,11 @@
     padding: 24px 0;
   }
 
-  .form_radio-input:checked~.form_radio-label::before {
+  .form_radio-input:checked ~ .form_radio-label::before {
     top: 19px;
   }
 
-  .form_radio-input~.form_radio-label::before {
+  .form_radio-input ~ .form_radio-label::before {
     top: 19px;
   }
 

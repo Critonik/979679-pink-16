@@ -70,7 +70,7 @@
 }
 
 .photo-editor_btns {
-  padding: 40px 9%;
+  padding: 33px 6% 42px;
   border-top: 1px #dddfe0 solid;
 }
 
@@ -89,9 +89,6 @@
   margin: 0 auto;
   padding: 16px 88px;
   margin-bottom: 16px;
-}
-
-.photo-editor_upload-btn {
   background-color: transparent;
   border: 3px #d22856 solid;
   border-radius: 50px;
@@ -187,7 +184,7 @@
   .photo-editor_tools {
     display: flex;
     flex-direction: column;
-    width: 323px;
+    width: 317px;
     align-items: flex-start;
     margin: 0;
     padding: 0;
@@ -202,7 +199,7 @@
     border-bottom: 1px #dddfe0 solid;
     margin: 0;
     justify-content: space-between;
-    padding: 22px;
+    padding: 25px;
   }
 
   .photo-editor_tool:first-child {

@@ -26,6 +26,7 @@
   top: 0;
   left: 0;
   height: 100%;
+  padding-bottom: 35px;
 }
 
 .disable-slide {
@@ -103,6 +104,15 @@
   }
 }
 
+.review_slider--active {
+  border: 3px #283645 solid;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #ffffff;
+  width: 2px;
+  height: 2px;
+}
+
 .review_slider-label ~ .review_slider-input:checked {
   border: 3px #56616c solid;
   border-radius: 50%;
@@ -112,7 +122,7 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    width: 960px;
+    width: 660px;
     padding: 34px 0 50px;
   }
 
@@ -195,7 +205,7 @@
   }
 
   .review_item {
-    height: 321px;
+    height: 355px;
   }
 
   .review_item::before {
@@ -224,7 +234,7 @@
     border: 0;
     height: 50px;
     width: 50px;
-    bottom: 196px;
+    bottom: 165px;
     right: -7px;
     transform: translateX(1%);
     z-index: 11;

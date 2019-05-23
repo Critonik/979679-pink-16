@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 0;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -38,7 +38,7 @@
   .panorama-of-the-day {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
 
   .panorama-of-the-day_photo {
@@ -76,8 +76,8 @@
   .panorama-of-the-day_heart {
     background-image: url("../img/icon-heart.svg");
     position: absolute;
-    top: 28px;
-    left: 582px;
+    top: 30px;
+    left: 579px;
     width: 16px;
     height: 16px;
   }
@@ -93,7 +93,7 @@
   }
 
   .panorama-of-the-day_logo {
-    margin-right: 1%;
+    margin-right: 2%;
   }
 
   .panorama-of-the-day_block {
@@ -117,7 +117,7 @@
   }
 
   .panorama-of-the-day_user-text {
-    padding: 0px 38px;
+    padding: 0 38px;
     height: auto;
   }
 

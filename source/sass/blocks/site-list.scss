@@ -29,7 +29,6 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
-    width: 640px;
     box-sizing: border-box;
   }
 
@@ -46,7 +45,7 @@
   }
 
   .site-list_item:first-child {
-    margin-left: 33px;
+    margin-left: 48px;
   }
 
   .site-list_item:last-child {

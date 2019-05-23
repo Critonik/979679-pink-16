@@ -28,6 +28,7 @@
 .tariff_table {
   margin: 0 auto;
   transform: translateX(-31%);
+  border-collapse: collapse;
 }
 
 .tariff_item {
@@ -38,6 +39,7 @@
   padding: 14px 0;
   padding-left: 24px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .tariff_header {
@@ -172,6 +174,15 @@
     width: 2px;
     height: 2px;
   }
+}
+
+.tariff_toggle-label--active {
+  border: 3px #283645 solid;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #ffffff;
+  width: 2px;
+  height: 2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -316,8 +327,9 @@
   }
 
   .tariff::before {
-    border-right: 2200px solid #f2f2f2;
-    top: -53px;
+    height: 167px;
+    top: -158px;
+    background-size: 2200px;
   }
 
   .tariff_table {
