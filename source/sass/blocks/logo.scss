@@ -4,6 +4,10 @@
   display: block;
 }
 
+.logo-background_color {
+  background-color: #283645;
+}
+
 .logo_image {
   width: 77px;
   height: 24px;
@@ -25,7 +29,7 @@
   opacity: 0.3;
 }
 
-.logo_desktop_footer {
+.logo_desktop-footer {
   display: none;
 }
 
@@ -59,7 +63,7 @@
     display: none;
   }
 
-  .logo_mobile_footer {
+  .logo_mobile-footer {
     display: none;
   }
 
@@ -67,12 +71,12 @@
     display: block;
   }
 
-  .logo_desktop_footer {
+  .logo_desktop-footer {
     display: block;
   }
 
   .page-header_logo {
-    padding: 25px 10px;
+    padding: 29px 5px;
   }
 
   .logo_image {

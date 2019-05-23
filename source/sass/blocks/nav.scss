@@ -5,6 +5,7 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .main-nav_wrapper {
@@ -90,6 +91,8 @@
     padding: 0;
     text-align: center;
     box-sizing: border-box;
+    margin-left: 139px;
+    width: 638px;
   }
 
   .main-nav_list {
@@ -101,7 +104,6 @@
   .main-nav_wrapper {
     display: block;
     box-sizing: border-box;
-    width: 660px;
     background-color: transparent;
   }
 

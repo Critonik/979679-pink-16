@@ -2,7 +2,7 @@
   margin-bottom: 15px;
 }
 
-.form_main-description {
+.form-main_description {
   margin: 0;
   font-weight: normal;
   font-size: 14px;
@@ -12,7 +12,7 @@
   padding: 45px 20px 35px 20px;
 }
 
-.form_main-description--invitation {
+.form-main_description--invitation {
   display: none;
 }
 
@@ -239,6 +239,10 @@
   position: relative;
 }
 
+.form_footer-block {
+  margin-bottom: 28px;
+}
+
 .form_error {
   margin: 0 auto;
   width: 320px;
@@ -386,7 +390,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form_main-description {
+  .form-main_description {
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
@@ -399,7 +403,7 @@
     color: #283645;
   }
 
-  .form_main-description--invitation {
+  .form-main_description--invitation {
     display: block;
     font-weight: normal;
     font-size: 18px;
@@ -480,7 +484,7 @@
     border: 2px #f2f2f2 solid;
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 52px;
+    margin-bottom: 45px;
   }
 
   .form_radio-fields--apps {
@@ -490,10 +494,6 @@
   .form_radio-label {
     margin-left: 19%;
     padding: 26px 0;
-  }
-
-  .form_radio-label:first-child {
-    padding-top: 10px;
   }
 
   .form_radio-input ~ .form_radio-label::before {
@@ -522,7 +522,7 @@
     border: 2px #f2f2f2 solid;
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 33px;
   }
 
   .form_text-label--contacts {
@@ -567,6 +567,7 @@
 
   .form_text-field--contacts:last-child::after {
     background-image: url("../img/icon-mail.svg");
+    right: -3px;
   }
 
   .form_fieldset--achievements {
@@ -584,8 +585,9 @@
 
   .form_title--achievements {
     background-color: transparent;
-    width: 380px;
+    width: 400px;
     margin: 0 auto;
+    padding: 22px 22px 20px;
   }
 
   .form_checkbox-label {
@@ -608,8 +610,7 @@
   .form_fieldset--emotions {
     border: 2px #f2f2f2 solid;
     width: 620px;
-    margin: 0 auto;
-    margin-bottom: 70px;
+    margin: 0 auto 65px;
   }
 
   .form_title--emotions {
@@ -716,13 +717,15 @@
     margin: 0 auto;
   }
 
-  .form_main-description {
-    padding-right: 52px;
-    padding-left: 52px;
+  .form-main_description {
+    width: 765px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 30px;
   }
 
-  .form_main-description--invitation {
+  .form-main_description--invitation {
     display: inline;
   }
 
@@ -758,11 +761,11 @@
   }
 
   .form_fieldset--apps {
-    width: 429px;
+    width: 407px;
     height: 303px;
     margin: 0;
     margin-left: auto;
-    transform: translateY(-4%) translateX(-2%);
+    transform: translateY(-4%);
   }
 
   .form_radio-fields--apps {
@@ -772,6 +775,7 @@
   .form_radio-label {
     margin-left: 32%;
     padding: 24px 0;
+    width: 249px;
   }
 
   .form_radio-input:checked ~ .form_radio-label::before {
@@ -795,6 +799,12 @@
     margin: 0 auto;
   }
 
+  .form_text-label--contacts {
+    padding-top: 12px;
+    margin-left: 0;
+    padding-bottom: 10px;
+  }
+
   .form_text-input--contacts {
     width: 347px;
   }
@@ -816,7 +826,7 @@
   .form_text-field--contacts::after {
     width: 64px;
     height: 60px;
-    right: -5px;
+    right: -1px;
     top: 1px;
   }
 
@@ -913,7 +923,8 @@
   .form_error {
     width: 782px;
     height: 378px;
-    transform: translateX(14%);
+    right: 208px;
+    bottom: 109px;
   }
 
   .form_error-wrapper {
@@ -946,6 +957,8 @@
   .form_sucsess {
     width: 780px;
     height: 376px;
+    right: 291px;
+    bottom: 109px;
   }
 
   .form_sucsess-wrapper {

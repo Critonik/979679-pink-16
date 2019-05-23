@@ -9,6 +9,7 @@
   color: #283645;
   margin: 0;
   margin-bottom: 25px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .effect_description-text {
@@ -112,12 +113,12 @@
     width: 940px;
   }
 
-  .description_wrap {
+  .effect_description-wrap {
     display: none;
   }
 
   .effect_description {
-    width: 564px;
+    width: 569px;
     margin-left: auto;
     padding-top: 96px;
   }
@@ -128,7 +129,7 @@
     position: absolute;
     height: 172%;
     top: -82px;
-    right: 462px;
+    right: 472px;
   }
 
   .effect_description::after {
@@ -139,7 +140,7 @@
     width: 251px;
     background-color: transparent;
     top: 70px;
-    left: -274px;
+    left: -277px;
   }
 
   .effect_description-title {

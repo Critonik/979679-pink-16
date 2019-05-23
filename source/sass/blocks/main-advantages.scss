@@ -14,6 +14,7 @@
   color: #283645;
   background-color: #ffffff;
   padding: 33px 50px;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   &:nth-child(2) {
     padding-bottom: 0;
@@ -73,6 +74,7 @@
 .advantages_item {
   margin-bottom: 41px;
   padding: 0 27px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .advantage_title {
@@ -225,8 +227,8 @@
   .advantages_item {
     text-align: center;
     position: relative;
-    padding: 260px 20px 0 39px;
-    width: 320px;
+    padding: 260px 0 0 0;
+    width: 236px;
     margin: 0 auto;
   }
 
@@ -237,8 +239,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: -94px;
-    right: 9px;
+    top: -98px;
+    right: -34px;
     height: 300px;
     width: 300px;
     z-index: 11;
@@ -250,7 +252,6 @@
 
   .advantages_item:last-child::before {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    left: 18px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
@@ -272,14 +273,14 @@
   .advantage_title {
     font-size: 30px;
     line-height: 30px;
-    padding: 0 20px;
+    padding: 0 0;
     margin: 0 0 26px;
   }
 
   .advantage_description {
     font-size: 18px;
     line-height: 30px;
-    padding: 0 12px;
+    padding: 0 0;
     text-align: center;
   }
 

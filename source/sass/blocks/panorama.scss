@@ -62,7 +62,7 @@
   }
 
   .panorama-of-the-day_user-text {
-    padding: 0 22px 0 32px;
+    padding: 0 22px 0 28px;
     height: auto;
   }
 
@@ -85,7 +85,7 @@
 
 @media (min-width: $desktop-width) {
   .panorama-of-the-day {
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 
   .panorama-of-the-day_photo {
@@ -109,7 +109,7 @@
   }
 
   .panorama-of-the-day_name {
-    margin-left: 4%;
+    margin-left: 3%;
   }
 
   .panorama-of-the-day_user-block {
@@ -117,19 +117,19 @@
   }
 
   .panorama-of-the-day_user-text {
-    padding: 0 38px;
+    padding: 0 27px;
     height: auto;
   }
 
   .panorama-of-the-day_user-like {
     position: absolute;
     top: 22px;
-    right: 53px;
+    right: 60px;
   }
 
   .panorama-of-the-day_heart {
     top: 27px;
-    left: 905px;
+    left: 895px;
   }
 }
 
