@@ -29,17 +29,19 @@
 .social_link {
   padding: 4px;
   fill: #d22856;
-  width: auto;
+  width: 50px;
+}
+
+.social_link svg {
+  width: 50px;
 }
 
 .social_link--facebook {
   padding: 2px 8px;
-  width: 11px;
 }
 
 .social_link--youtube {
   padding: 5px 7px;
-  width: auto;
 }
 
 @media (min-width: $tablet-width) {
