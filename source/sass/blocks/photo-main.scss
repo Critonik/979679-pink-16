@@ -1,10 +1,11 @@
 .photo-header_title {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: lighter;
   font-size: 24px;
-  line-height: normal;
+  line-height: 30px;
   text-align: center;
   color: #ffffff;
-  padding: 27px 50px 78px;
+  padding: 27px 50px 82px;
   margin: 0;
 }
 
@@ -37,11 +38,9 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    margin: 0;
-    padding-left: 110px;
-    padding-right: 104px;
-    padding-top: 95px;
-    padding-bottom: 74px;
+    padding: 93px 0 75px;
+    margin: 0 auto;
+    width: 446px;
     color: #283645;
   }
 }
@@ -51,7 +50,7 @@
     width: 355px;
     margin: 0 auto;
     padding-top: 54px;
-    padding-bottom: 90px;
+    padding-bottom: 95px;
   }
 
   .photo_user-description {

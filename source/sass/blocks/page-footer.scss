@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.photo_footer {
+  padding-top: 6px;
+}
+
 @media (min-width: $tablet-width) {
   .main-footer {
     display: block;
@@ -61,7 +65,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 44px 0 27px;
+    padding: 55px 0 27px;
   }
 
   .page-footer_form {

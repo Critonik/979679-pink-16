@@ -12,7 +12,7 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  padding-top: 41px;
+  padding-top: 44px;
   padding-bottom: 32px;
   background-color: #ffffff;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -23,10 +23,11 @@
   position: relative;
   z-index: 5;
   padding-bottom: 17px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .contacts_item {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   text-align: center;
   padding: 0 7%;
 }
@@ -106,26 +107,37 @@
   .contacts_title {
     font-weight: lighter;
     font-size: 40px;
-    line-height: 50px;
+    line-height: 49px;
     text-align: center;
     color: #283645;
-    margin: 0;
-    padding: 0 20% 39px;
+    width: 430px;
+    margin: 0 auto;
+    padding: 0 0 36px;
   }
 
   .contacts_inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 630px;
+    margin: 0 auto;
   }
 
   .contacts_item {
+    padding: 0;
     margin-bottom: 46px;
+    margin-left: 18px;
+  }
+
+  .contacts_item--email {
+    margin-left: 30px;
   }
 
   .contacts_item--address {
-    padding: 0 32%;
+    padding: 0;
+    margin: 0;
     margin-bottom: 11px;
+    width: 250px;
   }
 
   .contacts-map {
@@ -155,11 +167,11 @@
     width: 480px;
     margin: 0 auto;
     padding: 0 0 39px;
-    line-height: 56px;
+    line-height: 55px;
   }
 
   .contacts_inner {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -170,10 +182,13 @@
 
   .contacts_item {
     padding: 0;
+    margin: 0;
+    width: 250px;
   }
 
   .contacts_item-lead {
     margin-bottom: 20px;
+    margin-left: 8px;
   }
 
   .contacts_item-info-address {
@@ -183,15 +198,16 @@
 
   .contacts_item:first-child {
     order: 1;
+    margin-right: 24px;
   }
 
   .contacts_item:nth-child(2) {
     order: 3;
+    margin-left: 27px;
   }
 
   .contacts_item:last-child {
     order: 2;
-    width: 243px;
     text-align: center;
   }
 
@@ -208,8 +224,9 @@
   }
 
   .contacts::after {
-    bottom: 268px;
-    height: 226px;
+    background-size: 100% 107px;
+    bottom: 237px;
+    height: 256px;
   }
 }
 

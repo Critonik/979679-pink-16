@@ -1,16 +1,20 @@
 .user-block {
-  padding: 20px 0;
+  padding: 17px 0 19px;
   margin: 0 auto;
   width: 280px;
   background-color: #f2f2f2;
-  transform: translateY(-6%);
+  transform: translateY(-4%);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .user-block_name {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  margin-left: 5%;
+  margin-left: 6%;
+  order: 1;
+  letter-spacing: 0.5px;
 }
 
 .user-block_timer {
@@ -19,6 +23,8 @@
   line-height: 24px;
   color: #283645;
   text-transform: uppercase;
+  margin-left: 6px;
+  order: 2;
 }
 
 .user-block_text {
@@ -28,38 +34,46 @@
   line-height: 24px;
   color: #283645;
   padding: 0 16px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
+  order: 3;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user-block_like-wrapper {
+  order: 4;
+  width: 200px;
+  display: flex;
 }
 
 .user-block_like {
   color: #d22856;
   font-weight: normal;
   font-size: 12px;
-  line-height: 26px;
-  position: relative;
-  margin-left: 49px;
+  line-height: 12px;
+  margin-left: 15px;
   text-transform: uppercase;
+  order: 2;
 }
 
 .user-block_heart {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
-  position: absolute;
   border: 0;
   background-color: transparent;
-  bottom: 21px;
-  left: 18px;
   width: 17px;
   height: 17px;
   padding: 0;
-  background-size: 15px;
+  background-size: 14px;
+  order: 1;
+  margin-left: 8%;
 }
 
 @media (min-width: $tablet-width) {
   .user-block {
     width: 300px;
     padding: 23px 0;
-    transform: translateY(-5%);
+    transform: translateY(-4%);
   }
 
   .user-block_name {
@@ -67,48 +81,61 @@
   }
 
   .user-block_text {
-    height: 56px;
+    height: 54px;
     padding: 0 28px;
+    margin: 0 0 14px;
+  }
+
+  .user-block_like-wrapper {
+    width: 245px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 
   .user-block_like {
     margin: 0;
-    margin-left: 9%;
+    margin-left: 0;
+    order: 4;
   }
 
   .user-block_heart {
     background-image: url("../img/icon-heart.svg");
-    position: absolute;
-    bottom: 31px;
-    left: 254px;
     width: 16px;
     height: 16px;
+    order: 5;
+    margin: 0;
+    margin-right: 1px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-block {
     width: 300px;
-    padding-top: 25px;
-    padding-bottom: 0;
-    transform: translateY(-7%);
+    transform: translateY(-2%);
+    padding: 23px 0 24px;
   }
 
-  .user-block_name {
-    margin-left: 9%;
-  }
-
-  .user-block_like {
-    margin-left: 9%;
+  .user-block_timer {
+    margin-left: 3px;
   }
 
   .user-block_heart {
-    bottom: 22px;
-    left: 255px;
+    background-size: 13px;
+    margin: 0px 17px 0px 0;
   }
 
   .user-block_text {
     height: 58px;
     padding: 0 27px;
+    margin: 0 0 9px;
+  }
+
+  .user-block_like {
+    margin-left: 21px;
+  }
+
+  .user-block_like-wrapper {
+    width: 280px;
+    padding-bottom: 4px;
   }
 }

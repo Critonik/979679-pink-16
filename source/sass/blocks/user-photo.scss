@@ -15,7 +15,7 @@
 
 .user-photo-list_item {
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   width: 320px;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   text-align: center;
   color: #283645;
   margin: 0;
-  padding: 26px 20px 0 20px;
+  padding: 22px 20px 0 20px;
 }
 
 .user-photo_motivation:last-child {
@@ -65,7 +65,7 @@
 
   .user-photo_motivation {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 26px;
     font-weight: normal;
     text-align: center;
     color: #283645;
@@ -74,7 +74,7 @@
   }
 
   .user-photo_motivation:last-child {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
   }
 }
 
@@ -95,16 +95,23 @@
 
   .user-photo_wrapper {
     width: 940px;
-    margin: 0 auto;
-    margin-bottom: 13px;
+    margin: 0 auto 7px;
   }
 
   .user-photo-image {
     width: 300px;
   }
 
+  .user-photo_motivation {
+    padding: 0;
+    width: 400px;
+    margin: 0 auto 3px;
+  }
+
   .user-photo_motivation:last-child {
-    margin-bottom: 25px;
+    padding: 0;
+    width: 450px;
+    margin: 0 auto 67px;
   }
 }
 
