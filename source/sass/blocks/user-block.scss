@@ -28,14 +28,14 @@
   line-height: 24px;
   color: #283645;
   padding: 0 16px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .user-block_like {
   color: #d22856;
   font-weight: normal;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 26px;
   position: relative;
   margin-left: 49px;
   text-transform: uppercase;
@@ -47,10 +47,12 @@
   position: absolute;
   border: 0;
   background-color: transparent;
-  bottom: 22px;
-  left: 19px;
-  width: 15px;
-  height: 15px;
+  bottom: 21px;
+  left: 18px;
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  background-size: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,8 +81,8 @@
     position: absolute;
     bottom: 31px;
     left: 254px;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
   }
 }
 
