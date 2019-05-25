@@ -5,11 +5,12 @@
 .form-header_title {
   font-weight: lighter;
   font-size: 24px;
-  line-height: normal;
+  line-height: 31px;
   text-align: center;
   color: #ffffff;
-  padding: 25px 44px 48px;
-  margin: 0;
+  padding: 28px 0 51px;
+  width: 240px;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -109,7 +110,7 @@
   line-height: 30px;
   color: #283645;
   position: relative;
-  margin-left: 27%;
+  margin-left: 28%;
   padding: 24px 0 28px;
 }
 
@@ -124,8 +125,8 @@
   background-color: #ffffff;
   width: 34px;
   height: 34px;
-  top: 18px;
-  left: -62px;
+  top: 20px;
+  left: -69px;
 }
 
 .form_checkbox-input ~ .form_checkbox-label:hover::before {
@@ -147,8 +148,8 @@
   background-color: #ffffff;
   width: 34px;
   height: 34px;
-  top: 18px;
-  left: -62px;
+  top: 20px;
+  left: -69px;
 }
 
 .form_checkbox-input:checked ~ .form_checkbox-label:hover::before {
@@ -330,6 +331,7 @@
 }
 
 .form_submit-button {
+  font-family: "Open Sans", "Arial", sans-serif;
   border: 0;
   width: 280px;
   margin: 0 auto;
@@ -429,8 +431,9 @@
     line-height: 62px;
     text-align: center;
     color: #ffffff;
-    margin: 0;
-    padding: 65px 90px 80px 96px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 65px 0 78px;
   }
 
   .form-main_description--invitation {

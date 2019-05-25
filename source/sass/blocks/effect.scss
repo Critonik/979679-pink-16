@@ -77,7 +77,7 @@
     width: 200px;
     background-color: transparent;
     top: 20px;
-    left: -221px;
+    left: -218px;
     font-size: 95px;
     line-height: 191px;
     font-weight: bold;
@@ -107,7 +107,7 @@
 @media (min-width: $desktop-width) {
   .effect {
     padding: 0;
-    height: 413px;
+    height: 363px;
     margin: 0;
     background-color: #f2f2f2;
     width: 100%;
@@ -124,7 +124,7 @@
   .effect_description {
     width: 571px;
     margin-left: auto;
-    padding-top: 96px;
+    padding-top: 45px;
   }
 
   .effect_description::before {
@@ -132,8 +132,8 @@
     background-position: center;
     position: absolute;
     height: 172%;
-    top: -82px;
-    right: 472px;
+    top: -89px;
+    right: 468px;
   }
 
   .effect_description::after {
@@ -143,8 +143,8 @@
     height: 253px;
     width: 251px;
     background-color: transparent;
-    top: 70px;
-    left: -276px;
+    top: 19px;
+    left: -273px;
   }
 
   .effect_description-title {

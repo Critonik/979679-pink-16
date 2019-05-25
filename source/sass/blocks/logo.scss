@@ -59,6 +59,11 @@
 }
 
 @media (min-width: 960px) {
+  .logo_image {
+    padding: 0;
+    margin-left: 0;
+  }
+
   .logo_tablet {
     display: none;
   }
@@ -73,15 +78,11 @@
 
   .logo_desktop-footer {
     display: block;
+    margin-left: 10px;
   }
 
   .page-header_logo {
     padding: 29px 5px;
-  }
-
-  .logo_image {
-    padding: 0;
-    margin-left: 0;
   }
 }
 
