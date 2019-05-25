@@ -10,20 +10,20 @@
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  color: #283645;
+  color: $bluegreen;
   margin: 0;
   padding-top: 40px;
   padding-bottom: 32px;
-  background-color: #ffffff;
-  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: $white;
+  font-family: $opensans;
 }
 
 .contacts_inner {
-  background-color: #ffffff;
+  background-color: $white;
   position: relative;
   z-index: 5;
   padding-bottom: 17px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $opensans;
 }
 
 .contacts_item {
@@ -37,7 +37,7 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: $black;
   font-style: normal;
   margin: 0;
 }
@@ -47,17 +47,17 @@
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  color: #d22856;
+  color: $pink;
   font-style: normal;
 
   &:hover {
-    color: #283645;
-    border-bottom: 1px #283645 solid;
+    color: $bluegreen;
+    border-bottom: 1px $bluegreen solid;
   }
 
   &:active {
-    color: #283645;
-    border-bottom: 1px #283645 solid;
+    color: $bluegreen;
+    border-bottom: 1px $bluegreen solid;
     opacity: 0.5;
   }
 }
@@ -109,7 +109,7 @@
     font-size: 40px;
     line-height: 49px;
     text-align: center;
-    color: #283645;
+    color: $bluegreen;
     width: 430px;
     margin: 0 auto;
     padding: 0 0 36px;

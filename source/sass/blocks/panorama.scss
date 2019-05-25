@@ -12,14 +12,14 @@
 }
 
 .panorama-of-the-day_logo {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $opensans;
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
   line-height: 24px;
   text-align: center;
-  color: #ffffff;
-  background-color: #d22856;
+  color: $white;
+  background-color: $pink;
   width: 140px;
   padding: 0;
   padding-top: 6px;

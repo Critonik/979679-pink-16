@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #f2f2f2;
+  background-color: $gray;
   margin: 0;
   padding: 0;
   position: relative;
@@ -11,10 +11,10 @@
   line-height: normal;
   font-weight: lighter;
   text-align: center;
-  color: #283645;
-  background-color: #ffffff;
+  color: $bluegreen;
+  background-color: $white;
   padding: 33px 38px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $opensans;
 
   &:nth-child(2) {
     padding-bottom: 0;
@@ -74,7 +74,7 @@
 .advantages_item {
   margin-bottom: 41px;
   padding: 0 27px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $opensans;
 }
 
 .advantage_title {
@@ -180,8 +180,8 @@
     line-height: 62px;
     font-weight: lighter;
     text-align: center;
-    color: #283645;
-    background-color: #ffffff;
+    color: $bluegreen;
+    background-color: $white;
     width: 760px;
     margin: 0 auto;
 
@@ -216,7 +216,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: $gray;
   }
 
   .advantages_wrapper::before {

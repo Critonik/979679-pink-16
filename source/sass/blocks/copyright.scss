@@ -3,7 +3,7 @@
 }
 
 .copyright_link path {
-  fill: #d22856;
+  fill: $pink;
 }
 
 .copyright_logo {
@@ -12,11 +12,11 @@
 }
 
 .copyright_link:hover path {
-  fill: #283645;
+  fill: $bluegreen;
 }
 
 .copyright_link:active path {
-  fill: #283645;
+  fill: $bluegreen;
   opacity: 0.5;
 }
 
@@ -25,7 +25,7 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: #283645;
+  color: $bluegreen;
 }
 
 .copyright_logo--form {

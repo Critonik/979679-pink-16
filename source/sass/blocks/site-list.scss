@@ -5,10 +5,10 @@
 }
 
 .site-list_link {
-  color: #ffffff;
+  color: $white;
 
   &:hover {
-    color: #d22856;
+    color: $pink;
   }
 
   &:active {
@@ -19,11 +19,11 @@
 .site-list_item {
   padding-top: 16px;
   padding-bottom: 15px;
-  border-bottom: 1px #000000 solid;
+  border-bottom: 1px $black solid;
 }
 
 .site-list_item:first-child {
-  border-top: 1px #000000 solid;
+  border-top: 1px $black solid;
 }
 
 @media (min-width: $desktop-width) {
@@ -37,7 +37,7 @@
     font-size: 18px;
     line-height: 18px;
     text-align: center;
-    color: #ffffff;
+    color: $white;
     text-transform: none;
     margin: 0 auto;
     border: 0;
@@ -53,13 +53,13 @@
   }
 
   .site-list_link--active {
-    border-bottom: 1px #ffffff solid;
+    border-bottom: 1px $white solid;
     padding-bottom: 10px;
   }
 
   .site-list_link {
     &:hover {
-      color: #d22856;
+      color: $pink;
     }
 
     &:active {

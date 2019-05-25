@@ -3,14 +3,14 @@
   font-size: 18px;
   line-height: 32px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $opensans;
 }
 
 .main-nav_wrapper {
   display: block;
-  background-color: #283645;
+  background-color: $bluegreen;
 }
 
 .main-nav_toggle {
@@ -69,7 +69,7 @@
 }
 
 .menu-position {
-  background-color: #283645;
+  background-color: $bluegreen;
 }
 
 @media (min-width: $tablet-width) {

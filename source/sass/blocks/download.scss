@@ -20,7 +20,7 @@
 
 .download-programm_wrapper {
   background-color: #243141;
-  color: #ffffff;
+  color: $white;
   min-height: 213px;
   padding: 32px 0;
   display: flex;
@@ -30,7 +30,7 @@
 
 .download-programm_title {
   display: none;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $opensans;
 }
 
 .download-programm_store-list {
@@ -48,26 +48,26 @@
 }
 
 .download-programm_link {
-  color: #ffffff;
+  color: $white;
   width: 274px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  border: 4px #ffffff solid;
+  border: 4px $white solid;
   padding: 15px 0;
   border-radius: 40px;
   align-self: center;
   margin-bottom: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $opensans;
 
   &:hover {
-    background-color: #ffffff;
-    color: #d22856;
+    background-color: $white;
+    color: $pink;
   }
 
   &:active {
-    background-color: #ffffff;
+    background-color: $white;
     color: #f1becc;
   }
 }
@@ -85,7 +85,7 @@
   margin: 0 auto;
   padding: 0 8%;
   text-align: center;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $opensans;
 }
 
 @media (min-width: $tablet-width) {
@@ -185,7 +185,7 @@
 
   .download-programm_link {
     font-size: 21px;
-    border: 3px #ffffff solid;
+    border: 3px $white solid;
     text-align: center;
     width: 240px;
     padding: 15px 29px;

@@ -1,5 +1,5 @@
 .page-header {
-  background-color: rgba(#1d2631, 0.7);
+  background-color: rgba($darkblue, 0.7);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -25,7 +25,7 @@
 }
 
 .page-header_top {
-  background-color: rgba(#1d2631, 0.7);
+  background-color: rgba($darkblue, 0.7);
 }
 
 @media (min-width: $tablet-width) {
@@ -56,7 +56,7 @@
   .page-header {
     display: flex;
     flex-direction: column;
-    background-color: rgba(#1d2631, 0.7);
+    background-color: rgba($darkblue, 0.7);
     width: 100%;
     position: relative;
     box-sizing: border-box;
@@ -73,7 +73,7 @@
   }
 
   .page-header_top {
-    background-color: rgba(#1d2631, 0.3);
+    background-color: rgba($darkblue, 0.3);
     background-image: none;
     margin: 0 auto;
     width: 100%;

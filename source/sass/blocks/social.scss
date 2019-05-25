@@ -18,7 +18,7 @@
   display: flex;
 
   &:hover {
-    border-color: #283645;
+    border-color: $bluegreen;
   }
 
   &:active {
@@ -28,7 +28,7 @@
 
 .social_link {
   padding: 4px;
-  fill: #d22856;
+  fill: $pink;
   width: 50px;
 }
 
