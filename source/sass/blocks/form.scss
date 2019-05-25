@@ -459,7 +459,7 @@
   }
 
   .form_footer {
-    width: 626px;
+    width: 620px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -650,7 +650,7 @@
   .form_fieldset--emotions {
     border: 2px #f2f2f2 solid;
     width: 620px;
-    margin: 0 auto 70px;
+    margin: 0 auto 71px;
   }
 
   .form_title--emotions {
@@ -677,7 +677,6 @@
   }
 
   .form_sucsess {
-    transform: translateX(18%);
     width: 460px;
     height: 431px;
   }
@@ -714,7 +713,6 @@
   }
 
   .form_error {
-    transform: translateX(18%);
     width: 460px;
     height: 367px;
   }
@@ -836,7 +834,7 @@
     display: block;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .form_title--contacts {
@@ -965,8 +963,6 @@
   .form_error {
     width: 782px;
     height: 378px;
-    right: 208px;
-    bottom: 109px;
   }
 
   .form_error-wrapper {
@@ -999,8 +995,6 @@
   .form_sucsess {
     width: 780px;
     height: 376px;
-    right: 209px;
-    bottom: 109px;
   }
 
   .form_sucsess-wrapper {
