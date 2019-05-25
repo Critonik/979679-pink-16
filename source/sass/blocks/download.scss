@@ -1,0 +1,206 @@
+.download-programm {
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 110px;
+  background-size: auto;
+  height: 670px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 260px;
+  }
+}
+
+.download-programm_wrapper {
+  background-color: #243141;
+  color: #ffffff;
+  min-height: 213px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.download-programm_title {
+  display: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.download-programm_store-list {
+  width: 234px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.download-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.download-programm_link {
+  color: #ffffff;
+  width: 274px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border: 4px #ffffff solid;
+  padding: 15px 0;
+  border-radius: 40px;
+  align-self: center;
+  margin-bottom: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: #f1becc;
+  }
+}
+
+.download-links_logo {
+  width: 47px;
+  height: 57px;
+}
+
+.download-programm_info {
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+  width: 240px;
+  margin: 0 auto;
+  padding: 0 8%;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .download-programm {
+    width: 660px;
+    margin: 0 auto;
+    height: 619px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: bottom;
+    display: inline;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 700px;
+    }
+  }
+
+  .download-programm_wrapper {
+    background-color: transparent;
+    padding: 0;
+    width: 300px;
+    padding-top: 90px;
+    margin-left: 19px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .download-programm_title {
+    display: block;
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0;
+    padding: 0 55px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .download-programm_link {
+    padding: 15px 0;
+    width: 290px;
+    margin-bottom: 45px;
+  }
+
+  .download-programm_store-list {
+    padding: 0 10%;
+    margin-bottom: 28px;
+  }
+
+  .download-programm_info {
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 0;
+    width: 308px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-programm {
+    width: 940px;
+    margin: 0 auto;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position-x: -17%;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 745px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 1054px;
+      background-position-x: -17%;
+      background-position-y: bottom;
+    }
+  }
+
+  .download-programm_wrapper {
+    padding-top: 113px;
+    min-height: 500px;
+    margin: 0;
+    width: 310px;
+  }
+
+  .download-programm_title {
+    font-size: 50px;
+    font-weight: lighter;
+    line-height: 58px;
+    width: 300px;
+    padding: 0;
+    margin-bottom: 56px;
+  }
+
+  .download-programm_link {
+    font-size: 21px;
+    border: 3px #ffffff solid;
+    text-align: center;
+    width: 240px;
+    padding: 15px 29px;
+    margin-bottom: 67px;
+  }
+
+  .download-programm_store-list {
+    margin-bottom: 47px;
+    padding: 0;
+    width: 240px;
+  }
+
+  .download-programm_info {
+    width: 309px;
+  }
+}
+
+@import "variables.scss";

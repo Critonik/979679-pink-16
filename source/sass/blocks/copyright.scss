@@ -1,0 +1,53 @@
+.copyright_link {
+  margin-left: 7px;
+}
+
+.copyright_link path {
+  fill: #d22856;
+}
+
+.copyright_logo {
+  width: 40px;
+  height: 45px;
+}
+
+.copyright_link:hover path {
+  fill: #283645;
+}
+
+.copyright_link:active path {
+  fill: #283645;
+  opacity: 0.5;
+}
+
+.copyright_text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #283645;
+}
+
+.copyright_logo--form {
+  margin-left: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright_link {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright_text {
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: top;
+  }
+
+  .copyright_logo {
+    padding-top: 3px;
+  }
+}
+
+@import "variables.scss";

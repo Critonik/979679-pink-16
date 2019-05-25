@@ -1,0 +1,115 @@
+.main-nav {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.main-nav_wrapper {
+  display: block;
+  background-color: #283645;
+}
+
+.main-nav_toggle {
+  cursor: pointer;
+  user-select: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  position: absolute;
+  height: 25px;
+  width: 52px;
+  top: 21px;
+  right: 17px;
+  border: 0;
+}
+
+.main-nav_burger {
+  background-image: url("../img/icon-menu-burger.svg");
+}
+
+.main-nav_toggle:hover {
+  background-image: url("../img/icon-menu-burger-hover.svg");
+}
+
+.main-nav_toggle:active {
+  background-image: url("../img/icon-menu-burger-hover.svg");
+  opacity: 0.5;
+}
+
+.main-nav_toggle_cross {
+  cursor: pointer;
+  user-select: none;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  position: absolute;
+  height: 26px;
+  width: 52px;
+  top: 17px;
+  right: 7px;
+  border: 0;
+}
+
+.main-nav_toggle_cross:hover {
+  background-image: url("../img/icon-menu-cross-hover.svg");
+}
+
+.main-nav_toggle_cross:active {
+  background-image: url("../img/icon-menu-cross-hover.svg");
+  opacity: 0.5;
+}
+
+.menu-show {
+  display: none;
+}
+
+.menu-position {
+  background-color: #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav_toggle {
+    top: 44px;
+    right: 23px;
+  }
+
+  .main-nav_toggle_cross {
+    top: 43px;
+    right: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 139px;
+    width: 643px;
+  }
+
+  .main-nav_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main-nav_wrapper {
+    display: block;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  .main-nav_toggle {
+    display: none;
+  }
+}
+
+@import "variables.scss";

@@ -2,9 +2,9 @@
   text-align: center;
   overflow: hidden;
   position: relative;
-  z-index: 10;
+  z-index: 3;
   background-color: #ffffff;
-  padding-bottom: 92px;
+  padding-bottom: 35px;
 }
 
 .review_list {
@@ -16,8 +16,6 @@
   flex-shrink: 1;
   position: relative;
   overflow: hidden;
-  height: 210px;
-  margin-bottom: 46px;
 }
 
 .review_item {
@@ -28,6 +26,7 @@
   top: 0;
   left: 0;
   height: 100%;
+  padding-bottom: 35px;
 }
 
 .disable-slide {
@@ -38,12 +37,13 @@
   display: block;
 }
 
-.review_author_wrapper {
-  padding-top: 45px;
+.review_wrapper {
+  padding-top: 41px;
   overflow: hidden;
+  margin-bottom: 55px;
 }
 
-.author_review {
+.review_text {
   padding: 0 20px;
   margin: 0;
   font-size: 14px;
@@ -51,7 +51,7 @@
   font-weight: normal;
 }
 
-.slider_toggle-input {
+.review_slider-input {
   display: none;
   position: absolute;
   width: 1px;
@@ -59,32 +59,37 @@
   clip: rect(0, 0, 0, 0);
 }
 
-.author_name {
+.review_author {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 13px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .author_description {
   display: none;
   margin: 0;
+  font-family: "Open Sans Regular", "Arial", sans-serif;
 }
 
-.slider_toggles {
+.review_slider_toggles {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 78px;
+  height: 12px;
+  margin: 0 auto;
 }
 
-.slider_toggle-label {
+.review_slider-label {
   font-size: 0;
   background-color: #b5b9be;
   width: 2px;
   height: 2px;
   padding: 1px;
-  margin-right: 14px;
-  border: 3px #b5b9be solid;
+  margin: auto;
+  border: 1px #b5b9be solid;
   border-radius: 50%;
   vertical-align: top;
   align-items: center;
@@ -96,10 +101,21 @@
     border-radius: 50%;
     padding: 2px;
     background-color: #ffffff;
+    width: 2px;
+    height: 2px;
   }
 }
 
-.slider_toggle-label ~ .slider_toggle-input:checked {
+.review_slider--active {
+  border: 3px #283645 solid;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #ffffff;
+  width: 2px;
+  height: 2px;
+}
+
+.review_slider-label ~ .review_slider-input:checked {
   border: 3px #56616c solid;
   border-radius: 50%;
   width: 10px;
@@ -108,11 +124,11 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    width: 100%;
-    padding: 29px 0 65px;
+    width: 660px;
+    padding: 36px 0 50px;
   }
 
-  .review_author_wrapper {
+  .review_wrapper {
     width: 660px;
     margin: 0 auto;
     padding: 0;
@@ -132,15 +148,16 @@
     padding-bottom: 20px;
   }
 
-  .author_review {
-    font-size: 20px;
+  .review_text {
+    font-size: 18px;
+    color: #283645;
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 37px;
     padding: 0 12px;
   }
 
-  .author_name {
-    font-size: 18px;
+  .review_author {
+    font-size: 20px;
     line-height: 30px;
     display: block;
   }
@@ -160,14 +177,14 @@
     height: auto;
   }
 
-  .advantages_toggles {
+  .review_slider {
     position: relative;
     width: 960px;
     margin: 0 auto;
   }
 
-  .review_author_wrapper {
-    width: 960px;
+  .review_wrapper {
+    width: 940px;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 55px;
@@ -175,30 +192,32 @@
     z-index: -1;
   }
 
-  .author_name {
+  .review_author {
     font-size: 24px;
     line-height: 30px;
     display: block;
+    margin-bottom: 20px;
   }
 
-  .author_review {
+  .review_text {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 38px;
-    padding: 0 94px;
+    margin-bottom: 39px;
+    padding: 0 109px;
   }
 
   .review_item {
-    height: 321px;
+    height: 355px;
   }
 
   .review_item::before {
     content: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 44px;
-    right: 438px;
+    top: 37px;
+    right: 424px;
     z-index: 11;
+    width: 79px;
   }
 
   .author_description {
@@ -207,7 +226,7 @@
     line-height: 30px;
   }
 
-  .slider_toggle-label {
+  .review_slider-label {
     display: block;
     position: absolute;
     background-image: url("../img/icon-review-arrow-right.svg");
@@ -218,9 +237,10 @@
     border: 0;
     height: 50px;
     width: 50px;
-    bottom: 196px;
-    right: -7px;
+    bottom: 165px;
+    right: 4px;
     transform: translateX(1%);
+    z-index: 11;
 
     &:hover {
       border: 0;
@@ -233,13 +253,14 @@
     }
   }
 
-  .slider-arrow--left {
+  .review_slider_arrow--left {
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
     background-position: center;
-    left: 0;
+    left: -12px;
     background-color: transparent;
     border: 0;
+    z-index: 11;
 
     &:hover {
       border: 0;
